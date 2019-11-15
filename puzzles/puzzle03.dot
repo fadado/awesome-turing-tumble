@@ -1,0 +1,44 @@
+/* Challenge #3, */
+
+digraph Challenge03 {
+	// graph attributes
+	label="Challenge #3"
+	fontname=Helvetica
+	labelloc=t
+
+	// global attributes
+	node [ // for all nodes
+		shape=circle
+		fontname=Helvetica
+	]
+	edge [ // for all edges
+	]
+
+	// nodes
+	start [shape=point]
+	B_top [ // attributes for the blue top entry
+		label="B"
+		fontcolor=blue
+	]
+	B_bot [ // attributes for the blue bottom exit
+		label="B"
+		fontcolor=blue
+	]
+	R_top [ // attributes for the red top entry
+		label="R"
+		fontcolor=red
+	]
+	R_bot [ // attributes for the red bottom exit
+		label="R"
+		fontcolor=red
+	]
+
+	// edges
+	{rank=same start B_top R_top}
+	start -> B_top
+	B_top -> R_bot
+	{rank=same B_bot R_bot}
+	R_top -> B_bot
+}
+
+// vim:ai:ts=4:sw=4
