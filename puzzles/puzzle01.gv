@@ -1,0 +1,41 @@
+/*	Challenge #1: Gravity
+	Challenge #2: Re-entry
+	Challenge #7: Path of Least Resistance
+
+	Objective: Make all of the blue balls (and only the blue balls) reach the end.
+	Setup: balls:8B; start:B; trace:8B
+*/
+
+digraph Challenge01 {
+	// graph attributes
+	label="Challenge #1"
+	fontname=Helvetica
+	labelloc=t
+
+	node [ // attributes for all nodes
+		shape=circle
+		fontname=Helvetica
+	]
+	edge [ // attributes for all edges
+	]
+
+	// nodes
+	start [shape=point]
+	B_top [ // attributes for the blue top entry
+		label="B"
+		fontcolor=blue
+	]
+	B_bot [ // attributes for the blue bottom exit
+		label="B"
+		fontcolor=blue
+	]
+
+	// edges
+	{rank=same; start, B_top }
+	start -> B_top:nw
+	B_top -> B_bot
+
+	B_bot:w -> B_top:w [style=dotted dir=none]
+}
+
+// vim:ai:ts=4:sw=4:fileencoding=utf-8:syntax=dot

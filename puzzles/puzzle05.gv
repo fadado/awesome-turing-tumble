@@ -1,17 +1,20 @@
-/* Challenge #3, */
+/*	Challenge #5: Entropy
 
-digraph Challenge03 {
+	Objective: Make the pattern blue, red, blue, red, blue, red…
+	Setup: balls:8B 8R; start:B; trace:8(RB)
+*/
+
+digraph Challenge05 {
 	// graph attributes
-	label="Challenge #3"
+	label="Challenge #5"
 	fontname=Helvetica
 	labelloc=t
 
-	// global attributes
-	node [ // for all nodes
+	node [ // attributes for all nodes
 		shape=circle
 		fontname=Helvetica
 	]
-	edge [ // for all edges
+	edge [ // attributes for all edges
 	]
 
 	// nodes
@@ -34,11 +37,14 @@ digraph Challenge03 {
 	]
 
 	// edges
-	{rank=same start B_top R_top}
-	start -> B_top
+	{rank=same; start, B_top, R_top}
+	start -> B_top:nw
 	B_top -> R_bot
-	{rank=same B_bot R_bot}
+
+	{rank=same; B_bot, R_bot}
 	R_top -> B_bot
+
+	B_bot:w -> B_top:w [style=dotted dir=none]
 }
 
-// vim:ai:ts=4:sw=4
+// vim:ai:ts=4:sw=4:fileencoding=utf-8:syntax=dot
