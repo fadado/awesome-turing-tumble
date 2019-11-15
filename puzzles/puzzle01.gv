@@ -9,7 +9,7 @@ digraph Challenge01 {
 	/*
 	** global attributes
 	*/
-	graph [ 
+	graph [
 		label="Challenge #1"
 		fontname=Helvetica
 		labelloc=t
@@ -24,7 +24,9 @@ digraph Challenge01 {
 	/*
 	** nodes
 	*/
-	start [shape=point]
+	start [
+		shape=point
+	]
 	// blue top entry
 	B_top [
 		label="B"
@@ -35,15 +37,19 @@ digraph Challenge01 {
 		label="B"
 		fontcolor=blue
 	]
+	// align
+	{rank=same; start, B_top}
 
 	/*
 	** edges
 	*/
-	{rank=same; start, B_top }
 	start -> B_top:nw
 	B_top -> B_bot
 
-	B_bot:w -> B_top:w [style=dotted dir=none]
+	B_bot:w -> B_top:w [
+		style=dotted
+		dir=none
+	]
 }
 
 // vim:ai:ts=4:sw=4:fileencoding=utf-8:syntax=dot
