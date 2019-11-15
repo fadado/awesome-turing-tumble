@@ -1,36 +1,44 @@
 /*	Challenge #1: Gravity
-	Challenge #2: Re-entry
-	Challenge #7: Path of Least Resistance
-
-	Objective: Make all of the blue balls (and only the blue balls) reach the end.
-	Setup: balls:8B; start:B; trace:8B
-*/
+ *	Challenge #2: Re-entry
+ *	Challenge #7: Path of Least Resistance
+ *
+ *	Make all of the blue balls (and only the blue balls) reach the end.
+ */
 
 digraph Challenge01 {
-	// graph attributes
-	label="Challenge #1"
-	fontname=Helvetica
-	labelloc=t
-
-	node [ // attributes for all nodes
+	/*
+	** global attributes
+	*/
+	graph [ 
+		label="Challenge #1"
+		fontname=Helvetica
+		labelloc=t
+	]
+	node [
 		shape=circle
 		fontname=Helvetica
 	]
-	edge [ // attributes for all edges
+	edge [
 	]
 
-	// nodes
+	/*
+	** nodes
+	*/
 	start [shape=point]
-	B_top [ // attributes for the blue top entry
+	// blue top entry
+	B_top [
 		label="B"
 		fontcolor=blue
 	]
-	B_bot [ // attributes for the blue bottom exit
+	// blue bottom exit
+	B_bot [
 		label="B"
 		fontcolor=blue
 	]
 
-	// edges
+	/*
+	** edges
+	*/
 	{rank=same; start, B_top }
 	start -> B_top:nw
 	B_top -> B_bot

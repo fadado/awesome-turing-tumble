@@ -1,42 +1,52 @@
 /*	Challenge #5: Entropy
-
-	Objective: Make the pattern blue, red, blue, red, blue, red…
-	Setup: balls:8B 8R; start:B; trace:8(RB)
-*/
+ *
+ *	Make the pattern 8(RB)
+ */
 
 digraph Challenge05 {
-	// graph attributes
-	label="Challenge #5"
-	fontname=Helvetica
-	labelloc=t
-
-	node [ // attributes for all nodes
+	/*
+	** global attributes
+	*/
+	graph [
+		label="Challenge #5"
+		fontname=Helvetica
+		labelloc=t
+		]
+	node [
 		shape=circle
 		fontname=Helvetica
 	]
-	edge [ // attributes for all edges
+	edge [
 	]
 
-	// nodes
+	/*
+	** nodes
+	*/
 	start [shape=point]
-	B_top [ // attributes for the blue top entry
+	// blue top entry
+	B_top [
 		label="B"
 		fontcolor=blue
 	]
-	B_bot [ // attributes for the blue bottom exit
+	// blue bottom exit
+	B_bot [
 		label="B"
 		fontcolor=blue
 	]
-	R_top [ // attributes for the red top entry
+	// red top entry
+	R_top [
 		label="R"
 		fontcolor=red
 	]
-	R_bot [ // attributes for the red bottom exit
+	// red bottom exit
+	R_bot [
 		label="R"
 		fontcolor=red
 	]
 
-	// edges
+	/*
+	** edges
+	*/
 	{rank=same; start, B_top, R_top}
 	start -> B_top:nw
 	B_top -> R_bot
