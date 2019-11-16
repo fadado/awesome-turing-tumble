@@ -1,40 +1,39 @@
-/*	Challenge #1: Gravity
- *	Challenge #2: Re-entry
- *	Challenge #7: Path of Least Resistance
+/*  Challenge #1: Gravity
+ *  Challenge #2: Re-entry
+ *  Challenge #7: Path of Least Resistance
  *
- *	Make all of the blue balls (and only the blue balls) reach the end.
+ *  Make all of the blue balls (and only the blue balls) reach the end.
  */
 
-#include "style.h"
+#include "turing-tumble.h"
 
 digraph Challenge01 {
-	/*
-	** global attributes
-	*/
-	node [ NODE_STYLE ]
-	edge [ EDGE_STYLE ]
+    /*
+    ** global attributes
+    */
+    node [ NODE_STYLE ]
+    edge [ EDGE_STYLE ]
 
-	/*
-	** nodes
-	*/
-	GAME_BOARD
+    /*
+    ** nodes
+    */
+    GAME_BOARD
 
-	/*
-	** edges
-	*/
-	start -> B_top
-	B_top -> B_bot
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> B_bot
 
-	NEXT_BLUE_BALL
+    NEXT_BLUE_BALL_EDGE
 
-	/*
-	** top level graph attributes
-	*/
-	graph [
-		GRAPH_STYLE
-		label="Challenge #1"
-		labelloc=t
-	]
+    /*
+    ** top level graph attributes
+    */
+    graph [
+        GRAPH_STYLE
+        label="Challenge #1"
+    ]
 }
 
-// vim:ai:ts=4:sw=4:fileencoding=utf-8:syntax=dot
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

@@ -1,41 +1,39 @@
-/*	Challenge #5: Entropy
+/*  Challenge #5: Entropy
  *
- *	Make the pattern 8(RB)
+ *  Make the pattern 8(RB)
  */
 
-#include "style.h"
+#include "turing-tumble.h"
 
 digraph Challenge05 {
-	/*
-	** global attributes
-	*/
-	ordering=out
-	node [ NODE_STYLE ]
-	edge [ EDGE_STYLE ]
+    /*
+    ** global attributes
+    */
+    node [ NODE_STYLE ]
+    edge [ EDGE_STYLE ]
 
-	/*
-	** nodes
-	*/
-	GAME_BOARD
+    /*
+    ** nodes
+    */
+    GAME_BOARD
 
-	/*
-	** edges
-	*/
-	start -> B_top
-	B_top -> R_bot
-	R_top -> B_bot
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> R_bot
+    R_top -> B_bot
 
-	NEXT_BLUE_BALL
-	NEXT_RED_BALL
+    NEXT_BLUE_BALL_EDGE
+    NEXT_RED_BALL_EDGE
 
-	/*
-	** top level graph attributes
-	*/
-	graph [
-		GRAPH_STYLE
-		label="Challenge #5"
-		labelloc=t
-	]
+    /*
+    ** top level graph attributes
+    */
+    graph [
+        GRAPH_STYLE
+        label="Challenge #5"
+    ]
 }
 
-// vim:ai:ts=4:sw=4:fileencoding=utf-8:syntax=dot
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot
