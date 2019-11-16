@@ -3,11 +3,11 @@
  *  Make the pattern 8(RB)
  */
 
-#include "turing-tumble.h"
+#include "board.h"
 
 digraph Challenge05 {
     /*
-    ** global attributes
+    ** attributes
     */
     node [ NODE_STYLE ]
     edge [ EDGE_STYLE ]
@@ -15,7 +15,7 @@ digraph Challenge05 {
     /*
     ** nodes
     */
-    GAME_BOARD
+    GAME_BOARD_NODES
 
     /*
     ** edges
@@ -24,11 +24,10 @@ digraph Challenge05 {
     B_top -> R_bot
     R_top -> B_bot
 
-    NEXT_BLUE_BALL_EDGE
-    NEXT_RED_BALL_EDGE
+    GAME_BOARD_EDGES
 
     /*
-    ** top level graph attributes
+    ** graph attributes
     */
     graph [
         GRAPH_STYLE

@@ -1,9 +1,9 @@
 /*
- * Style macros for all Turing Tumble graphs
+ * Turing Tumble graphs
  */
 
 /*
- * Global constants
+ * Fonts, colors, etc.
  */
 #define FONTNAME    Helvetica
 #define FONTCOLOR   black
@@ -33,44 +33,40 @@
     width=0.11              \
 
 /*
- * Edges
+ * Game Board
  */
-#define NEXT_BLUE_BALL_EDGE \
+#define GAME_BOARD_NODES        \
+    start [ START_STYLE ]       \
+    B_top [                     \
+        label="B"               \
+        fontcolor=blue          \
+    ]                           \
+    B_bot [                     \
+        label="B"               \
+        fontcolor=blue          \
+    ]                           \
+    R_top [                     \
+        label="R"               \
+        fontcolor=red           \
+    ]                           \
+    R_bot [                     \
+        label="R"               \
+        fontcolor=red           \
+    ]                           \
+    {rank=same; B_top, R_top}   \
+    {rank=same; B_bot, R_bot}   \
+
+#define GAME_BOARD_EDGES    \
     B_bot:w -> B_top:w [    \
         style=dotted        \
         dir=none            \
         color=blue          \
     ]                       \
-
-#define NEXT_RED_BALL_EDGE  \
     R_bot:e -> R_top:e [    \
         style=dotted        \
         dir=none            \
         color=red           \
     ]                       \
-
-/*
- * Game Board
- */
-#define GAME_BOARD                  \
-    start [ START_STYLE ]           \
-    B_top [                         \
-        label="B"                   \
-        fontcolor=blue              \
-    ]                               \
-    B_bot [                         \
-        label="B"                   \
-        fontcolor=blue              \
-    ]                               \
-    R_top [                         \
-        label="R"                   \
-        fontcolor=red               \
-    ]                               \
-    R_bot [                         \
-        label="R"                   \
-        fontcolor=red               \
-    ]                               \
-    {rank=same; B_top, R_top}       \
-    {rank=same; B_bot, R_bot}       \
+    B_bot -> R_bot [style=invis]
 
 // vim:ai:sw=4:ts=4:et:syntax=dot
