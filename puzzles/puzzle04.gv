@@ -1,12 +1,11 @@
-/*  Challenge #5: Entropy
- *  Challenge #6: Total Internal Reflection
+/*  Challenge #4: Fusion
  *
- *  Make the pattern blue, red, blue, red, blue, red…
+ *  Release one red ball and then all of the blue balls.
  */
 
 #include "board.h"
 
-digraph Challenge05 {
+digraph Challenge04 {
     /*
     ** attributes
     */
@@ -21,8 +20,8 @@ digraph Challenge05 {
     /*
     ** edges
     */
-    start -> B_top
-    B_top -> R_bot
+    start -> R_top
+    B_top -> B_bot
     R_top -> B_bot
 
     GAME_BOARD_EDGES
@@ -32,7 +31,7 @@ digraph Challenge05 {
     */
     graph [
         GRAPH_STYLE
-        label="Challenge #5"
+        label="Challenge #4"
     ]
 }
 
