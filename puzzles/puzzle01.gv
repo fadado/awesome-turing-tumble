@@ -5,50 +5,35 @@
  *	Make all of the blue balls (and only the blue balls) reach the end.
  */
 
+#include "style.h"
+
 digraph Challenge01 {
 	/*
 	** global attributes
 	*/
-	graph [
-		label="Challenge #1"
-		fontname=Helvetica
-		labelloc=t
-	]
-	node [
-		shape=circle
-		fontname=Helvetica
-	]
-	edge [
-	]
+	node [ NODE_STYLE ]
+	edge [ EDGE_STYLE ]
 
 	/*
 	** nodes
 	*/
-	start [
-		shape=point
-	]
-	// blue top entry
-	B_top [
-		label="B"
-		fontcolor=blue
-	]
-	// blue bottom exit
-	B_bot [
-		label="B"
-		fontcolor=blue
-	]
-	// align
-	{rank=same; start, B_top}
+	GAME_BOARD
 
 	/*
 	** edges
 	*/
-	start -> B_top:nw
+	start -> B_top
 	B_top -> B_bot
 
-	B_bot:w -> B_top:w [
-		style=dotted
-		dir=none
+	NEXT_BLUE_BALL
+
+	/*
+	** top level graph attributes
+	*/
+	graph [
+		GRAPH_STYLE
+		label="Challenge #1"
+		labelloc=t
 	]
 }
 

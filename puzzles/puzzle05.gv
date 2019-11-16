@@ -3,63 +3,38 @@
  *	Make the pattern 8(RB)
  */
 
+#include "style.h"
+
 digraph Challenge05 {
 	/*
 	** global attributes
 	*/
-	graph [
-		label="Challenge #5"
-		fontname=Helvetica
-		labelloc=t
-	]
-	node [
-		shape=circle
-		fontname=Helvetica
-	]
-	edge [
-	]
+	ordering=out
+	node [ NODE_STYLE ]
+	edge [ EDGE_STYLE ]
 
 	/*
 	** nodes
 	*/
-	start [
-		shape=point
-	]
-	// blue top entry
-	B_top [
-		label="B"
-		fontcolor=blue
-	]
-	// blue bottom exit
-	B_bot [
-		label="B"
-		fontcolor=blue
-	]
-	// red top entry
-	R_top [
-		label="R"
-		fontcolor=red
-	]
-	// red bottom exit
-	R_bot [
-		label="R"
-		fontcolor=red
-	]
-	// align
-	{rank=same; start, B_top, R_top}
-	{rank=same; B_bot, R_bot}
+	GAME_BOARD
 
 	/*
 	** edges
 	*/
-	start -> B_top:nw
+	start -> B_top
 	B_top -> R_bot
-
 	R_top -> B_bot
 
-	B_bot:w -> B_top:w [
-		style=dotted
-		dir=none
+	NEXT_BLUE_BALL
+	NEXT_RED_BALL
+
+	/*
+	** top level graph attributes
+	*/
+	graph [
+		GRAPH_STYLE
+		label="Challenge #5"
+		labelloc=t
 	]
 }
 

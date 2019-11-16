@@ -1,10 +1,12 @@
 #
 
-.SILENT:
+#.SILENT:
+
+CPP=cpp -P
 
 all:
-	dot -Tsvg < puzzle01.gv > puzzle01.svg
-	dot -Tsvg < puzzle05.gv > puzzle05.svg
+	$(CPP) puzzle01.gv | dot -Tsvg > puzzle01.svg
+	$(CPP) puzzle05.gv | dot -Tsvg > puzzle05.svg
 
 clean:
 	rm -f *.svg *.png
