@@ -20,10 +20,12 @@ digraph Challenge01 {
     */
     GAME_BOARD_NODES
 
+#ifdef ShowObjective
     objective [
         OBJ_STYLE
         label="Make all of the blue balls\l(and only the blue balls)\lreach the end"
     ]
+#endif
 
     /*
     ** edges

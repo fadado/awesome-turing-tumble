@@ -18,10 +18,12 @@ digraph Challenge04 {
     */
     GAME_BOARD_NODES
 
+#ifdef ShowObjective
     objective [
         OBJ_STYLE
         label="Release one red ball and\lthen all of the blue balls"
     ]
+#endif
 
     /*
     ** edges

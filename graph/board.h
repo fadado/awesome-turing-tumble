@@ -2,6 +2,8 @@
  * Turing Tumble graphs
  */
 
+#define ShowObjective   /* Add descripyive text to graph */
+
 /*
  * Fonts, colors, etc.
  */

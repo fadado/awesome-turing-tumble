@@ -18,10 +18,12 @@ digraph Challenge09 {
     */
     GAME_BOARD_NODES
 
+#ifdef ShowObjective
     objective [
         OBJ_STYLE
         label="Make the pattern blue, blue, red,\lblue, blue, red…"
     ]
+#endif
 
     bit [
         BIT_STYLE
