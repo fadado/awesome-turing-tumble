@@ -42,6 +42,8 @@ SHELL := /bin/bash
 # Targets and files
 ########################################################################
 
+BOARD=board.h
+
 # Dot files to process
 DotFiles := $(wildcard *.gv)
 
@@ -49,6 +51,8 @@ DotFiles := $(wildcard *.gv)
 SvgTargets := $(DotFiles:.gv=.svg)
 PngTargets := $(DotFiles:.gv=.png)
 PdfTargets := $(DotFiles:.gv=.pdf)
+
+$(SvgTargets): $(BOARD)
 
 ########################################################################
 # Rules
@@ -70,7 +74,7 @@ png: $(PngTargets)
 pdf: $(PdfTargets)
 
 all: $(SvgTargets)
-	@ls -lh *.svg
+	#@ls -lh *.svg
 
 ########################################################################
 # Tools

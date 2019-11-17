@@ -10,13 +10,19 @@ digraph Challenge05 {
     /*
     ** attributes
     */
-    node [ NODE_STYLE ]
-    edge [ EDGE_STYLE ]
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
 
     /*
     ** nodes
     */
     GAME_BOARD_NODES
+
+    objective [
+        OBJ_STYLE
+        label="Make the pattern blue, red,\lblue, red, blue, red…"
+    ]
 
     /*
     ** edges
@@ -31,8 +37,7 @@ digraph Challenge05 {
     ** graph attributes
     */
     graph [
-        GRAPH_STYLE
-        label="Challenge #5"
+        label="Challenge #5, #6"
     ]
 }
 

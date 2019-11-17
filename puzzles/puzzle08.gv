@@ -1,13 +1,11 @@
-/*  Challenge #1: Gravity
- *  Challenge #2: Re-entry
- *  Challenge #7: Path of Least Resistance
+/*  Challenge #8: Depolarization
  *
- *  Make all of the blue balls (and only the blue balls) reach the end.
+ *  Make the pattern blue, red, blue, red, blue, red…
  */
 
 #include "board.h"
 
-digraph Challenge01 {
+digraph Challenge08 {
     /*
     ** attributes
     */
@@ -22,22 +20,30 @@ digraph Challenge01 {
 
     objective [
         OBJ_STYLE
-        label="Make all of the blue balls\l(and only the blue balls)\lreach the end"
+        label="Make the pattern blue, red,\lblue, red, blue, red…"
+    ]
+
+    bit [
+        BIT_STYLE
+        label=BITLEFT
     ]
 
     /*
     ** edges
     */
-    start -> B_top
-    B_top -> B_bot
-
     GAME_BOARD_EDGES
+
+    start -> B_top
+    B_top -> bit
+    R_top -> bit
+    bit   -> B_bot
+    bit   -> R_bot
 
     /*
     ** graph attributes
     */
     graph [
-        label="Challenge #1, #2, #7"
+        label="Challenge #8"
     ]
 }
 

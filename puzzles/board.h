@@ -8,6 +8,12 @@
 #define FONTNAME    Helvetica
 #define FONTCOLOR   black
 
+#define BITCOLOR    deepskyblue
+#define BITSIZE     24
+#define BITRIGHT    "⬈"   // north est arrow: U+2B08
+#define BITLEFT     "⬉"   // north west up arrow: U+2B09
+#define BITUNDEF    "⬆"   // upwards arrow: U+2B06
+
 /*
  * Styles
  */
@@ -31,6 +37,17 @@
 #define START_STYLE         \
     shape=point             \
     width=0.11              \
+
+#define OBJ_STYLE           \
+        shape=plaintext     \
+        fontsize=10         \
+        fontname=Times      \
+
+#define BIT_STYLE           \
+        shape=diamond       \
+        fontcolor=BITCOLOR  \
+        fontsize=BITSIZE    \
+        fixedsize=true      \
 
 /*
  * Game Board

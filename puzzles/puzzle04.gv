@@ -9,13 +9,19 @@ digraph Challenge04 {
     /*
     ** attributes
     */
-    node [ NODE_STYLE ]
-    edge [ EDGE_STYLE ]
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
 
     /*
     ** nodes
     */
     GAME_BOARD_NODES
+
+    objective [
+        OBJ_STYLE
+        label="Release one red ball and\lthen all of the blue balls"
+    ]
 
     /*
     ** edges
@@ -30,7 +36,6 @@ digraph Challenge04 {
     ** graph attributes
     */
     graph [
-        GRAPH_STYLE
         label="Challenge #4"
     ]
 }
