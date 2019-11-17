@@ -69,9 +69,9 @@ $(SvgTargets): $(BOARD)
 
 .PHONY: svg png pdf
 
-svg: $(SvgTargets)
-png: $(PngTargets)
-pdf: $(PdfTargets)
+svg: $(SvgTargets); @mv $(SvgTargets) SVG
+png: $(PngTargets); @mv $(PngTargets) PNG
+pdf: $(PdfTargets); @mv $(PdfTargets) PDF
 
 all: $(SvgTargets)
 
