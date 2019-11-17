@@ -1,20 +1,94 @@
-# TODO: all!
+# Makefile for Turing Tumble graphs
 
-#.SILENT:
+########################################################################
+# Configuration
+########################################################################
 
-CPP=cpp -P
+# Disable builtins.
+MAKEFLAGS += --no-builtin-rules
+MAKEFLAGS += --no-builtin-variables
 
-PUZZLES=\
-	puzzle01.gv	\
-	puzzle03.gv	\
-	puzzle04.gv	\
-	puzzle05.gv	\
+# Warn when an undefined variable is referenced.
+MAKEFLAGS += --warn-undefined-variables
 
-all:
-	$(CPP) puzzle01.gv | dot -Tsvg > puzzle01.svg
-	$(CPP) puzzle03.gv | dot -Tsvg > puzzle03.svg
-	$(CPP) puzzle04.gv | dot -Tsvg > puzzle04.svg
-	$(CPP) puzzle05.gv | dot -Tsvg > puzzle05.svg
+# Make will not print the recipe used to remake files.
+.SILENT:
+
+# Eliminate use of the built-in implicit rules. Also clear out the
+# default list of suffixes for suffix rules.
+.SUFFIXES:
+
+# Sets the default goal to be used if no targets were specified on the
+# command line.
+.DEFAULT_GOAL := all
+
+# When it is time to consider phony targets, make will run its recipe
+# unconditionally, regardless of whether a file with that name exists or
+# what its last-modification time is.
+.PHONY: all
+
+# Default shell: if we require GNU Make, why not require Bash?
+SHELL := /bin/bash
+
+# The argument(s) passed to the shell are taken from the variable
+# .SHELLFLAGS.
+.SHELLFLAGS := -o errexit -o pipefail -o nounset -c
+
+# Make will delete the target of a rule if it has changed and its recipe
+# exits with a nonzero exit status.
+.DELETE_ON_ERROR:
+
+########################################################################
+# Targets and files
+########################################################################
+
+# Dot files to process
+DotFiles := $(wildcard *.gv)
+
+# Targets to create
+SvgTargets := $(DotFiles:.gv=.svg)
+PngTargets := $(DotFiles:.gv=.png)
+PdfTargets := $(DotFiles:.gv=.pdf)
+
+########################################################################
+# Rules
+########################################################################
+
+%.svg: %.gv
+	cpp -P $< | dot -Tsvg -o $@
+
+%.png: %.gv
+	cpp -P $< | dot -Tpng -o $@
+
+%.pdf: %.gv
+	cpp -P $< | dot -Tpdf -o $@
+
+.PHONY: svg png pdf
+
+svg: $(SvgTargets)
+png: $(PngTargets)
+pdf: $(PdfTargets)
+
+all: $(SvgTargets)
+	@ls -lh *.svg
+
+########################################################################
+# Tools
+########################################################################
+
+.PHONY: clean list
 
 clean:
-	rm -f *.svg *.png
+	@rm -f *.svg *.png *.pdf
+
+# Show targets
+help:
+	echo 'Targets:';					\
+	$(MAKE) --print-data-base --just-print 2>&1		\
+	| grep -v '^[mM]akefile'				\
+	| awk '/^[^ \t.%][-A-Za-z0-9_]*:/ { print $$1 }'	\
+	| sort --unique						\
+	| sed 's/:\+$$//'					\
+	| pr --omit-pagination --indent=4 --width=80 --columns=4
+
+# EOF
