@@ -12,7 +12,7 @@ MAKEFLAGS += --no-builtin-variables
 MAKEFLAGS += --warn-undefined-variables
 
 # Make will not print the recipe used to remake files.
-.SILENT:
+#.SILENT:
 
 # Eliminate use of the built-in implicit rules. Also clear out the
 # default list of suffixes for suffix rules.
@@ -59,13 +59,13 @@ $(SvgTargets): $(BOARD)
 ########################################################################
 
 %.svg: %.gv
-	cpp -P $< | dot -Tsvg -o $@
+	@cpp -P $< | dot -Tsvg -o $@
 
 %.png: %.gv
-	cpp -P $< | dot -Tpng -o $@
+	@cpp -P $< | dot -Tpng -o $@
 
 %.pdf: %.gv
-	cpp -P $< | dot -Tpdf -o $@
+	@cpp -P $< | dot -Tpdf -o $@
 
 .PHONY: svg png pdf
 
@@ -74,7 +74,6 @@ png: $(PngTargets)
 pdf: $(PdfTargets)
 
 all: $(SvgTargets)
-	#@ls -lh *.svg
 
 ########################################################################
 # Tools
@@ -87,7 +86,7 @@ clean:
 
 # Show targets
 help:
-	echo 'Targets:';					\
+	@echo 'Targets:';					\
 	$(MAKE) --print-data-base --just-print 2>&1		\
 	| grep -v '^[mM]akefile'				\
 	| awk '/^[^ \t.%][-A-Za-z0-9_]*:/ { print $$1 }'	\

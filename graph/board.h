@@ -10,9 +10,16 @@
 
 #define BITCOLOR    deepskyblue
 #define BITSIZE     24
-#define BITRIGHT    "⬈"   // north est arrow: U+2B08
-#define BITLEFT     "⬉"   // north west up arrow: U+2B09
-#define BITUNDEF    "⬆"   // upwards arrow: U+2B06
+
+#ifdef NotSupportedByAndroid
+#define BITRIGHT    "⬈"  // north est arrow: U+2B08
+#define BITLEFT     "⬉"  // north west up arrow: U+2B09
+#define BITUNDEF    "⬆"  // upwards arrow: U+2B06
+#else
+#define BITRIGHT    ">"  // ASCII alternatives
+#define BITLEFT     "<"
+#define BITUNDEF    "^"
+#endif
 
 /*
  * Styles
@@ -22,6 +29,7 @@
     fontcolor=FONTCOLOR     \
     fontsize=12             \
     shape=circle            \
+    fixedsize=true          \
 
 #define EDGE_STYLE          \
     fontname=FONTNAME       \
@@ -39,15 +47,15 @@
     width=0.11              \
 
 #define OBJ_STYLE           \
-        shape=plaintext     \
-        fontsize=10         \
-        fontname=Times      \
+    shape=plaintext         \
+    fontsize=10             \
+    fontname=Times          \
+    fixedsize=false         \
 
 #define BIT_STYLE           \
-        shape=diamond       \
-        fontcolor=BITCOLOR  \
-        fontsize=BITSIZE    \
-        fixedsize=true      \
+    shape=diamond           \
+    fontcolor=BITCOLOR      \
+    fontsize=BITSIZE        \
 
 /*
  * Game Board

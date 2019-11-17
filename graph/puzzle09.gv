@@ -1,11 +1,11 @@
-/*  Challenge #8: Depolarization
+/*  Challenge #9: Dimers
  *
- *  Make the pattern blue, red, blue, red, blue, red…
+ *  Make the pattern blue, blue, red, blue, blue, red…
  */
 
 #include "board.h"
 
-digraph Challenge08 {
+digraph Challenge09 {
     /*
     ** attributes
     */
@@ -20,12 +20,12 @@ digraph Challenge08 {
 
     objective [
         OBJ_STYLE
-        label="Make the pattern blue, red,\lblue, red, blue, red…"
+        label="Make the pattern blue, blue, red,\lblue, blue, red…"
     ]
 
     bit [
         BIT_STYLE
-        label=BITLEFT
+        label=BITRIGHT
     ]
 
     /*
@@ -34,16 +34,16 @@ digraph Challenge08 {
     GAME_BOARD_EDGES
 
     start -> B_top
-    B_top -> bit
-    R_top -> bit
-    bit   -> B_bot
-    bit   -> R_bot
+    B_top -> bit:nw
+    R_top -> B_bot:ne
+    bit:sw -> B_bot
+    bit:se -> R_bot
 
     /*
     ** graph attributes
     */
     graph [
-        label="Challenge #8"
+        label="Challenge #9"
     ]
 }
 
