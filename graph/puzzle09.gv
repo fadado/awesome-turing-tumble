@@ -45,7 +45,7 @@ digraph Challenge09 {
     ** graph attributes
     */
     graph [
-        label="Challenge #9"
+        label="Challenge #9: Dimers"
     ]
 }
 

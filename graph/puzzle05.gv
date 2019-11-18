@@ -39,7 +39,7 @@ digraph Challenge05 {
     ** graph attributes
     */
     graph [
-        label="Challenge #5, #6"
+        label="Challenge #5: Entropy"
     ]
 }
 

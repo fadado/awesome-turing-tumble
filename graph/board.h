@@ -7,11 +7,12 @@
 /*
  * Fonts, colors, etc.
  */
-#define FONTNAME    Helvetica
-#define FONTCOLOR   black
+#define FONTNAME        Helvetica
+#define FONTNAME_BOLD   "Helvetica-Bold"
+#define FONTCOLOR       black
 
-#define BITCOLOR    deepskyblue
-#define BITSIZE     24
+#define BITCOLOR        deepskyblue
+#define BITSIZE         24
 
 #ifdef NotSupportedByAndroid
 #define BITRIGHT    "⬈"  // north est arrow: U+2B08
@@ -39,7 +40,7 @@
     fontsize=10             \
 
 #define GRAPH_STYLE         \
-    fontname=FONTNAME       \
+    fontname=FONTNAME_BOLD  \
     fontcolor=FONTCOLOR     \
     fontsize=12             \
     labelloc=t              \

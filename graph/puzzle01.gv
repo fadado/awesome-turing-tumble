@@ -39,7 +39,7 @@ digraph Challenge01 {
     ** graph attributes
     */
     graph [
-        label="Challenge #1, #2, #7"
+        label="Challenge #1: Gravity"
     ]
 }
 

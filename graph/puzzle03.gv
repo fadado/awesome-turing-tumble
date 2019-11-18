@@ -38,7 +38,7 @@ digraph Challenge03 {
     ** graph attributes
     */
     graph [
-        label="Challenge #3"
+        label="Challenge #3: Ignition"
     ]
 }
 

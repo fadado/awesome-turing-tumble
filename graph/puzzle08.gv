@@ -45,7 +45,7 @@ digraph Challenge08 {
     ** graph attributes
     */
     graph [
-        label="Challenge #8"
+        label="Challenge #8: Depolarization"
     ]
 }
 
