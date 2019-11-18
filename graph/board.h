@@ -12,7 +12,7 @@
 #define FONTCOLOR       black
 
 #define BITCOLOR        deepskyblue
-#define BITSIZE         24
+#define BITSIZE         20
 
 #ifdef NotSupportedByAndroid
 #define BITRIGHT    "⬈"  // north est arrow: U+2B08
