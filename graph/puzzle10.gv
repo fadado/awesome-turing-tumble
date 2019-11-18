@@ -1,0 +1,59 @@
+/*  Challenge #10: Double Bond
+ *
+ *  Make the pattern blue, blue, red, red, blue, blue, red, red…
+ */
+
+#include "board.h"
+
+digraph Challenge10 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#ifdef ShowObjective
+    objective [
+        OBJ_STYLE
+        label="Make the pattern blue, blue, red, red,\lblue, blue, red, red…"
+    ]
+#endif
+
+    bit_a [
+        BIT_STYLE
+        label=BITRIGHT
+    ]
+
+    bit_b [
+        BIT_STYLE
+        label=BITLEFT
+    ]
+
+    /*
+    ** edges
+    */
+    GAME_BOARD_EDGES
+
+    start -> B_top
+    B_top -> bit_a
+    R_top -> bit_b
+    bit_a:sw -> B_bot
+    bit_a:se -> R_bot
+    bit_b:sw -> B_bot
+    bit_b:se -> R_bot
+
+    /*
+    ** graph attributes
+    */
+    graph [
+        label="Challenge #10: Double Bond"
+    ]
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

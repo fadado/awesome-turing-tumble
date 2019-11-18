@@ -1,0 +1,58 @@
+/*  Challenge #21: Quantum Number 
+ *
+ *  Use register A to count the number of blue balls. Use 15 or fewer balls. 
+ */
+
+#include "board.h"
+
+digraph Challenge01 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#ifdef ShowObjective
+    objective [
+        OBJ_STYLE
+        label="Use register A to count the number of blue balls.\lUse 15 or fewer balls."
+    ]
+#endif
+
+    bit_0 [ BIT_STYLE label=BITLEFT ]
+    bit_1 [ BIT_STYLE label=BITLEFT ]
+    bit_2 [ BIT_STYLE label=BITLEFT ]
+    bit_3 [ BIT_STYLE label=BITLEFT ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> bit_0
+
+    bit_0:sw -> bit_1:nw
+    bit_0:se -> B_bot:ne
+    bit_1:sw -> bit_2:nw
+    bit_1:se -> B_bot:ne //[arrowhead=none]
+    bit_2:sw -> bit_3:nw
+    bit_2:se -> B_bot:ne //[arrowhead=none]
+    bit_3:sw -> B_bot:nw
+    bit_3:se -> B_bot:ne //[arrowhead=none]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+    graph [
+        label="Challenge #21: Quantum Number"
+    ]
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

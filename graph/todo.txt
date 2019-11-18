@@ -1,2 +1,3 @@
+(A) 2019-11-18 Challenge #1: usar cluster per registre A!
 (Y) 2019-11-18 Publicar formats SVG, PNG, PDF. Fer al final.
 (Z) 2019-11-18 Duplicar graphs repetits, com ara 1-2-7. Fer al final de tot.
