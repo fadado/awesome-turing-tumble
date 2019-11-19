@@ -84,17 +84,23 @@
     {rank=same; B_top, R_top}   \
     {rank=same; B_bot, R_bot}   \
 
+#define BOARD_BACK_BLUE_EDGE    \
+    B_bot:w -> B_top:w [        \
+        style=dotted            \
+        dir=none                \
+        color=blue              \
+    ]
+
+#define BOARD_BACK_RED_EDGE     \
+    R_bot:e -> R_top:e [        \
+        style=dotted            \
+        dir=none                \
+        color=red               \
+    ]                           \
+
 #define GAME_BOARD_EDGES    \
-    B_bot:w -> B_top:w [    \
-        style=dotted        \
-        dir=none            \
-        color=blue          \
-    ]                       \
-    R_bot:e -> R_top:e [    \
-        style=dotted        \
-        dir=none            \
-        color=red           \
-    ]                       \
+    BOARD_BACK_BLUE_EDGE    \
+    BOARD_BACK_RED_EDGE     \
     B_bot -> R_bot [style=invis]
 
 // vim:ai:sw=4:ts=4:et:syntax=dot

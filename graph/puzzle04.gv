@@ -21,7 +21,7 @@ digraph Challenge04 {
 #ifdef ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Release one red ball and\lthen all of the blue balls"
+        label="Release one red ball and\rthen all of the blue balls"
     ]
 #endif
 

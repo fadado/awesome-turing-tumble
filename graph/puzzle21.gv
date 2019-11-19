@@ -23,7 +23,7 @@ digraph Challenge21 {
 #ifdef ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Use register A to count the number of blue balls.\lUse 15 or fewer balls."
+        label="Use register A to count the number of blue balls.\rUse 15 or fewer balls."
     ]
 #endif
 

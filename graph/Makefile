@@ -80,10 +80,13 @@ all: $(SvgTargets)
 # Tools
 ########################################################################
 
-.PHONY: clean list
+.PHONY: clean clobber help
 
 clean:
-	@rm -f *.svg *.png *.pdf
+	@rm -f *.svg
+
+clobber: clean
+	@rm -f SVG/*.svg PNG/*.png PDF/*.pdf
 
 # Show targets
 help:

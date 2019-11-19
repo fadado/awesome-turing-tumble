@@ -23,7 +23,7 @@ digraph Challenge01 {
 #ifdef ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Make all of the blue balls\l(and only the blue balls)\lreach the end"
+        label="Make all of the blue balls\r(and only the blue balls)\rreach the end"
     ]
 #endif
 

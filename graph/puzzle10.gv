@@ -21,7 +21,7 @@ digraph Challenge10 {
 #ifdef ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Make the pattern blue, blue, red, red,\lblue, blue, red, red…"
+        label="Make the pattern blue, blue, red, red,\rblue, blue, red, red…"
     ]
 #endif
 
