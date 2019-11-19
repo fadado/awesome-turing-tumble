@@ -16,7 +16,6 @@ digraph Challenge21 {
     /*
     ** nodes
     */
-    //ordering=out
 
     GAME_BOARD_NODES
 
@@ -45,13 +44,13 @@ digraph Challenge21 {
     B_top -> bit_0:n
 
     bit_0:sw -> bit_1:nw
-    bit_0:se -> B_bot:ne
     bit_1:sw -> bit_2:nw
-    bit_1:se -> B_bot:ne
     bit_2:sw -> bit_3:nw
-    bit_2:se -> B_bot:ne
     bit_3:sw -> B_bot:nw
-    bit_3:se -> B_bot:ne
+    bit_0:se -> B_bot:ne [arrowhead=none]
+    bit_1:se -> B_bot:ne // only preserve one arrow head
+    bit_2:se -> B_bot:ne [arrowhead=none]
+    bit_3:se -> B_bot:ne [arrowhead=none]
 
     GAME_BOARD_EDGES
 

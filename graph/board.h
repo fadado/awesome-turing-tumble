@@ -2,7 +2,18 @@
  * Turing Tumble graphs
  */
 
-#define ShowObjective   /* Add descriptive text to graph */
+#define FALSE   0
+#define TRUE    1
+
+/* Show objective description */
+#ifndef ShowObjective
+#   define ShowObjective TRUE
+#endif
+
+/* Show blue/red up lines */
+#ifndef ShowBackBoardEdges
+#   define ShowBackBoardEdges TRUE
+#endif
 
 /*
  * Fonts, colors, etc.
@@ -98,9 +109,18 @@
         color=red               \
     ]                           \
 
+#if ShowBackBoardEdges
+
 #define GAME_BOARD_EDGES    \
     BOARD_BACK_BLUE_EDGE    \
     BOARD_BACK_RED_EDGE     \
     B_bot -> R_bot [style=invis]
+
+#else
+
+#define GAME_BOARD_EDGES    \
+    B_bot -> R_bot [style=invis]
+
+#endif
 
 // vim:ai:sw=4:ts=4:et:syntax=dot

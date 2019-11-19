@@ -3,13 +3,14 @@
  *  Flip bits 2 and 5 to the right.
  */
 
+// Disabled to mantain graph more compact
+#define ShowBackBoardEdges FALSE
 #include "board.h"
 
 digraph Challenge11 {
     /*
     ** attributes
     */
-        ordering=out
     graph [ GRAPH_STYLE newrank=true ]
     node  [ NODE_STYLE  ]
     edge  [ EDGE_STYLE  ]
@@ -29,11 +30,11 @@ digraph Challenge11 {
     bit_T [ BIT_STYLE label=BITRIGHT ]
     subgraph five_bits {
         rank=same
-        bit_1 [ BIT_STYLE label=BITUNDEF ]
-        bit_2 [ BIT_STYLE label=BITUNDEF ]
-        bit_3 [ BIT_STYLE label=BITUNDEF ]
-        bit_4 [ BIT_STYLE label=BITUNDEF ]
-        bit_5 [ BIT_STYLE label=BITUNDEF ]
+        bit_1 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
+        bit_2 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
+        bit_3 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
+        bit_4 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
+        bit_5 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
     }
 
     /*
@@ -49,8 +50,7 @@ digraph Challenge11 {
     bit_2 -> B_bot
     bit_5 -> B_bot
 
-    // Disabled to mantain graph more compact
-    //GAME_BOARD_EDGES
+    GAME_BOARD_EDGES
 
     /*
     ** graph attributes
