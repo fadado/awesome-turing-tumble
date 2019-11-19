@@ -2,7 +2,7 @@
  * Turing Tumble graphs
  */
 
-#define ShowObjective   /* Add descripyive text to graph */
+#define ShowObjective   /* Add descriptive text to graph */
 
 /*
  * Fonts, colors, etc.
@@ -14,7 +14,7 @@
 #define BITCOLOR        deepskyblue
 #define BITSIZE         20
 
-#ifdef NotSupportedByAndroid
+#ifdef GraphicalBitArrows
 #define BITRIGHT    "⬈"  // north est arrow: U+2B08
 #define BITLEFT     "⬉"  // north west up arrow: U+2B09
 #define BITUNDEF    "⬆"  // upwards arrow: U+2B06
@@ -49,7 +49,7 @@
     shape=point             \
     width=0.11              \
 
-#define OBJ_STYLE           \
+#define OBJECTIVE_STYLE     \
     shape=plaintext         \
     fontsize=10             \
     fontname=Times          \

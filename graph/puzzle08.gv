@@ -20,7 +20,7 @@ digraph Challenge08 {
 
 #ifdef ShowObjective
     objective [
-        OBJ_STYLE
+        OBJECTIVE_STYLE
         label="Make the pattern blue, red,\lblue, red, blue, red…"
     ]
 #endif
@@ -33,13 +33,13 @@ digraph Challenge08 {
     /*
     ** edges
     */
-    GAME_BOARD_EDGES
-
     start -> B_top
     B_top -> bit:nw
     R_top -> bit:ne
     bit:sw -> B_bot
     bit:se -> R_bot
+
+    GAME_BOARD_EDGES
 
     /*
     ** graph attributes

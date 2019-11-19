@@ -67,11 +67,12 @@ $(SvgTargets): $(BOARD)
 %.pdf: %.gv
 	@cpp -P $< | dot -Tpdf -o $@
 
-.PHONY: svg png pdf
+.PHONY: svg png pdf publish
 
 svg: $(SvgTargets); @mv $(SvgTargets) SVG
 png: $(PngTargets); @mv $(PngTargets) PNG
 pdf: $(PdfTargets); @mv $(PdfTargets) PDF
+publish: svg png pdf
 
 all: $(SvgTargets)
 

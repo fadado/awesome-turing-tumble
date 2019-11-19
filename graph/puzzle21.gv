@@ -5,7 +5,7 @@
 
 #include "board.h"
 
-digraph Challenge01 {
+digraph Challenge21 {
     /*
     ** attributes
     */
@@ -22,7 +22,7 @@ digraph Challenge01 {
 
 #ifdef ShowObjective
     objective [
-        OBJ_STYLE
+        OBJECTIVE_STYLE
         label="Use register A to count the number of blue balls.\lUse 15 or fewer balls."
     ]
 #endif
