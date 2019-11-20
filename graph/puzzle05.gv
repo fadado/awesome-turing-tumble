@@ -22,11 +22,9 @@ digraph Challenge05 {
 #if ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label=<
-<table border="0" cellpadding="0" cellspacing="0">
-    <tr><td align="left">Make the pattern blue, red,</td></tr>
-    <tr><td align="left">blue, red, blue, red…</td></tr>
-</table> >
+        label=$text(
+            $line(Make the pattern blue, red,),
+            $line(blue, red, blue, red…))
     ]
 #endif
 

@@ -23,12 +23,10 @@ digraph Challenge01 {
 #if ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label=<
-<table border="0" cellpadding="0" cellspacing="0">
-    <tr><td align="left">Make all of the blue balls</td></tr>
-    <tr><td align="left">(and only the blue balls)</td></tr>
-    <tr><td align="left">reach the end.</td></tr>
-</table> >
+        label=$text(
+            $line(Make all of the blue balls),
+            $line((and only the blue balls)),
+            $line(reach the end.))
     ]
 #endif
 

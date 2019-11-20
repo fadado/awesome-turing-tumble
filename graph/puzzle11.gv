@@ -3,8 +3,8 @@
  *  Flip bits 2 and 5 to the right.
  */
 
-// Disabled to mantain graph more compact
-#define ShowBackBoardEdges $false
+#define ShowBackBoardEdges $false /* mantain graph more compact */
+
 #import "board.h"
 
 digraph Challenge11 {
@@ -23,10 +23,7 @@ digraph Challenge11 {
 #if ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label=<
-<table border="0" cellpadding="0" cellspacing="0">
-    <tr><td align="left">Flip bits 2 and 5 to the right.</td></tr>
-</table> >
+        label=$text($line(Flip bits 2 and 5 to the right.))
     ]
 #endif
 

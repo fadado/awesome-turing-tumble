@@ -2,15 +2,16 @@
  * Turing Tumble graphs
  */
 
+/* Logic constants */
 #define $false   0
 #define $true    1
 
-/* Show objective description */
+/* Show objective description? */
 #ifndef ShowObjective
 #   define ShowObjective $true
 #endif
 
-/* Show blue/red up lines */
+/* Show blue/red up lines? */
 #ifndef ShowBackBoardEdges
 #   define ShowBackBoardEdges $true
 #endif
@@ -25,7 +26,7 @@
 #define BITCOLOR        deepskyblue
 #define BITSIZE         20
 
-#ifdef GraphicalBitArrows
+#if 0
 #   define BITRIGHT     "⬈"  // north est arrow: U+2B08
 #   define BITLEFT      "⬉"  // north west up arrow: U+2B09
 #   define BITUNDEF     "⬆"  // upwards arrow: U+2B06
@@ -122,5 +123,11 @@
     B_bot -> R_bot [style=invis]
 
 #endif
+
+/*
+ * Labels
+ */
+#define $text(...)  < <table border="0" cellpadding="0" cellspacing="0">__VA_ARGS__</table> >
+#define $line(...)  <tr><td align="left">__VA_ARGS__</td></tr>
 
 // vim:ai:sw=4:ts=4:et:syntax=dot

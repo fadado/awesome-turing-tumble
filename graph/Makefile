@@ -51,6 +51,7 @@ DotFiles := $(wildcard *.gv)
 SvgTargets := $(DotFiles:.gv=.svg)
 PngTargets := $(DotFiles:.gv=.png)
 PdfTargets := $(DotFiles:.gv=.pdf)
+DotTargets := $(DotFiles:.gv=.dot)
 
 $(SvgTargets): $(BOARD)
 
@@ -69,11 +70,15 @@ CPP=cpp -finput-charset=UTF-8 -Wno-deprecated -P
 %.pdf: %.gv
 	@$(CPP) $< | dot -Tpdf -o $@
 
-.PHONY: svg png pdf publish
+%.dot: %.gv
+	@$(CPP) $< | dot -Tdot -o $@
+
+.PHONY: svg png pdf dot publish
 
 svg: $(SvgTargets); @mv $(SvgTargets) SVG
 png: $(PngTargets); @mv $(PngTargets) PNG
 pdf: $(PdfTargets); @mv $(PdfTargets) PDF
+dot: $(DotTargets); @mv $(DotTargets) DOT
 publish: svg png pdf
 
 all: $(SvgTargets)

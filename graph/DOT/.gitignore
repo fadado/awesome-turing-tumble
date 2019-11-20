@@ -1,0 +1,2 @@
+# This format is for debugging only (never save .dot files)
+*.dot
