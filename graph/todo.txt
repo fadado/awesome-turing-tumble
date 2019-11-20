@@ -1,4 +1,4 @@
-(B) 2019-11-19 Revisar justificació de labels: \n\r\l ???
 (Y) 2019-11-18 Publicar formats SVG, PNG, PDF. Fer al final.
 (Z) 2019-11-18 Duplicar graphs repetits, com ara 1-2-7. Fer al final de tot.
 x 2019-11-18 Challenge #1: usar cluster per registre A!
+x 2019-11-19 Revisar justificació de labels: \n\r\l ???

@@ -3,7 +3,7 @@
  *  Use register A to count the number of blue balls. Use 15 or fewer balls. 
  */
 
-#include "board.h"
+#import "board.h"
 
 digraph Challenge21 {
     /*
@@ -19,10 +19,14 @@ digraph Challenge21 {
 
     GAME_BOARD_NODES
 
-#ifdef ShowObjective
+#if ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Use register A to count the number of blue balls.\rUse 15 or fewer balls."
+        label=<
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr><td align="left">Use register A to count the number of</td></tr>
+    <tr><td align="left">blue balls. Use 15 or fewer balls.</td></tr>
+</table> >
     ]
 #endif
 

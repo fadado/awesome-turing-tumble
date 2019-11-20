@@ -2,17 +2,17 @@
  * Turing Tumble graphs
  */
 
-#define FALSE   0
-#define TRUE    1
+#define $false   0
+#define $true    1
 
 /* Show objective description */
 #ifndef ShowObjective
-#   define ShowObjective TRUE
+#   define ShowObjective $true
 #endif
 
 /* Show blue/red up lines */
 #ifndef ShowBackBoardEdges
-#   define ShowBackBoardEdges TRUE
+#   define ShowBackBoardEdges $true
 #endif
 
 /*
@@ -26,13 +26,13 @@
 #define BITSIZE         20
 
 #ifdef GraphicalBitArrows
-#define BITRIGHT    "⬈"  // north est arrow: U+2B08
-#define BITLEFT     "⬉"  // north west up arrow: U+2B09
-#define BITUNDEF    "⬆"  // upwards arrow: U+2B06
+#   define BITRIGHT     "⬈"  // north est arrow: U+2B08
+#   define BITLEFT      "⬉"  // north west up arrow: U+2B09
+#   define BITUNDEF     "⬆"  // upwards arrow: U+2B06
 #else
-#define BITRIGHT    ">"  // ASCII alternatives
-#define BITLEFT     "<"
-#define BITUNDEF    "^"
+#   define BITRIGHT     ">"  // ASCII alternatives
+#   define BITLEFT      "<"
+#   define BITUNDEF     "^"
 #endif
 
 /*

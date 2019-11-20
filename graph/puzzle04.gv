@@ -3,7 +3,7 @@
  *  Release one red ball and then all of the blue balls.
  */
 
-#include "board.h"
+#import "board.h"
 
 digraph Challenge04 {
     /*
@@ -18,10 +18,14 @@ digraph Challenge04 {
     */
     GAME_BOARD_NODES
 
-#ifdef ShowObjective
+#if ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Release one red ball and\rthen all of the blue balls"
+        label=<
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr><td align="left">Release one red ball and</td></tr>
+    <tr><td align="left">then all of the blue balls.</td></tr>
+</table> >
     ]
 #endif
 

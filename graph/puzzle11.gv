@@ -4,8 +4,8 @@
  */
 
 // Disabled to mantain graph more compact
-#define ShowBackBoardEdges FALSE
-#include "board.h"
+#define ShowBackBoardEdges $false
+#import "board.h"
 
 digraph Challenge11 {
     /*
@@ -20,10 +20,13 @@ digraph Challenge11 {
     */
     GAME_BOARD_NODES
 
-#ifdef ShowObjective
+#if ShowObjective
     objective [
         OBJECTIVE_STYLE
-        label="Flip bits 2 and 5 to the right."
+        label=<
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr><td align="left">Flip bits 2 and 5 to the right.</td></tr>
+</table> >
     ]
 #endif
 

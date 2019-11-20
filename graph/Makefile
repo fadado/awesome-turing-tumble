@@ -58,14 +58,16 @@ $(SvgTargets): $(BOARD)
 # Rules
 ########################################################################
 
+CPP=cpp -finput-charset=UTF-8 -Wno-deprecated -P
+
 %.svg: %.gv
-	@cpp -P $< | dot -Tsvg -o $@
+	@$(CPP) $< | dot -Tsvg -o $@
 
 %.png: %.gv
-	@cpp -P $< | dot -Tpng -o $@
+	@$(CPP) $< | dot -Tpng -o $@
 
 %.pdf: %.gv
-	@cpp -P $< | dot -Tpdf -o $@
+	@$(CPP) $< | dot -Tpdf -o $@
 
 .PHONY: svg png pdf publish
 
