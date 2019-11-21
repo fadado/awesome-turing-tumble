@@ -65,9 +65,9 @@
 <!-- objective -->
 <g id="node6" class="node">
 <title>objective</title>
-<text text-anchor="end" x="176" y="-173" font-family="Times" font-size="10.00" fill="#000000">Make all of the blue balls</text>
-<text text-anchor="end" x="176" y="-162" font-family="Times" font-size="10.00" fill="#000000">(and only the blue balls)</text>
-<text text-anchor="middle" x="124" y="-151" font-family="Times" font-size="10.00" fill="#000000">reach the end</text>
+<text text-anchor="start" x="72" y="-172.5" font-family="Times" font-size="10.00" fill="#000000">Make all of the blue balls</text>
+<text text-anchor="start" x="72" y="-161.5" font-family="Times" font-size="10.00" fill="#000000">(and only the blue balls)</text>
+<text text-anchor="start" x="72" y="-150.5" font-family="Times" font-size="10.00" fill="#000000">reach the end.</text>
 </g>
 </g>
 </svg>

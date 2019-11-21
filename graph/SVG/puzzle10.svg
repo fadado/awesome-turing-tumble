@@ -83,8 +83,8 @@
 <!-- objective -->
 <g id="node6" class="node">
 <title>objective</title>
-<text text-anchor="end" x="237.1158" y="-237" font-family="Times" font-size="10.00" fill="#000000">Make the pattern blue, blue, red, red,</text>
-<text text-anchor="middle" x="162.6158" y="-226" font-family="Times" font-size="10.00" fill="#000000">blue, blue, red, red…</text>
+<text text-anchor="start" x="88.6158" y="-237" font-family="Times" font-size="10.00" fill="#000000">Make the pattern blue, blue, red, red,</text>
+<text text-anchor="start" x="88.6158" y="-226" font-family="Times" font-size="10.00" fill="#000000">blue, blue, red, red…</text>
 </g>
 <!-- bit_a&#45;&gt;B_bot -->
 <g id="edge4" class="edge">

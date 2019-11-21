@@ -61,7 +61,7 @@
 <!-- objective -->
 <g id="node6" class="node">
 <title>objective</title>
-<text text-anchor="middle" x="214" y="-291.5" font-family="Times" font-size="10.00" fill="#000000">Flip bits 2 and 5 to the right.</text>
+<text text-anchor="start" x="156" y="-291" font-family="Times" font-size="10.00" fill="#000000">Flip bits 2 and 5 to the right.</text>
 </g>
 <!-- bit_1 -->
 <g id="node8" class="node">

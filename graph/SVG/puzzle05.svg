@@ -71,8 +71,8 @@
 <!-- objective -->
 <g id="node6" class="node">
 <title>objective</title>
-<text text-anchor="end" x="180.5" y="-165" font-family="Times" font-size="10.00" fill="#000000">Make the pattern blue, red,</text>
-<text text-anchor="middle" x="126" y="-154" font-family="Times" font-size="10.00" fill="#000000">blue, red, blue, red…</text>
+<text text-anchor="start" x="72" y="-165" font-family="Times" font-size="10.00" fill="#000000">Make the pattern blue, red,</text>
+<text text-anchor="start" x="72" y="-154" font-family="Times" font-size="10.00" fill="#000000">blue, red, blue, red…</text>
 </g>
 </g>
 </svg>

@@ -77,8 +77,8 @@
 <!-- objective -->
 <g id="node6" class="node">
 <title>objective</title>
-<text text-anchor="end" x="222.5077" y="-237" font-family="Times" font-size="10.00" fill="#000000">Make the pattern blue, blue, red,</text>
-<text text-anchor="middle" x="156.5077" y="-226" font-family="Times" font-size="10.00" fill="#000000">blue, blue, red…</text>
+<text text-anchor="start" x="90.5077" y="-237" font-family="Times" font-size="10.00" fill="#000000">Make the pattern blue, blue, red,</text>
+<text text-anchor="start" x="90.5077" y="-226" font-family="Times" font-size="10.00" fill="#000000">blue, blue, red…</text>
 </g>
 <!-- bit&#45;&gt;B_bot -->
 <g id="edge4" class="edge">

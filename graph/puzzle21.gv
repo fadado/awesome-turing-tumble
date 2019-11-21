@@ -9,7 +9,7 @@ digraph Challenge21 {
     /*
     ** attributes
     */
-    graph [ GRAPH_STYLE newrank=true ]
+    graph [ GRAPH_STYLE newrank=true concentrate=true ]
     node  [ NODE_STYLE  ]
     edge  [ EDGE_STYLE  ]
 
@@ -49,10 +49,10 @@ digraph Challenge21 {
     bit_1:sw -> bit_2:nw
     bit_2:sw -> bit_3:nw
     bit_3:sw -> B_bot:nw
-    bit_0:se -> B_bot:ne [arrowhead=none]
-    bit_1:se -> B_bot:ne // only preserve one arrow head
-    bit_2:se -> B_bot:ne [arrowhead=none]
-    bit_3:se -> B_bot:ne [arrowhead=none]
+    bit_0:se -> B_bot:ne
+    bit_1:se -> B_bot:ne
+    bit_2:se -> B_bot:ne
+    bit_3:se -> B_bot:ne
 
     GAME_BOARD_EDGES
 

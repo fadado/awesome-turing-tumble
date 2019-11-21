@@ -71,8 +71,8 @@
 <!-- objective -->
 <g id="node6" class="node">
 <title>objective</title>
-<text text-anchor="end" x="176.5" y="-165" font-family="Times" font-size="10.00" fill="#000000">Release one blue ball and</text>
-<text text-anchor="middle" x="124" y="-154" font-family="Times" font-size="10.00" fill="#000000">then all of the red balls</text>
+<text text-anchor="start" x="72" y="-165" font-family="Times" font-size="10.00" fill="#000000">Release one blue ball and</text>
+<text text-anchor="start" x="72" y="-154" font-family="Times" font-size="10.00" fill="#000000">then all of the red balls.</text>
 </g>
 </g>
 </svg>
