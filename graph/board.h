@@ -6,9 +6,14 @@
 #define $false   0
 #define $true    1
 
+/* Show graph label? */
+#ifndef ShowGraphLabel
+#   define ShowGraphLabel $false
+#endif
+
 /* Show objective description? */
 #ifndef ShowObjective
-#   define ShowObjective $true
+#   define ShowObjective $false
 #endif
 
 /* Show blue/red up lines? */

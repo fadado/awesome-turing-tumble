@@ -40,9 +40,11 @@ digraph Challenge05 {
     /*
     ** graph attributes
     */
+#if ShowGraphLabel
     graph [
         label="Challenge #5: Entropy"
     ]
+#endif
 }
 
 // vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

@@ -41,9 +41,11 @@ digraph Challenge01 {
     /*
     ** graph attributes
     */
+#if ShowGraphLabel
     graph [
         label="Challenge #1: Gravity"
     ]
+#endif
 }
 
 // vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

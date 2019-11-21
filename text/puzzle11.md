@@ -1,0 +1,30 @@
+## Challenge #11: Selectivity
+
+### Objective
+
+Flip bits 2 and 5 to the right.
+
+### Setup
+
+`init:2B-0R; start:B; trace:BB`
+
+### Solution
+
+	 ___o    ___
+	|  .\. .-.  |
+	| .-.\.-.-. |
+	|.-.-.>.-.-.|
+	|-.-./.\.-.-|
+	|.-./.-.\.-.|
+	|-.\.-.-.\.-|
+	|.<.<.<.<.<.|
+	|-.-./.-.-./|
+	|.-./.-.-./.|
+	|-./.-.-./.-|
+	|     -     |
+	|____% %____|
+
+### Diagram
+
+![Puzzle #11](../graph/PNG/puzzle11.png)
+

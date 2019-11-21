@@ -46,9 +46,10 @@ digraph Challenge08 {
     /*
     ** graph attributes
     */
-    graph [
+#if ShowGraphLabel
         label="Challenge #8: Depolarization"
     ]
+#endif
 }
 
 // vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

@@ -59,9 +59,11 @@ digraph Challenge21 {
     /*
     ** graph attributes
     */
+#if ShowGraphLabel
     graph [
         label="Challenge #21: Quantum Number"
     ]
+#endif
 }
 
 // vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot
