@@ -6,7 +6,7 @@ Release one blue ball and then all of the red balls.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8RB`
+`balls:8B-8R; start:B; trace:8RB`
 
 ### Solution
 

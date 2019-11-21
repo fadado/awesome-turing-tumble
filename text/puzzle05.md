@@ -6,7 +6,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8(RB)`
+`balls:8B-8R; start:B; trace:8(RB)`
 
 ### Solution
 

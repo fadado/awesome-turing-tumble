@@ -6,7 +6,7 @@ If the machine starts with bit A pointing to the left, intercept a blue ball. Ot
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 

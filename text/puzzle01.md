@@ -6,7 +6,7 @@ Make all of the blue balls (and only the blue balls) reach the end.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8B`
+`balls:8B-8R; start:B; trace:8B`
 
 ### Solution
 

@@ -6,7 +6,7 @@ Intercept a blue ball.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b`
+`balls:8B-8R; start:B; trace:b`
 
 ### Solution
 

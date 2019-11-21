@@ -6,7 +6,7 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 

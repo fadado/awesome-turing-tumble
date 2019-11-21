@@ -6,7 +6,7 @@ Release only the blue balls.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8B`
+`balls:8B-8R; start:B; trace:8B`
 
 ### Solution
 

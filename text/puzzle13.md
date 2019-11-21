@@ -6,7 +6,7 @@ Intercept a red ball.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:rB`
+`balls:8B-8R; start:B; trace:rB`
 
 ### Solution
 

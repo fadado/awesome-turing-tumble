@@ -6,7 +6,7 @@ Generate the pattern 3R6B.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:r3R6B`
+`balls:8B-8R; start:B; trace:r3R6B`
 
 ### Solution
 

@@ -6,7 +6,7 @@ If bit A starts to the left, intercept a blue ball. If bit A starts to the right
 
 ### Setup
 
-`init:8B-8R; start:B; trace:bB|rB`
+`balls:8B-8R; start:B; trace:bB|rB`
 
 ### Solution
 

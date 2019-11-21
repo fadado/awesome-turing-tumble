@@ -6,7 +6,7 @@ Use register A to count the number of blue balls. Use 15 or fewer balls.
 
 ### Setup
 
-`init:15B-0R; start:B; trace:15B`
+`balls:15B-0R; start:B; trace:15B`
 
 	 ___o    ___
 	|  .<. .-.  |

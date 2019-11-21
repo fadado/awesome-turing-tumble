@@ -8,7 +8,7 @@ Make all of the blue balls (and only the blue balls) reach the end.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8B`
+`balls:8B-8R; start:B; trace:8B`
 
 ### Solution
 
@@ -38,7 +38,7 @@ Make all of the blue balls (and only the blue balls) reach the end.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8B`
+`balls:8B-8R; start:B; trace:8B`
 
 ### Solution
 
@@ -68,7 +68,7 @@ Release one blue ball and then all of the red balls.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8RB`
+`balls:8B-8R; start:B; trace:8RB`
 
 ### Solution
 
@@ -98,7 +98,7 @@ Release one red ball and then all of the blue balls.
 
 ### Setup
 
-`init:8B-8R; start:R; trace:8BR`
+`balls:8B-8R; start:R; trace:8BR`
 
 ### Solution
 
@@ -128,7 +128,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8(RB)`
+`balls:8B-8R; start:B; trace:8(RB)`
 
 ### Solution
 
@@ -158,7 +158,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8(RB)`
+`balls:8B-8R; start:B; trace:8(RB)`
 
 ### Solution
 
@@ -188,7 +188,7 @@ Create a path for the blue balls to reach the output with only 6 ramps.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8B`
+`balls:8B-8R; start:B; trace:8B`
 
 ### Solution
 
@@ -218,7 +218,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8(RB)`
+`balls:8B-8R; start:B; trace:8(RB)`
 
 ### Solution
 
@@ -248,7 +248,7 @@ Make the pattern blue, blue, red, blue, blue, red…
 
 ### Setup
 
-`init:10B-10R; start:B; trace:5(RBB)`
+`balls:10B-10R; start:B; trace:5(RBB)`
 
 ### Solution
 
@@ -278,7 +278,7 @@ Make the pattern blue, blue, red, red, blue, blue, red, red…
 
 ### Setup
 
-`init:8B-8R; start:B; trace:4(RRBB)`
+`balls:8B-8R; start:B; trace:4(RRBB)`
 
 ### Solution
 
@@ -308,7 +308,7 @@ Flip bits 2 and 5 to the right.
 
 ### Setup
 
-`init:2B-0R; start:B; trace:BB`
+`balls:2B-0R; start:B; trace:BB`
 
 ### Solution
 
@@ -338,7 +338,7 @@ Intercept a blue ball.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b`
+`balls:8B-8R; start:B; trace:b`
 
 ### Solution
 
@@ -364,7 +364,7 @@ Intercept a red ball.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:rB`
+`balls:8B-8R; start:B; trace:rB`
 
 ### Solution
 
@@ -390,7 +390,7 @@ If the machine starts with bit A pointing to the left, intercept a blue ball. Ot
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 
@@ -416,7 +416,7 @@ If bit A starts to the left, intercept a blue ball. If bit A starts to the right
 
 ### Setup
 
-`init:8B-8R; start:B; trace:bB|rB`
+`balls:8B-8R; start:B; trace:bB|rB`
 
 ### Solution
 
@@ -442,7 +442,7 @@ Let only 3 blue balls reach the bottom and catch the 4th ball in the interceptor
 
 ### Setup
 
-`init:8B-8R; start:B; trace:bBBB`
+`balls:8B-8R; start:B; trace:bBBB`
 
 ### Solution
 
@@ -468,7 +468,7 @@ Make the pattern blue, blue, blue, red, red, red.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:r3R3B`
+`balls:8B-8R; start:B; trace:r3R3B`
 
 ### Solution
 
@@ -494,7 +494,7 @@ If the top bit AND the bottom bit start pointed to the right, put a ball in inte
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b`
+`balls:8B-8R; start:B; trace:b`
 
 ### Solution
 
@@ -520,7 +520,7 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 
@@ -546,7 +546,7 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 
@@ -572,7 +572,7 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB|rRB|rRRB`
+`balls:8B-8R; start:B; trace:b|rB|rRB|rRRB`
 
 ### Solution
 
@@ -598,7 +598,7 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 
@@ -624,7 +624,7 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b|rB`
+`balls:8B-8R; start:B; trace:b|rB`
 
 ### Solution
 
@@ -650,7 +650,7 @@ Use register A to count the number of blue balls. Use 15 or fewer balls.
 
 ### Setup
 
-`init:15B-0R; start:B; trace:15B`
+`balls:15B-0R; start:B; trace:15B`
 
 	 ___o    ___
 	|  .<. .-.  |
@@ -678,7 +678,7 @@ Register A starts at 15. Subtract the number of blue balls from the register. (U
 
 ### Setup
 
-`init:15B 0R; start:B; trace:15B`
+`balls:15B 0R; start:B; trace:15B`
 
 ### Solution
 
@@ -704,7 +704,7 @@ Let exactly 4 blue balls reach the end. (Intercept the 5th.)
 
 ### Setup
 
-`init:8B-8R; start:B; trace:b4B`
+`balls:8B-8R; start:B; trace:b4B`
 
 ### Solution
 
@@ -730,7 +730,7 @@ Let exactly 9 blue balls reach the end. (Intercept the 10th.)
 
 ### Setup
 
-`init:12B 12R; start:B; trace:b9B`
+`balls:12B 12R; start:B; trace:b9B`
 
 ### Solution
 
@@ -756,7 +756,7 @@ Generate the pattern 3R6B.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:r3R6B`
+`balls:8B-8R; start:B; trace:r3R6B`
 
 ### Solution
 
@@ -782,7 +782,7 @@ Generate the pattern 4B1R4B.
 
 ### Setup
 
-`init:10B-10R; start:B; trace:r4B1R4B`
+`balls:10B-10R; start:B; trace:r4B1R4B`
 
 ### Solution
 
@@ -808,7 +808,7 @@ Reverse the direction of each of the 9 starting bits, regardless of the directio
 
 ### Setup
 
-`init:8B-8R; start:B; trace:rBB`
+`balls:8B-8R; start:B; trace:rBB`
 
 ### Solution
 
@@ -834,7 +834,7 @@ Release only the blue balls.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:8B`
+`balls:8B-8R; start:B; trace:8B`
 
 ### Solution
 
@@ -860,7 +860,7 @@ Release a blue ball, a red ball, and then the rest of the blue balls.
 
 ### Setup
 
-`init:8B-8R; start:B; trace:7BRB`
+`balls:8B-8R; start:B; trace:7BRB`
 
 ### Solution
 
@@ -886,7 +886,7 @@ Count the blue balls in register A. If there are more than 7, gear bit OV must f
 
 ### Setup
 
-`init:*B-0R; start:B; trace:*B`
+`balls:*B-0R; start:B; trace:*B`
 
 ### Solution
 

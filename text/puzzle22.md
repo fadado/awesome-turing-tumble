@@ -6,7 +6,7 @@ Register A starts at 15. Subtract the number of blue balls from the register. (U
 
 ### Setup
 
-`init:15B 0R; start:B; trace:15B`
+`balls:15B 0R; start:B; trace:15B`
 
 ### Solution
 

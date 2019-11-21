@@ -6,7 +6,7 @@ Reverse the direction of each of the 9 starting bits, regardless of the directio
 
 ### Setup
 
-`init:8B-8R; start:B; trace:rBB`
+`balls:8B-8R; start:B; trace:rBB`
 
 ### Solution
 

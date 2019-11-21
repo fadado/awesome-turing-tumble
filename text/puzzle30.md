@@ -6,7 +6,7 @@ Count the blue balls in register A. If there are more than 7, gear bit OV must f
 
 ### Setup
 
-`init:*B-0R; start:B; trace:*B`
+`balls:*B-0R; start:B; trace:*B`
 
 ### Solution
 

@@ -6,7 +6,7 @@ Flip bits 2 and 5 to the right.
 
 ### Setup
 
-`init:2B-0R; start:B; trace:BB`
+`balls:2B-0R; start:B; trace:BB`
 
 ### Solution
 
