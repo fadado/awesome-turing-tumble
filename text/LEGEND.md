@@ -21,7 +21,7 @@
 + Bit: `<` (0) `>` (1) `^` (0 or 1)
 + Interceptor: `U`
 + Gearbit: `{` (0) `}` (1)
-+ Gear: *
++ Gear: `*`
 
 ### Trace syntax
 
