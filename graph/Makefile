@@ -12,7 +12,7 @@ MAKEFLAGS += --no-builtin-variables
 MAKEFLAGS += --warn-undefined-variables
 
 # Make will not print the recipe used to remake files.
-#.SILENT:
+.SILENT:
 
 # Eliminate use of the built-in implicit rules. Also clear out the
 # default list of suffixes for suffix rules.
@@ -52,6 +52,7 @@ SvgTargets := $(DotFiles:.gv=.svg)
 PngTargets := $(DotFiles:.gv=.png)
 PdfTargets := $(DotFiles:.gv=.pdf)
 DotTargets := $(DotFiles:.gv=.dot)
+CppTargets := $(DotFiles:.gv=.cpp)
 
 $(SvgTargets): $(BOARD)
 
@@ -59,27 +60,46 @@ $(SvgTargets): $(BOARD)
 # Rules
 ########################################################################
 
-CPP=cpp -finput-charset=UTF-8 -Wno-deprecated -P
+WithText := -DShowGraphLabel=1 -DShowObjective=1
+WithoutText := -DShowGraphLabel=0 -DShowObjective=0
+
+CPPFLAGS :=			\
+	-P			\
+	-CC			\
+	-undef			\
+	-finput-charset=UTF-8	\
+	-fdollars-in-identifiers\
+	-Wno-deprecated		\
+	-Wundef			\
+	-Wunused-macros		\
+
+CPP := cpp $(CPPFLAGS)
 
 %.svg: %.gv
-	@$(CPP) $< | dot -Tsvg -o $@
+	@$(CPP) $(WithText) $< | dot -Tsvg -o $@
 
 %.png: %.gv
-	@$(CPP) $< | dot -Tpng -o $@
+	@$(CPP) $(WithoutText) $< | dot -Tpng -o PNG/$@
 
 %.pdf: %.gv
-	@$(CPP) $< | dot -Tpdf -o $@
+	@$(CPP) $(WithText) $< | dot -Tpdf -o PDF/$@
 
-%.dot: %.gv
-	@$(CPP) $< | dot -Tdot -o $@
+# Debug only formats
+DOT CPP: ; mkdir $@
 
-.PHONY: svg png pdf dot publish
+%.dot: %.gv | DOT
+	@$(CPP) $(WithText) $< | dot -Tdot -o DOT/$@
 
-svg: $(SvgTargets); @mv $(SvgTargets) SVG
-png: $(PngTargets); @mv $(PngTargets) PNG
-pdf: $(PdfTargets); @mv $(PdfTargets) PDF
-dot: $(DotTargets); @mv $(DotTargets) DOT
-publish: svg png pdf
+%.cpp: %.gv | CPP
+	@$(CPP) $(WithText) $< > CPP/$@
+
+.PHONY: svg png pdf dot cpp publish
+
+svg: $(SvgTargets); @cp --update $(SvgTargets) SVG
+png: $(PngTargets)
+pdf: $(PdfTargets)
+dot: $(DotTargets)
+cpp: $(CppTargets)
 
 all: $(SvgTargets)
 

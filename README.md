@@ -5,7 +5,7 @@ turing-complete language _Turing Tumble_.
 
 * [Home Page](#turing-tumble-home-page)
 * [Puzzles](#puzzles)
-* [Tools](#tools)
+* [Software](#software)
 * [Articles](#articles)
 * [Papers](#papers)
 * [Contribute](#contribute)
@@ -28,7 +28,7 @@ you discover how computers work.
 Solutions to all Turing Tumble puzzles in the [Educator Guide](text/EducatorGuide.md)
 (see the [notation](text/LEGEND.md) used in the solutions).
 
-|01..10|11..20|21..30|
+| 01..10                      | 11..20                      | 21..30                      |
 |-----------------------------|-----------------------------|-----------------------------|
 |[Puzzle 01](text/puzzle01.md)|[Puzzle 11](text/puzzle11.md)|[Puzzle 21](text/puzzle21.md)|
 |[Puzzle 02](text/puzzle02.md)|[Puzzle 12](text/puzzle12.md)|[Puzzle 22](text/puzzle22.md)|
@@ -41,13 +41,19 @@ Solutions to all Turing Tumble puzzles in the [Educator Guide](text/EducatorGuid
 |[Puzzle 09](text/puzzle09.md)|[Puzzle 19](text/puzzle19.md)|[Puzzle 29](text/puzzle29.md)|
 |[Puzzle 10](text/puzzle10.md)|[Puzzle 20](text/puzzle20.md)|[Puzzle 30](text/puzzle30.md)|
 
-## Tools
+## Software
 
 Simulators:
 
 * [Turing Tumble Simulator](https://jessecrossen.github.io/ttsim/)
 * [JSTumble](https://www.lodev.org/jstumble/)
 * [Turing Tumble VR](https://store.steampowered.com/app/898440/Turing_Tumble_VR/)
+
+GitHub repositories:
+
+* [OUDON/emtumble](https://github.com/OUDON/emtumble): An emulator of Turing Tumble written in C++.
+* [PiwwowPants/TuringTumble](https://github.com/PiwwowPants/TuringTumble): An unofficial, digital version of the Kickstarter game "Turing Tumble".
+* [MichaelSpencerJr/TTBoardReader](https://github.com/MichaelSpencerJr/TTBoardReader): Image Processor for converting pictures of a Turing Tumble board into jstumble-like notation.
 
 ## Articles
 

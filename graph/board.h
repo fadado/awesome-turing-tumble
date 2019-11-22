@@ -2,22 +2,25 @@
  * Turing Tumble graphs
  */
 
-/* Logic constants */
 #define $false   0
 #define $true    1
 
+/*
+ * Parameters
+ */
+
 /* Show graph label? */
-#ifndef ShowGraphLabel
-#   define ShowGraphLabel $false
+#if !defined(ShowGraphLabel)
+#   define ShowGraphLabel $true
 #endif
 
 /* Show objective description? */
-#ifndef ShowObjective
-#   define ShowObjective $false
+#if !defined(ShowObjective)
+#   define ShowObjective $true
 #endif
 
 /* Show blue/red up lines? */
-#ifndef ShowBackBoardEdges
+#if !defined(ShowBackBoardEdges)
 #   define ShowBackBoardEdges $true
 #endif
 
@@ -31,7 +34,7 @@
 #define BITCOLOR        deepskyblue
 #define BITSIZE         20
 
-#if 0
+#if $false
 #   define BITRIGHT     "⬈"  // north est arrow: U+2B08
 #   define BITLEFT      "⬉"  // north west up arrow: U+2B09
 #   define BITUNDEF     "⬆"  // upwards arrow: U+2B06

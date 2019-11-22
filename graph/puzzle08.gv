@@ -47,6 +47,7 @@ digraph Challenge08 {
     ** graph attributes
     */
 #if ShowGraphLabel
+    graph [
         label="Challenge #8: Depolarization"
     ]
 #endif
