@@ -12,7 +12,7 @@ MAKEFLAGS += --no-builtin-variables
 MAKEFLAGS += --warn-undefined-variables
 
 # Make will not print the recipe used to remake files.
-#.SILENT:
+.SILENT:
 
 # Eliminate use of the built-in implicit rules. Also clear out the
 # default list of suffixes for suffix rules.
@@ -42,8 +42,6 @@ SHELL := /bin/bash
 # Targets and files
 ########################################################################
 
-BOARD=board.h
-
 # Dot files to process
 DotFiles := $(wildcard puzzle??.gv)
 Duplicated := puzzle02.gv puzzle06.gv puzzle07.gv
@@ -55,7 +53,8 @@ PdfTargets := $(DotFiles:.gv=.pdf) $(Duplicated:.gv=.pdf)
 DotTargets := $(DotFiles:.gv=.dot)
 CppTargets := $(DotFiles:.gv=.cpp)
 
-$(SvgTargets): $(BOARD)
+# All depends on board.h
+$(SvgTargets): board.h
 
 ########################################################################
 # Rules
@@ -81,44 +80,42 @@ puzzle = -DPuzzle=$(patsubst 0%,%,$(patsubst puzzle%.$(2),%,$(1)))
 
 # Render with text into a directory
 define renderT =
-  @$(CPP) $(WithText) $(call puzzle,$@,$(1)) $< \
-   | dot -T$(1) -o $(2)/$@
+  $(CPP) $(WithText) $(call puzzle,$@,$(1)) $< \
+  | dot -T$(1) -o $(2)/$@
 endef
 
 # Render without text, only image, into a directory
 define renderI =
-  @$(CPP) $(WithoutText) $(call puzzle,$@,$(1)) $< \
-   | dot -T$(1) -o $(2)/$@
+  $(CPP) $(WithoutText) $(call puzzle,$@,$(1)) $< \
+  | dot -T$(1) -o $(2)/$@
 endef
 
-# Debug
-define renderD =
-  @$(CPP) $(WithText) $(call puzzle,$@,$(1)) $< >$(2)/$@
+# Only Pre-processed (for debugging)
+define renderP =
+  $(CPP) $(WithText) $(call puzzle,$@,$(1)) $< >$(2)/$@
 endef
 
 # Implicit rules
 
-%.svg: %.gv; $(call renderT,svg,./)
+%.svg: %.gv; $(call renderT,svg,.)
 %.png: %.gv; $(call renderI,png,PNG)
 %.pdf: %.gv; $(call renderT,pdf,PDF)
 
 # Debug only formats
 DOT CPP: ; mkdir $@
-%.dot: %.gv | DOT; @$(call renderT,dot,DOT)
-%.cpp: %.gv | CPP; @$(call renderD,cpp,CPP)
+%.dot: %.gv | DOT; $(call renderT,dot,DOT)
+%.cpp: %.gv | CPP; $(call renderP,cpp,CPP)
 
 # Duplicated graphs
-puzzle02.svg: puzzle01.gv; $(call renderT,svg,./)
-puzzle02.png: puzzle01.gv; $(call renderI,png,PNG)
-puzzle02.pdf: puzzle01.gv; $(call renderT,pdf,PDF)
+define duplicated
+puzzle$(1).svg: puzzle$(2).gv; $$(call renderT,svg,.)
+puzzle$(1).png: puzzle$(2).gv; $$(call renderI,png,PNG)
+puzzle$(1).pdf: puzzle$(2).gv; $$(call renderT,pdf,PDF)
+endef
 
-puzzle06.svg: puzzle05.gv; $(call renderT,svg,./)
-puzzle06.png: puzzle05.gv; $(call renderI,png,PNG)
-puzzle06.pdf: puzzle05.gv; $(call renderT,pdf,PDF)
-
-puzzle07.svg: puzzle01.gv; $(call renderT,svg,./)
-puzzle07.png: puzzle01.gv; $(call renderI,png,PNG)
-puzzle07.pdf: puzzle01.gv; $(call renderT,pdf,PDF)
+$(eval $(call duplicated,02,01))
+$(eval $(call duplicated,07,01))
+$(eval $(call duplicated,06,05))
 
 # Targets
 
@@ -144,7 +141,8 @@ clean:
 	@rm -f *.svg
 
 clobber: clean
-	@rm -f SVG/*.svg PNG/*.png PDF/*.pdf
+	@rm -f SVG/*.svg PNG/*.png PDF/*.pdf 
+	@rm -rf DOT CPP
 
 # Show targets
 help:
