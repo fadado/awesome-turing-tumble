@@ -79,44 +79,57 @@ CPP = cpp $(CPPFLAGS)
 # Extracts puzzle ID
 puzzle = -DPuzzle=$(patsubst 0%,%,$(patsubst puzzle%.$(2),%,$(1)))
 
+# Render with text into a directory
+define renderT =
+  @$(CPP) $(WithText) $(call puzzle,$@,$(1)) $< \
+   | dot -T$(1) -o $(2)/$@
+endef
+
+# Render without text, only image, into a directory
+define renderI =
+  @$(CPP) $(WithoutText) $(call puzzle,$@,$(1)) $< \
+   | dot -T$(1) -o $(2)/$@
+endef
+
+# Debug
+define renderD =
+  @$(CPP) $(WithText) $(call puzzle,$@,$(1)) $< >$(2)/$@
+endef
+
 # Implicit rules
-%.svg: %.gv
-	@$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
 
-%.png: %.gv
-	@$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
-
-%.pdf: %.gv
-	@$(CPP) $(WithText) $< | dot -Tpdf -o PDF/$@
-
-puzzle02.svg: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
-puzzle02.png: puzzle01.gv; @$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
-puzzle02.pdf: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,pdf) $< | dot -Tpdf -o PDF/$@
-
-puzzle06.svg: puzzle05.gv; @$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
-puzzle06.png: puzzle05.gv; @$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
-puzzle06.pdf: puzzle05.gv; @$(CPP) $(WithText) $(call puzzle,$@,pdf) $< | dot -Tpdf -o PDF/$@
-
-puzzle07.svg: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
-puzzle07.png: puzzle01.gv; @$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
-puzzle07.pdf: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,pdf) $< | dot -Tpdf -o PDF/$@
+%.svg: %.gv; $(call renderT,svg,./)
+%.png: %.gv; $(call renderI,png,PNG)
+%.pdf: %.gv; $(call renderT,pdf,PDF)
 
 # Debug only formats
 DOT CPP: ; mkdir $@
+%.dot: %.gv | DOT; @$(call renderT,dot,DOT)
+%.cpp: %.gv | CPP; @$(call renderD,cpp,CPP)
 
-%.dot: %.gv | DOT
-	@$(CPP) $(WithText) $(call puzzle,$@,dot) $< | dot -Tdot -o DOT/$@
+# Duplicated graphs
+puzzle02.svg: puzzle01.gv; $(call renderT,svg,./)
+puzzle02.png: puzzle01.gv; $(call renderI,png,PNG)
+puzzle02.pdf: puzzle01.gv; $(call renderT,pdf,PDF)
 
-%.cpp: %.gv | CPP
-	@$(CPP) $(WithText)  $(call puzzle,$@,cpp) $< > CPP/$@
+puzzle06.svg: puzzle05.gv; $(call renderT,svg,./)
+puzzle06.png: puzzle05.gv; $(call renderI,png,PNG)
+puzzle06.pdf: puzzle05.gv; $(call renderT,pdf,PDF)
+
+puzzle07.svg: puzzle01.gv; $(call renderT,svg,./)
+puzzle07.png: puzzle01.gv; $(call renderI,png,PNG)
+puzzle07.pdf: puzzle01.gv; $(call renderT,pdf,PDF)
+
+# Targets
 
 .PHONY: svg png pdf dot cpp publish
 
-svg: $(SvgTargets); @cp --update $(SvgTargets) SVG
+svg: $(SvgTargets); @cp --update *.svg SVG
 png: $(PngTargets)
 pdf: $(PdfTargets)
 dot: $(DotTargets)
 cpp: $(CppTargets)
+publish: svg png pdf dot cpp
 
 all: $(SvgTargets)
 	@echo 'Done!'
