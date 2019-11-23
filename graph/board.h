@@ -34,15 +34,9 @@
 #define BITCOLOR        deepskyblue
 #define BITSIZE         20
 
-#if $false
-#   define BITRIGHT     "⬈"  // north est arrow: U+2B08
-#   define BITLEFT      "⬉"  // north west up arrow: U+2B09
-#   define BITUNDEF     "⬆"  // upwards arrow: U+2B06
-#else
-#   define BITRIGHT     ">"  // ASCII alternatives
-#   define BITLEFT      "<"
-#   define BITUNDEF     "^"
-#endif
+#define BITRIGHT        ">"
+#define BITLEFT         "<"
+#define BITUNDEF        "^"
 
 /*
  * Styles
@@ -90,7 +84,7 @@
         fontcolor=blue          \
     ]                           \
     B_bot [                     \
-        label="B"               \
+        label="%"               \
         fontcolor=blue          \
     ]                           \
     R_top [                     \
@@ -98,7 +92,7 @@
         fontcolor=red           \
     ]                           \
     R_bot [                     \
-        label="R"               \
+        label="%"               \
         fontcolor=red           \
     ]                           \
     {rank=same; B_top, R_top}   \

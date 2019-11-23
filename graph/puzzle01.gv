@@ -1,13 +1,21 @@
 /*  Challenge #1: Gravity
  *  Challenge #2: Re-entry
- *  Challenge #7: Path of Least Resistance
- *
  *  Make all of the blue balls (and only the blue balls) reach the end.
+ *
+ *  Challenge #7: Path of Least Resistance
+ *  Create a path for the blue balls to reach the output with only 6 ramps.
+ *
  */
 
 #import "board.h"
 
+#if Puzzle == 1
 digraph Challenge01 {
+#elif Puzzle == 2
+digraph Challenge02 {
+#elif Puzzle == 7
+digraph Challenge07 {
+#endif
     /*
     ** attributes
     */
@@ -23,12 +31,21 @@ digraph Challenge01 {
 #if ShowObjective
     objective [
         OBJECTIVE_STYLE
+#   if Puzzle == 1 || Puzzle == 2
         label=$text(
             $line(Make all of the blue balls),
             $line((and only the blue balls)),
             $line(reach the end.))
+#   elif Puzzle == 7
+        label=$text(
+            $line(Create a path for the blue),
+            $line(balls to reach the output with),
+            $line(only 6 ramps.))   
+#   else
+#       error Unexpected puzzle ID
+#   endif // Puzzle
     ]
-#endif
+#endif // ShowObjective
 
     /*
     ** edges
@@ -43,9 +60,15 @@ digraph Challenge01 {
     */
 #if ShowGraphLabel
     graph [
+#   if Puzzle == 1
         label="Challenge #1: Gravity"
+#   elif Puzzle == 2
+        label="Challenge #2: Re-entry"
+#   elif Puzzle == 7
+        label="Challenge #7: Path of Least Resistance"
+#   endif // Puzzle
     ]
-#endif
+#endif // ShowGraphLabel
 }
 
 // vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

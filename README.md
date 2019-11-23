@@ -3,7 +3,7 @@
 A curated list of awesome things built with the esoteric and
 turing-complete language _Turing Tumble_.
 
-* [Home Page](#turing-tumble-home-page)
+* [Website](#turing-tumble-web-site)
 * [Puzzles](#puzzles)
 * [Software](#software)
 * [Articles](#articles)
@@ -12,7 +12,7 @@ turing-complete language _Turing Tumble_.
 
 ------------------------------------------------------------------------
 
-## Turing Tumble Home Page
+## Turing Tumble Web Site
 
 Turing Tumble is a revolutionary new game where players build marble-powered
 computers to solve logic puzzles. It’s fun, addicting, and while you’re at it,
@@ -82,6 +82,6 @@ Published papers on Turing Tumble.
 
 ## Contribute
 
-Please contribute! Open an issue or a PR and we’ll discuss it or merge it. If
-you’re opening a PR, please ensure all formatting is ok (if you’re in a hurry
-just open an issue).
+Please contribute! Open an issue or a pull request and we’ll discuss it or
+merge it. If you’re opening a pull request, please ensure all formatting is ok
+(if you’re in a hurry just open an issue).

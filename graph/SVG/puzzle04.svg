@@ -37,7 +37,7 @@
 <g id="node3" class="node">
 <title>B_bot</title>
 <ellipse fill="none" stroke="#000000" cx="42" cy="-18" rx="18" ry="18"/>
-<text text-anchor="middle" x="42" y="-14.9" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#0000ff">B</text>
+<text text-anchor="middle" x="42" y="-14.9" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#0000ff">%</text>
 </g>
 <!-- B_top&#45;&gt;B_bot -->
 <g id="edge2" class="edge">
@@ -54,7 +54,7 @@
 <g id="node5" class="node">
 <title>R_bot</title>
 <ellipse fill="none" stroke="#000000" cx="96" cy="-18" rx="18" ry="18"/>
-<text text-anchor="middle" x="96" y="-14.9" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#ff0000">R</text>
+<text text-anchor="middle" x="96" y="-14.9" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#ff0000">%</text>
 </g>
 <!-- B_bot&#45;&gt;R_bot -->
 <!-- R_top&#45;&gt;B_bot -->

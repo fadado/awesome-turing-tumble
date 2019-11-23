@@ -23,6 +23,12 @@
 + Gearbit: `{` (0) `}` (1)
 + Gear: `*`
 
-### Trace syntax
+### Setup syntax
 
 `B b R r ( ) | ? * + [0-9]`
+
++ `B` and `R`: blue and red marble generators.
++ `b` and `r`: halted marbles.
++ `? * + [0-9]`: prefix quantifiers for marbles.
++ `( ) |`: regular expressions grouping and alternation.
+

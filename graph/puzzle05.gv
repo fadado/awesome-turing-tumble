@@ -6,7 +6,11 @@
 
 #import "board.h"
 
+#if Puzzle == 5
 digraph Challenge05 {
+#elif Puzzle == 6
+digraph Challenge06 {
+#endif
     /*
     ** attributes
     */
@@ -42,9 +46,15 @@ digraph Challenge05 {
     */
 #if ShowGraphLabel
     graph [
+#   if Puzzle == 5
         label="Challenge #5: Entropy"
+#   elif Puzzle == 6
+        label="Challenge #6: Total Internal Reflection"
+#   else
+#       error Unexpected puzzle ID
+#   endif // Puzzle
     ]
-#endif
+#endif // ShowGraphLabel
 }
 
 // vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

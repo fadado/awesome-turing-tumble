@@ -58,7 +58,7 @@ Make all of the blue balls (and only the blue balls) reach the end.
 
 ### Diagram
 
-![Puzzle #1](../graph/PNG/puzzle01.png)
+![Puzzle #2](../graph/PNG/puzzle02.png)
 
 ## Challenge #3: Ignition
 
@@ -178,7 +178,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Diagram
 
-![Puzzle #5](../graph/PNG/puzzle05.png)
+![Puzzle #6](../graph/PNG/puzzle06.png)
 
 ## Challenge #7: Path of Least Resistance
 
@@ -208,7 +208,7 @@ Create a path for the blue balls to reach the output with only 6 ramps.
 
 ### Diagram
 
-![Puzzle #1](../graph/PNG/puzzle01.png)
+![Puzzle #7](../graph/PNG/puzzle07.png)
 
 ## Challenge #8: Depolarization
 

@@ -27,4 +27,4 @@ Create a path for the blue balls to reach the output with only 6 ramps.
 
 ### Diagram
 
-![Puzzle #7](../graph/PNG/puzzle01.png)
+![Puzzle #7](../graph/PNG/puzzle07.png)

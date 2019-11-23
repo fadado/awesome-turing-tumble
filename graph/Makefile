@@ -12,7 +12,7 @@ MAKEFLAGS += --no-builtin-variables
 MAKEFLAGS += --warn-undefined-variables
 
 # Make will not print the recipe used to remake files.
-.SILENT:
+#.SILENT:
 
 # Eliminate use of the built-in implicit rules. Also clear out the
 # default list of suffixes for suffix rules.
@@ -45,12 +45,13 @@ SHELL := /bin/bash
 BOARD=board.h
 
 # Dot files to process
-DotFiles := $(wildcard *.gv)
+DotFiles := $(wildcard puzzle??.gv)
+Duplicated := puzzle02.gv puzzle06.gv puzzle07.gv
 
 # Targets to create
-SvgTargets := $(DotFiles:.gv=.svg)
-PngTargets := $(DotFiles:.gv=.png)
-PdfTargets := $(DotFiles:.gv=.pdf)
+SvgTargets := $(DotFiles:.gv=.svg) $(Duplicated:.gv=.svg)
+PngTargets := $(DotFiles:.gv=.png) $(Duplicated:.gv=.png)
+PdfTargets := $(DotFiles:.gv=.pdf) $(Duplicated:.gv=.pdf)
 DotTargets := $(DotFiles:.gv=.dot)
 CppTargets := $(DotFiles:.gv=.cpp)
 
@@ -59,9 +60,6 @@ $(SvgTargets): $(BOARD)
 ########################################################################
 # Rules
 ########################################################################
-
-WithText := -DShowGraphLabel=1 -DShowObjective=1
-WithoutText := -DShowGraphLabel=0 -DShowObjective=0
 
 CPPFLAGS :=			\
 	-P			\
@@ -73,25 +71,44 @@ CPPFLAGS :=			\
 	-Wundef			\
 	-Wunused-macros		\
 
-CPP := cpp $(CPPFLAGS)
+WithText := -DShowGraphLabel=1 -DShowObjective=1
+WithoutText := -DShowGraphLabel=0 -DShowObjective=0
 
+CPP = cpp $(CPPFLAGS)
+
+# Extracts puzzle ID
+puzzle = -DPuzzle=$(patsubst 0%,%,$(patsubst puzzle%.$(2),%,$(1)))
+
+# Implicit rules
 %.svg: %.gv
-	@$(CPP) $(WithText) $< | dot -Tsvg -o $@
+	@$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
 
 %.png: %.gv
-	@$(CPP) $(WithoutText) $< | dot -Tpng -o PNG/$@
+	@$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
 
 %.pdf: %.gv
 	@$(CPP) $(WithText) $< | dot -Tpdf -o PDF/$@
+
+puzzle02.svg: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
+puzzle02.png: puzzle01.gv; @$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
+puzzle02.pdf: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,pdf) $< | dot -Tpdf -o PDF/$@
+
+puzzle06.svg: puzzle05.gv; @$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
+puzzle06.png: puzzle05.gv; @$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
+puzzle06.pdf: puzzle05.gv; @$(CPP) $(WithText) $(call puzzle,$@,pdf) $< | dot -Tpdf -o PDF/$@
+
+puzzle07.svg: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,svg) $< | dot -Tsvg -o $@
+puzzle07.png: puzzle01.gv; @$(CPP) $(WithoutText) $(call puzzle,$@,png) $< | dot -Tpng -o PNG/$@
+puzzle07.pdf: puzzle01.gv; @$(CPP) $(WithText) $(call puzzle,$@,pdf) $< | dot -Tpdf -o PDF/$@
 
 # Debug only formats
 DOT CPP: ; mkdir $@
 
 %.dot: %.gv | DOT
-	@$(CPP) $(WithText) $< | dot -Tdot -o DOT/$@
+	@$(CPP) $(WithText) $(call puzzle,$@,dot) $< | dot -Tdot -o DOT/$@
 
 %.cpp: %.gv | CPP
-	@$(CPP) $(WithText) $< > CPP/$@
+	@$(CPP) $(WithText)  $(call puzzle,$@,cpp) $< > CPP/$@
 
 .PHONY: svg png pdf dot cpp publish
 
@@ -102,6 +119,7 @@ dot: $(DotTargets)
 cpp: $(CppTargets)
 
 all: $(SvgTargets)
+	@echo 'Done!'
 
 ########################################################################
 # Tools
