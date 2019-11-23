@@ -518,11 +518,11 @@ If the top bit AND the bottom bit start pointed to the right, put a ball in inte
 
 If the top bit AND the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
 
-### Setup
+### Setup 1
 
 `balls:8B-8R; start:B; trace:b|rB`
 
-### Solution
+### Solution 1
 
 	 ___o    ___
 	|  .\. .\.  |
@@ -538,17 +538,11 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 	|     U     |
 	|____% %____|
 
-## Challenge #19′: Entanglement
-
-### Objective
-
-If the top bit AND the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
-
-### Setup
+### Setup 2
 
 `balls:8B-8R; start:B; trace:b|rB`
 
-### Solution
+### Solution 2
 
 	 ___o    ___
 	|  .\. ./.  |
@@ -564,17 +558,11 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 	|     U     |
 	|____% %____|
 
-## Challenge #19″: Entanglement
-
-### Objective
-
-If the top bit AND the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
-
-### Setup
+### Setup 3
 
 `balls:8B-8R; start:B; trace:b|rB|rRB|rRRB`
 
-### Solution
+### Solution 3
 
 	 ___o    ___
 	|  .\. ./.  |
@@ -596,11 +584,11 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 If the top bit OR the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
 
-### Setup
+### Setup 1
 
 `balls:8B-8R; start:B; trace:b|rB`
 
-### Solution
+### Solution 1
 
 	 ___o    ___
 	|  .\. .\.  |
@@ -616,17 +604,11 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 	|     U     |
 	|____% %____|
 
-## Challenge #20′: Symbiosis
-
-### Objective
-
-If the top bit OR the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
-
-### Setup
+### Setup 2
 
 `balls:8B-8R; start:B; trace:b|rB`
 
-### Solution
+### Solution 2
 
 	 ___o    ___
 	|  .\. ./.  |

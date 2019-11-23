@@ -1,4 +1,4 @@
-# Awesome Turing Tumble
+# Awesome _Turing Tumble_
 
 A curated list of awesome things built with the esoteric and
 turing-complete language _Turing Tumble_.
@@ -9,12 +9,13 @@ turing-complete language _Turing Tumble_.
 * [Articles](#articles)
 * [Papers](#papers)
 * [Contribute](#contribute)
+* [License](#license)
 
 ------------------------------------------------------------------------
 
-## Turing Tumble Web Site
+## _Turing Tumble_ Web Site
 
-Turing Tumble is a revolutionary new game where players build marble-powered
+_Turing Tumble_ is a revolutionary new game where players build marble-powered
 computers to solve logic puzzles. It’s fun, addicting, and while you’re at it,
 you discover how computers work.
 
@@ -25,7 +26,7 @@ you discover how computers work.
 
 ## Puzzles
 
-Solutions to all Turing Tumble puzzles in the [Educator Guide](text/EducatorGuide.md)
+Solutions to all _Turing Tumble_ puzzles in the [Educator Guide](text/EducatorGuide.md)
 (see the [notation](text/LEGEND.md) used in the solutions).
 
 | 01..10                      | 11..20                      | 21..30                      |
@@ -51,13 +52,14 @@ Simulators:
 
 GitHub repositories:
 
-* [OUDON/emtumble](https://github.com/OUDON/emtumble): An emulator of Turing Tumble written in C++.
-* [PiwwowPants/TuringTumble](https://github.com/PiwwowPants/TuringTumble): An unofficial, digital version of the Kickstarter game "Turing Tumble".
-* [MichaelSpencerJr/TTBoardReader](https://github.com/MichaelSpencerJr/TTBoardReader): Image Processor for converting pictures of a Turing Tumble board into jstumble-like notation.
+* [jessecrossen/ttsim](https://github.com/jessecrossen/ttsim): A simulator for the _Turing Tumble_
+* [MichaelSpencerJr/TTBoardReader](https://github.com/MichaelSpencerJr/TTBoardReader): Image Processor for converting pictures of a _Turing Tumble_ board into jstumble-like notation.
+* [OUDON/emtumble](https://github.com/OUDON/emtumble): An emulator of _Turing Tumble_ written in C++.
+* [PiwwowPants/TuringTumble](https://github.com/PiwwowPants/TuringTumble): An unofficial, digital version of the Kickstarter game _Turing Tumble_.
 
 ## Articles
 
-Selected articles on Turing Tumble.
+Selected articles on _Turing Tumble_.
 
 * [Kickstarter Alert: Program a Mechanical Computer With ‘Turing Tumble’](https://geekdad.com/2017/05/kickstarter-alert-turing-tumble/)
 * [The Turing Tumble lets you and your kids build real mechanical computers](https://techcrunch.com/2017/05/30/the-turing-tumble-lets-you-and-your-kids-build-real-mechanical-computers/)
@@ -69,10 +71,9 @@ Selected articles on Turing Tumble.
 * [Turing Tumble’s Incredible Kickstarter Journey](https://theworks.org/turing-tumbles-incredible-kickstarter-journey/)
 * [Understand Computer Logic With Turing Tumble](https://www.i-programmer.info/news/150-training-a-education/10830-learn-computer-logic-with-turing-tumble-.html)
 
-
 ## Papers
 
-Published papers on Turing Tumble.
+Published papers on _Turing Tumble_.
 
 * [Cellular Automaton Model for Turing Tumble Mechanical Computer](https://ieeexplore.ieee.org/abstract/document/8590868)
 * [Constructing reversible logic elements on Turing Tumble model](http://www.automata2018.ugent.be/files/proceedings_main.pdf)
@@ -85,3 +86,10 @@ Published papers on Turing Tumble.
 Please contribute! Open an issue or a pull request and we’ll discuss it or
 merge it. If you’re opening a pull request, please ensure all formatting is ok
 (if you’re in a hurry just open an issue).
+
+## License
+
+This website content is licensed under the
+[MIT](https://github.com/fadado/awesome-turing-tumble/blob/master/LICENSE)
+license (code) and the
+[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/) license (documents).
