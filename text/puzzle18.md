@@ -24,3 +24,6 @@ If the top bit AND the bottom bit start pointed to the right, put a ball in inte
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #18](../graph/PNG/puzzle18.png)

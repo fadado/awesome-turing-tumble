@@ -1,0 +1,73 @@
+/*  Challenge #17: Fixed Ratio
+ *
+ *  Make the pattern blue, blue, blue, red, red, red.
+ */
+
+#import "board.h"
+
+digraph Challenge17 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(Make the pattern blue, blue, blue,),
+            $line(red, red, red.))
+    ]
+#endif
+
+    subgraph {
+        rank=same
+        bit_left_0  [ BIT_STYLE label=BITLEFT ]
+        bit_right_0 [ BIT_STYLE label=BITLEFT ]
+    }
+    subgraph {
+        rank=same
+        bit_left_1  [ BIT_STYLE label=BITRIGHT ]
+        bit_right_1 [ BIT_STYLE label=BITLEFT ]
+    }
+    halt [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+
+    B_top -> bit_left_0:n
+    bit_left_0:se -> bit_left_1:n
+    bit_left_0:sw -> B_bot
+    bit_left_1:se -> R_bot:nw
+    bit_left_1:sw -> B_bot
+
+    R_top -> bit_right_0:n
+    bit_right_0:se -> R_bot
+    bit_right_0:sw -> bit_right_1:n
+    bit_right_1:se -> R_bot:n
+    bit_right_1:sw -> halt
+
+    halt -> R_bot:w [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #17: Fixed Ratio"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

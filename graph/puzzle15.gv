@@ -5,7 +5,7 @@
 
 #import "board.h"
 
-digraph Challenge14 {
+digraph Challenge15 {
     /*
     ** attributes
     */

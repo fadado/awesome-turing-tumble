@@ -1,0 +1,58 @@
+/*  Challenge #16: Termination
+ *
+ *  Let only 3 blue balls reach the bottom and catch the 4th ball in the interceptor.
+ */
+
+#import "board.h"
+
+digraph Challenge16 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(Let only 3 blue balls reach),
+            $line(the bottom and catch the 4th),
+            $line(ball in the interceptor.))
+    ]
+#endif
+
+    bit_0 [ BIT_STYLE label=BITLEFT ]
+    bit_1 [ BIT_STYLE label=BITLEFT ]
+    halt  [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> bit_0:n
+    bit_0:se -> B_bot:ne
+    bit_0:sw -> bit_1:n
+    bit_1:sw -> halt
+    bit_1:se -> B_bot:nw
+    halt -> B_bot:w [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #16: Termination"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

@@ -24,3 +24,7 @@ Let only 3 blue balls reach the bottom and catch the 4th ball in the interceptor
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #16](../graph/PNG/puzzle16.png)
+

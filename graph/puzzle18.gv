@@ -1,0 +1,64 @@
+/*  Challenge #18: Entanglement
+ *
+ *  If the top bit AND the bottom bit start pointed to the right, put a ball in interceptor left. Otherwise put a ball in interceptor right.
+ */
+
+#import "board.h"
+
+digraph Challenge18 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(If the top bit AND the bottom bit),
+            $line(start pointed to the right, put a),
+            $line(ball in interceptor left. Otherwise),
+            $line(put a ball in interceptor right.))
+    ]
+#endif
+
+    bit_0 [ BIT_STYLE label=BITUNDEF ]
+    bit_1 [ BIT_STYLE label=BITUNDEF ]
+    subgraph {
+        rank=same
+        halt_left [ INTERCEPTOR_STYLE ]
+        halt_right [ INTERCEPTOR_STYLE ]
+    }
+
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> bit_0:n
+    bit_0:se -> halt_right
+    bit_0:sw -> bit_1:n
+    bit_1:sw -> halt_left
+    bit_1:se -> halt_right
+    halt_left -> B_bot [ style=invis ]
+    halt_right -> R_bot [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #18: Entanglement"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

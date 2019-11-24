@@ -476,6 +476,10 @@ Let only 3 blue balls reach the bottom and catch the 4th ball in the interceptor
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #16](../graph/PNG/puzzle16.png)
+
 ## Challenge #17: Fixed Ratio
 
 ### Objective
@@ -502,6 +506,10 @@ Make the pattern blue, blue, blue, red, red, red.
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #17](../graph/PNG/puzzle17.png)
+
 ## Challenge #18: Entanglement
 
 ### Objective
@@ -527,6 +535,10 @@ If the top bit AND the bottom bit start pointed to the right, put a ball in inte
 	|-.-.-.-.-.-|
 	|     -     |
 	|____% %____|
+
+### Diagram
+
+![Puzzle #18](../graph/PNG/puzzle18.png)
 
 ## Challenge #19: Entanglement
 
