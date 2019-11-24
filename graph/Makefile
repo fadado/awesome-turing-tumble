@@ -43,8 +43,8 @@ SHELL := /bin/bash
 ########################################################################
 
 # Dot files to process
-DotFiles := $(wildcard puzzle??.gv)
-Duplicated := puzzle02.gv puzzle06.gv puzzle07.gv
+DotFiles := $(wildcard puzzle??*.gv)
+Duplicated := puzzle02.gv puzzle06.gv puzzle07.gv puzzle192.gv
 
 # Targets to create
 SvgTargets := $(DotFiles:.gv=.svg) $(Duplicated:.gv=.svg)
@@ -116,6 +116,7 @@ endef
 $(eval $(call duplicated,02,01))
 $(eval $(call duplicated,07,01))
 $(eval $(call duplicated,06,05))
+$(eval $(call duplicated,192,190))
 
 # Targets
 

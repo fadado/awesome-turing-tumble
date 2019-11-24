@@ -1,0 +1,72 @@
+/*  Challenge #19: Entanglement
+ *
+ *  If the top bit AND the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
+ */
+
+#import "board.h"
+
+digraph Challenge19 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(If the top bit AND the bottom bit),
+            $line(start pointed to the right,),
+            $line(intercept a blue ball. Otherwise,),
+            $line(intercept a red ball.))
+    ]
+#endif
+
+    bit_0 [ BIT_STYLE label=BITUNDEF ]
+    bit_1 [ BIT_STYLE label=BITUNDEF ]
+    halt  [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+#if Puzzle == 190 || Puzzle == 191
+    B_top -> bit_0:n
+#elif Puzzle == 192
+    B_top -> bit_0:nw
+#else
+#   error Unexpected puzzle ID
+#endif
+    bit_0:sw -> bit_1:n
+    bit_0:se -> R_bot:ne
+    bit_1:sw -> halt
+    bit_1:se -> R_bot:n
+#if Puzzle == 190 || Puzzle == 191
+    R_top -> halt:ne
+#elif Puzzle == 192
+    R_top -> bit_0:ne
+#else
+#   error Unexpected puzzle ID
+#endif
+    halt -> B_bot [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #19: Entanglement"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot
