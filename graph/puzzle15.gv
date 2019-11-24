@@ -1,6 +1,6 @@
-/*  Challenge #14: Duality - Part 3
+/*  Challenge #15: Inversion
  *
- * If the machine starts with bit A pointing to the left, intercept a blue ball. Otherwise, intercept a red ball.
+ *  If bit A starts to the left, intercept a blue ball. If bit A starts to the right, intercept a red ball.
  */
 
 #import "board.h"
@@ -22,12 +22,14 @@ digraph Challenge14 {
     objective [
         OBJECTIVE_STYLE
         label=$text(
-            $line(If the machine starts with bit A),
-            $line(pointing to the left, intercept a blue),
-            $line(ball. Otherwise, intercept a red ball.))
+ 
+            $line(If bit A starts to the left, intercept),
+            $line(a blue ball. If bit A starts to the),
+            $line(right, intercept a red ball.))
     ]
 #endif
 
+    bit_T [ BIT_STYLE label=BITRIGHT ]
     bit_A [ BIT_STYLE label=BITUNDEF $xlabel(A) ]
     halt  [ INTERCEPTOR_STYLE ]
 
@@ -35,9 +37,11 @@ digraph Challenge14 {
     ** edges
     */
     start -> B_top
-    B_top -> bit_A:n
-    bit_A:se -> halt:n
-    bit_A:sw -> R_bot
+    B_top -> bit_T:n
+    bit_T:se -> halt:n
+    bit_T:sw -> bit_A:n
+    bit_A:sw -> R_bot:ne
+    bit_A:se -> B_bot:nw
     R_top -> halt:ne
     halt -> B_bot [ style=invis ]
 
@@ -48,7 +52,7 @@ digraph Challenge14 {
     */
 #if ShowGraphLabel
     graph [
-        label="Challenge #14: Duality - Part 3"
+        label="Challenge #15: Inversion"
     ]
 #endif
 }

@@ -75,7 +75,8 @@
     fontsize=BITSIZE        \
 
 #define INTERCEPTOR_STYLE   \
-    shape=circle            \
+    shape=doublecircle      \
+    width=0.3               \
     label=""                \
 
 /*

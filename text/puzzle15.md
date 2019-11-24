@@ -24,3 +24,6 @@ If bit A starts to the left, intercept a blue ball. If bit A starts to the right
 	|     X     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #15](../graph/PNG/puzzle15.png)
