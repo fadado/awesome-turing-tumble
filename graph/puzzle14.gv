@@ -1,0 +1,56 @@
+/*  Challenge #14: Duality - Part 3
+ *
+ * If the machine starts with bit A pointing to the left, intercept a blue ball. Otherwise, intercept a red ball.
+ */
+
+#import "board.h"
+
+digraph Challenge14 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(If the machine starts with bit A),
+            $line(pointing to the left, intercept a blue),
+            $line(ball. Otherwise, intercept a red ball.))
+    ]
+#endif
+
+    bit  [ BIT_STYLE label=BITUNDEF $xlabel(A) ]
+    halt [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> bit:n
+    bit:se -> halt:n
+    bit:sw -> R_bot
+    R_top -> halt:ne
+    halt -> B_bot [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #14: Duality - Part 3"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

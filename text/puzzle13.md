@@ -24,3 +24,7 @@ Intercept a red ball.
 	|     \     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #13](../graph/PNG/puzzle13.png)
+

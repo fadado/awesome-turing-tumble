@@ -356,6 +356,10 @@ Intercept a blue ball.
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #12](../graph/PNG/puzzle12.png)
+
 ## Challenge #13: Duality - Part 2
 
 ### Objective
@@ -382,6 +386,10 @@ Intercept a red ball.
 	|     \     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #13](../graph/PNG/puzzle13.png)
+
 ## Challenge #14: Duality - Part 3
 
 ### Objective
@@ -407,6 +415,10 @@ If the machine starts with bit A pointing to the left, intercept a blue ball. Ot
 	|-.-.\.-.-.-|
 	|     \     |
 	|____% %____|
+
+### Diagram
+
+![Puzzle #14](../graph/PNG/puzzle14.png)
 
 ## Challenge #15: Inversion
 

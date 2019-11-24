@@ -1,11 +1,11 @@
-/*  Challenge #10: Double Bond
+/*  Challenge #12: Duality - Part 1
  *
- *  Make the pattern blue, blue, red, red, blue, blue, red, red…
+ * Intercept a blue ball.
  */
 
 #import "board.h"
 
-digraph Challenge10 {
+digraph Challenge12 {
     /*
     ** attributes
     */
@@ -22,24 +22,20 @@ digraph Challenge10 {
     objective [
         OBJECTIVE_STYLE
         label=$text(
-            $line(Make the pattern blue, blue, red, red,),
-            $line(blue, blue, red, red…))
+            $line(Intercept a blue ball.))
     ]
 #endif
 
-    bit_a [ BIT_STYLE label=BITRIGHT ]
-    bit_b [ BIT_STYLE label=BITLEFT ]
+    bit  [ BIT_STYLE label=BITLEFT ]
+    halt [ INTERCEPTOR_STYLE ]
 
     /*
     ** edges
     */
     start -> B_top
-    B_top -> bit_a
-    R_top -> bit_b
-    bit_a:sw -> B_bot
-    bit_a:se -> R_bot
-    bit_b:sw -> B_bot
-    bit_b:se -> R_bot
+    B_top -> bit
+    bit:se -> halt
+    halt -> B_bot [ style=invis ]
 
     GAME_BOARD_EDGES
 
@@ -48,7 +44,7 @@ digraph Challenge10 {
     */
 #if ShowGraphLabel
     graph [
-        label="Challenge #10: Double Bond"
+        label="Challenge #12: Duality - Part 1"
     ]
 #endif
 }

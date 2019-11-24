@@ -27,10 +27,7 @@ digraph Challenge08 {
     ]
 #endif
 
-    bit [
-        BIT_STYLE
-        label=BITLEFT
-    ]
+    bit [ BIT_STYLE label=BITLEFT ]
 
     /*
     ** edges

@@ -74,6 +74,10 @@
     fontcolor=BITCOLOR      \
     fontsize=BITSIZE        \
 
+#define INTERCEPTOR_STYLE   \
+    shape=circle            \
+    label=""                \
+
 /*
  * Game Board
  */
@@ -131,5 +135,7 @@
  */
 #define $text(...)  < <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">__VA_ARGS__</TABLE> >
 #define $line(...)  <TR><TD ALIGN="left">__VA_ARGS__</TD></TR>
+
+#define $xlabel(s)   xlabel=< <FONT POINT-SIZE="10">s</FONT> >
 
 // vim:ai:sw=4:ts=4:et:syntax=dot

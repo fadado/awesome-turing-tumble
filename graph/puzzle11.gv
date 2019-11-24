@@ -27,8 +27,6 @@ digraph Challenge11 {
 
     bit_T [ BIT_STYLE label=BITRIGHT ]
 
-#define $xlabel(s)   xlabel=< <FONT POINT-SIZE="10">s</FONT> >
-
     subgraph five_bits {
         rank=same
         rankdir=LR

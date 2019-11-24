@@ -28,7 +28,7 @@ digraph Challenge21 {
     ]
 #endif
 
-    subgraph cluster_RegA {
+    subgraph cluster_Register_A {
         fontname=FONTNAME
         fontsize=10
         labeljust=r
