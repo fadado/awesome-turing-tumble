@@ -129,7 +129,7 @@
 /*
  * Labels
  */
-#define $text(...)  < <table border="0" cellpadding="0" cellspacing="0">__VA_ARGS__</table> >
-#define $line(...)  <tr><td align="left">__VA_ARGS__</td></tr>
+#define $text(...)  < <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0">__VA_ARGS__</TABLE> >
+#define $line(...)  <TR><TD ALIGN="left">__VA_ARGS__</TD></TR>
 
 // vim:ai:sw=4:ts=4:et:syntax=dot

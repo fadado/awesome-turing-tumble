@@ -3,8 +3,6 @@
  *  Flip bits 2 and 5 to the right.
  */
 
-#define ShowBackBoardEdges $false /* mantain graph more compact */
-
 #import "board.h"
 
 digraph Challenge11 {
@@ -28,13 +26,21 @@ digraph Challenge11 {
 #endif
 
     bit_T [ BIT_STYLE label=BITRIGHT ]
+
+#define $xlabel(s)   xlabel=< <FONT POINT-SIZE="10">s</FONT> >
+
     subgraph five_bits {
         rank=same
-        bit_1 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
-        bit_2 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
-        bit_3 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
-        bit_4 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
-        bit_5 [ BIT_STYLE label=BITUNDEF width=0.5 height=0.333 ]
+        rankdir=LR
+        bit_1 [ BIT_STYLE label=BITUNDEF $xlabel(1) color=grey ]
+        bit_2 [ BIT_STYLE label=BITUNDEF $xlabel(2) ]
+        bit_3 [ BIT_STYLE label=BITUNDEF $xlabel(3) color=grey ]
+        bit_4 [ BIT_STYLE label=BITUNDEF $xlabel(4) color=grey ]
+        bit_5 [ BIT_STYLE label=BITUNDEF $xlabel(5) ]
+        bit_1 -> bit_2 [style=invis]
+        bit_2 -> bit_3 [style=invis]
+        bit_3 -> bit_4 [style=invis]
+        bit_4 -> bit_5 [style=invis]
     }
 
     /*

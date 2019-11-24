@@ -126,7 +126,7 @@ png: $(PngTargets)
 pdf: $(PdfTargets)
 dot: $(DotTargets)
 cpp: $(CppTargets)
-publish: svg png pdf dot cpp
+publish: svg png pdf
 
 all: $(SvgTargets)
 	@echo 'Done!'
