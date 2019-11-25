@@ -830,6 +830,10 @@ Generate the pattern 3R6B.
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #25](../graph/PNG/puzzle25.png)
+
 ## Challenge #26: Nucleus
 
 ### Objective
