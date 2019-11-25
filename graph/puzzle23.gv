@@ -1,0 +1,67 @@
+/*  Challenge #23: Tetrad
+ *
+ * Let exactly 4 blue balls reach the end. (Intercept the 5th.)
+ */
+
+#import "board.h"
+
+digraph Challenge23 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE newrank=true concentrate=true ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(Let exactly 4 blue balls reach),
+            $line(the end. (Intercept the 5th.)))
+    ]
+#endif
+
+    subgraph cluster_Register_A {
+        fontname=FONTNAME
+        fontsize=10
+        color=grey
+        bit_0 [ BIT_STYLE label=BITLEFT ]
+        bit_1 [ BIT_STYLE label=BITLEFT ]
+        bit_2 [ BIT_STYLE label=BITRIGHT ]
+    }
+    halt  [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+    B_top -> bit_0:n
+
+    bit_0:se -> bit_1:ne
+    bit_1:se -> bit_2:ne
+    bit_0:sw -> B_bot:nw
+    bit_1:sw -> B_bot:nw
+    bit_2:sw -> B_bot:nw
+    bit_2:se -> halt
+    halt -> R_bot [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #23: Tetrad"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

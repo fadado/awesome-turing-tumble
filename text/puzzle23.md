@@ -24,3 +24,6 @@ Let exactly 4 blue balls reach the end. (Intercept the 5th.)
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #23](../graph/PNG/puzzle23.png)

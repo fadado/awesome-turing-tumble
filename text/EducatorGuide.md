@@ -1,5 +1,39 @@
 # Turing Tumble Educator Guide
 
+Solutions to all _Turing Tumble_ puzzles in the _Educator Guide_
+(see the [notation](LEGEND.md) used in the solutions).
+
+* [Challenge #1: Gravity](#challenge-1-gravity)
+* [Challenge #2: Re-entry](#challenge-2-re-entry)
+* [Challenge #3: Ignition](#challenge-3-ignition)
+* [Challenge #4: Fusion](#challenge-4-fusion)
+* [Challenge #5: Entropy](#challenge-5-entropy)
+* [Challenge #6: Total Internal Reflection](#challenge-6-total-internal-reflection)
+* [Challenge #7: Path of Least Resistance](#challenge-7-path-of-least-resistance)
+* [Challenge #8: Depolarization](#challenge-8-depolarization)
+* [Challenge #9: Dimers](#challenge-9-dimers)
+* [Challenge #10: Double Bond](#challenge-10-double-bond)
+* [Challenge #11: Selectivity](#challenge-11-selectivity)
+* [Challenge #12: Duality - Part 1](#challenge-12-duality---part-1)
+* [Challenge #13: Duality - Part 2](#challenge-13-duality---part-2)
+* [Challenge #14: Duality - Part 3](#challenge-14-duality---part-3)
+* [Challenge #15: Inversion](#challenge-15-inversion)
+* [Challenge #16: Termination](#challenge-16-termination)
+* [Challenge #17: Fixed Ratio](#challenge-17-fixed-ratio)
+* [Challenge #18: Entanglement](#challenge-18-entanglement)
+* [Challenge #19: Entanglement](#challenge-19-entanglement)
+* [Challenge #20: Symbiosis](#challenge-29-symbiosis)
+* [Challenge #21: Quantum Number](#challenge-21-quantum-number)
+* [Challenge #22: Depletion](#challenge-22-depletion)
+* [Challenge #23: Tetrad](#challenge-23-tetrad)
+* [Challenge #24: Ennead](#challenge-24-ennead)
+* [Challenge #25: Regular Expression](#challenge-25-regular-expression)
+* [Challenge #26: Nucleus](#challenge-26-nucleus)
+* [Challenge #27: Reflection](#challenge-27-reflection)
+* [Challenge #28: Latch](#challenge-28-Latch)
+* [Challenge #29: One-Shot Switch](#challenge-29-one-shot-switch)
+* [Challenge #30: Overflow](#challenge-30-overflow)
+
 ## Challenge #1: Gravity
 
 ### Objective
@@ -736,6 +770,10 @@ Let exactly 4 blue balls reach the end. (Intercept the 5th.)
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #23](../graph/PNG/puzzle23.png)
+
 ## Challenge #24: Ennead
 
 ### Objective
@@ -761,6 +799,10 @@ Let exactly 9 blue balls reach the end. (Intercept the 10th.)
 	|-./.-.-.-.-|
 	|     -     |
 	|____% %____|
+
+### Diagram
+
+![Puzzle #24](../graph/PNG/puzzle24.png)
 
 ## Challenge #25: Regular Expression
 
