@@ -81,7 +81,7 @@
 <text text-anchor="start" x="91.1155" y="-438.5" font-family="Times" font-size="10.00" fill="#000000">(Use 15 or fewer balls.)</text>
 </g>
 <!-- bit_0&#45;&gt;B_bot -->
-<g id="edge7" class="edge">
+<g id="edge3" class="edge">
 <title>bit_0:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M45.1155,-90C47.6403,-64.0204 54.097,-54.483 69.8027,-38.3735"/>
 <polygon fill="#000000" stroke="#000000" points="72.5588,-40.5649 77.1155,-31 67.5886,-35.6356 72.5588,-40.5649"/>
@@ -95,13 +95,13 @@
 <text text-anchor="middle" x="100.1155" y="-229" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- bit_0&#45;&gt;bit_1 -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit_0:se&#45;&gt;bit_1:ne</title>
 <path fill="none" stroke="#000000" d="M111.1155,-295C124.251,-281.8645 126.4061,-266.7308 117.5807,-252.9396"/>
 <polygon fill="#000000" stroke="#000000" points="120.1439,-250.5444 111.1155,-245 114.7158,-254.9644 120.1439,-250.5444"/>
 </g>
 <!-- bit_1&#45;&gt;B_bot -->
-<g id="edge8" class="edge">
+<g id="edge5" class="edge">
 <title>bit_1:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M89.1155,-223C65.4784,-199.3628 51.1798,-194.8733 45.1155,-162"/>
 </g>
@@ -112,13 +112,13 @@
 <text text-anchor="middle" x="100.1155" y="-157" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- bit_1&#45;&gt;bit_2 -->
-<g id="edge4" class="edge">
+<g id="edge6" class="edge">
 <title>bit_1:se&#45;&gt;bit_2:ne</title>
 <path fill="none" stroke="#000000" d="M111.1155,-223C124.251,-209.8645 126.4061,-194.7308 117.5807,-180.9396"/>
 <polygon fill="#000000" stroke="#000000" points="120.1439,-178.5444 111.1155,-173 114.7158,-182.9644 120.1439,-178.5444"/>
 </g>
 <!-- bit_2&#45;&gt;B_bot -->
-<g id="edge9" class="edge">
+<g id="edge7" class="edge">
 <title>bit_2:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M89.1155,-151C65.4784,-127.3628 41.8822,-123.2713 45.1155,-90"/>
 </g>
@@ -129,22 +129,22 @@
 <text text-anchor="middle" x="100.1155" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- bit_2&#45;&gt;bit_3 -->
-<g id="edge5" class="edge">
+<g id="edge8" class="edge">
 <title>bit_2:se&#45;&gt;bit_3:ne</title>
 <path fill="none" stroke="#000000" d="M111.1155,-151C124.251,-137.8645 126.4061,-122.7308 117.5807,-108.9396"/>
 <polygon fill="#000000" stroke="#000000" points="120.1439,-106.5444 111.1155,-101 114.7158,-110.9644 120.1439,-106.5444"/>
 </g>
 <!-- bit_3&#45;&gt;B_bot -->
-<g id="edge6" class="edge">
-<title>bit_3:se&#45;&gt;B_bot:ne</title>
-<path fill="none" stroke="#000000" d="M111.1155,-79C123.8995,-66.216 120.4066,-51.9499 109.983,-38.6796"/>
-<polygon fill="#000000" stroke="#000000" points="112.3905,-36.1211 103.1155,-31 107.1725,-40.7873 112.3905,-36.1211"/>
-</g>
-<!-- bit_3&#45;&gt;B_bot -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>bit_3:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M89.1155,-79C76.3603,-66.2448 65.9934,-52.5795 71.2628,-39.4973"/>
 <polygon fill="#000000" stroke="#000000" points="74.3255,-41.2209 77.1155,-31 68.5606,-37.2502 74.3255,-41.2209"/>
+</g>
+<!-- bit_3&#45;&gt;B_bot -->
+<g id="edge10" class="edge">
+<title>bit_3:se&#45;&gt;B_bot:ne</title>
+<path fill="none" stroke="#000000" d="M111.1155,-79C123.8995,-66.216 120.4066,-51.9499 109.983,-38.6796"/>
+<polygon fill="#000000" stroke="#000000" points="112.3905,-36.1211 103.1155,-31 107.1725,-40.7873 112.3905,-36.1211"/>
 </g>
 </g>
 </svg>

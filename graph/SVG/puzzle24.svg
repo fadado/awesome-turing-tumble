@@ -79,7 +79,7 @@
 <text text-anchor="start" x="87.2095" y="-508" font-family="Times" font-size="10.00" fill="#000000">the end. (Intercept the 10th.)</text>
 </g>
 <!-- bit_0&#45;&gt;B_bot -->
-<g id="edge7" class="edge">
+<g id="edge3" class="edge">
 <title>bit_0:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M48.2095,-87C46.059,-66.3026 34.505,-53.3764 41.0538,-39.41"/>
 <polygon fill="#000000" stroke="#000000" points="44.1274,-41.1366 47.2095,-31 38.4788,-37.0022 44.1274,-41.1366"/>
@@ -94,13 +94,13 @@
 <text text-anchor="middle" x="103.2095" y="-295" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 </g>
 <!-- bit_0&#45;&gt;bit_1 -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit_0:se&#45;&gt;bit_1:ne</title>
 <path fill="none" stroke="#000000" d="M114.2095,-361C127.345,-347.8645 129.5,-332.7308 120.6746,-318.9396"/>
 <polygon fill="#000000" stroke="#000000" points="123.2378,-316.5444 114.2095,-311 117.8098,-320.9644 123.2378,-316.5444"/>
 </g>
 <!-- bit_1&#45;&gt;B_bot -->
-<g id="edge8" class="edge">
+<g id="edge5" class="edge">
 <title>bit_1:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M92.2095,-289C68.5723,-265.3628 54.2738,-260.8733 48.2095,-228"/>
 </g>
@@ -111,13 +111,13 @@
 <text text-anchor="middle" x="103.2095" y="-223" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 </g>
 <!-- bit_1&#45;&gt;bit_2 -->
-<g id="edge4" class="edge">
+<g id="edge6" class="edge">
 <title>bit_1:se&#45;&gt;bit_2:ne</title>
 <path fill="none" stroke="#000000" d="M114.2095,-289C127.345,-275.8645 129.5,-260.7308 120.6746,-246.9396"/>
 <polygon fill="#000000" stroke="#000000" points="123.2378,-244.5444 114.2095,-239 117.8098,-248.9644 123.2378,-244.5444"/>
 </g>
 <!-- bit_2&#45;&gt;B_bot -->
-<g id="edge9" class="edge">
+<g id="edge7" class="edge">
 <title>bit_2:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M92.2095,-217C68.5723,-193.3628 54.2738,-188.8733 48.2095,-156"/>
 </g>
@@ -128,13 +128,13 @@
 <text text-anchor="middle" x="103.2095" y="-151" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- bit_2&#45;&gt;bit_3 -->
-<g id="edge5" class="edge">
+<g id="edge8" class="edge">
 <title>bit_2:se&#45;&gt;bit_3:ne</title>
 <path fill="none" stroke="#000000" d="M114.2095,-217C127.345,-203.8645 129.5,-188.7308 120.6746,-174.9396"/>
 <polygon fill="#000000" stroke="#000000" points="123.2378,-172.5444 114.2095,-167 117.8098,-176.9644 123.2378,-172.5444"/>
 </g>
 <!-- bit_3&#45;&gt;B_bot -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>bit_3:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M92.2095,-145C69.3303,-122.1208 51.5534,-119.1828 48.2095,-87"/>
 </g>
@@ -145,7 +145,7 @@
 <ellipse fill="none" stroke="#000000" cx="114.2095" cy="-87" rx="15" ry="15"/>
 </g>
 <!-- bit_3&#45;&gt;halt -->
-<g id="edge6" class="edge">
+<g id="edge10" class="edge">
 <title>bit_3:se&#45;&gt;halt</title>
 <path fill="none" stroke="#000000" d="M114.2095,-145C122.8555,-136.354 123.2993,-122.8606 121.3768,-111.0636"/>
 <polygon fill="#000000" stroke="#000000" points="124.7949,-110.3103 119.2249,-101.2978 117.9589,-111.8167 124.7949,-110.3103"/>

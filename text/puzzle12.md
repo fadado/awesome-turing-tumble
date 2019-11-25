@@ -27,3 +27,4 @@ Intercept a blue ball.
 ### Diagram
 
 ![Puzzle #12](../graph/PNG/puzzle12.png)
+

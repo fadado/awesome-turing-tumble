@@ -37,6 +37,7 @@ digraph Challenge19 {
     ** edges
     */
     start -> B_top
+
 #if Puzzle == 190 || Puzzle == 191
     B_top -> bit_0:n
 #elif Puzzle == 192
@@ -44,10 +45,13 @@ digraph Challenge19 {
 #else
 #   error Unexpected puzzle ID
 #endif
+
     bit_0:sw -> bit_1:n
     bit_0:se -> R_bot:ne
+
     bit_1:sw -> halt
     bit_1:se -> R_bot:n
+
 #if Puzzle == 190 || Puzzle == 191
     R_top -> halt:ne
 #elif Puzzle == 192
@@ -55,6 +59,7 @@ digraph Challenge19 {
 #else
 #   error Unexpected puzzle ID
 #endif
+
     halt -> B_bot [ style=invis ]
 
     GAME_BOARD_EDGES

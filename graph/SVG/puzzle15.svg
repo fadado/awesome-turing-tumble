@@ -97,13 +97,13 @@
 <text text-anchor="start" x="54.6518" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
 </g>
 <!-- bit_T&#45;&gt;bit_A -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>bit_T:sw&#45;&gt;bit_A:n</title>
 <path fill="none" stroke="#000000" d="M88.6518,-151C77.7776,-140.1258 84.4041,-131.2837 87.4074,-118.2867"/>
 <polygon fill="#000000" stroke="#000000" points="90.9254,-118.348 88.6518,-108 83.9761,-117.5072 90.9254,-118.348"/>
 </g>
 <!-- bit_T&#45;&gt;halt -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit_T:se&#45;&gt;halt:n</title>
 <path fill="none" stroke="#000000" d="M110.6518,-151C126.6196,-135.0322 142.9483,-132.1321 147.4441,-115.2476"/>
 <polygon fill="#000000" stroke="#000000" points="150.9572,-115.341 148.6518,-105 144.0053,-114.5216 150.9572,-115.341"/>

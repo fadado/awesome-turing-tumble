@@ -34,10 +34,13 @@ digraph Challenge10 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_a:n
     R_top -> bit_b:n
+
     bit_a:sw -> B_bot
     bit_a:se -> R_bot
+
     bit_b:sw -> B_bot
     bit_b:se -> R_bot
 

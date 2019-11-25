@@ -24,3 +24,7 @@ Generate the pattern 4B1R4B.
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #26](../graph/PNG/puzzle26.png)
+

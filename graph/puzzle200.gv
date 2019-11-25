@@ -36,19 +36,23 @@ digraph Challenge20 {
     ** edges
     */
     start -> B_top
+
 #if Puzzle == 200
     B_top -> bit_0:n
-    R_top -> halt:ne
+    R_top -> halt:e
 #elif Puzzle == 201
     B_top -> bit_0:nw
     R_top -> bit_0:ne
 #else
 #   error Unexpected puzzle ID
 #endif
+
     bit_0:sw -> halt
     bit_0:se -> bit_1:n
+
     bit_1:sw -> halt
-    bit_1:se -> R_bot:n
+    bit_1:se -> R_bot
+
     halt -> B_bot:w [ style=invis ]
 
     GAME_BOARD_EDGES

@@ -83,7 +83,7 @@
 <text text-anchor="middle" x="124.0649" y="-151" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">^</text>
 </g>
 <!-- bit_0&#45;&gt;bit_1 -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>bit_0:sw&#45;&gt;bit_1:n</title>
 <path fill="none" stroke="#000000" d="M124.0649,-217C113.1906,-206.1258 119.8171,-197.2837 122.8204,-184.2867"/>
 <polygon fill="#000000" stroke="#000000" points="126.3384,-184.348 124.0649,-174 119.3891,-183.5072 126.3384,-184.348"/>
@@ -95,7 +95,7 @@
 <ellipse fill="none" stroke="#000000" cx="170.0649" cy="-87" rx="15" ry="15"/>
 </g>
 <!-- bit_0&#45;&gt;halt_right -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit_0:se&#45;&gt;halt_right</title>
 <path fill="none" stroke="#000000" d="M146.0649,-217C173.5503,-189.5146 175.1727,-141.4978 173.1229,-112.1457"/>
 <polygon fill="#000000" stroke="#000000" points="176.5827,-111.5394 172.2038,-101.8918 169.6107,-112.1644 176.5827,-111.5394"/>

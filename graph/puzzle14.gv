@@ -35,10 +35,14 @@ digraph Challenge14 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_A:n
-    bit_A:se -> halt:n
+
     bit_A:sw -> R_bot
+    bit_A:se -> halt:n
+
     R_top -> halt:ne
+
     halt -> B_bot [ style=invis ]
 
     GAME_BOARD_EDGES

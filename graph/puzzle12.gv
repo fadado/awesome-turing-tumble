@@ -33,8 +33,11 @@ digraph Challenge12 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit
+
     bit:se -> halt
+
     halt -> B_bot [ style=invis ]
 
     GAME_BOARD_EDGES

@@ -28,3 +28,4 @@ Make all of the blue balls (and only the blue balls) reach the end.
 ### Diagram
 
 ![Puzzle #2](../graph/PNG/puzzle02.png)
+

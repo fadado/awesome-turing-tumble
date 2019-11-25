@@ -27,3 +27,4 @@ Flip bits 2 and 5 to the right.
 ### Diagram
 
 ![Puzzle #11](../graph/PNG/puzzle11.png)
+

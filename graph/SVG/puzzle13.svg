@@ -86,13 +86,13 @@
 <text text-anchor="start" x="113.2835" y="-297" font-family="Times" font-size="10.00" fill="#000000">Intercept a red ball.</text>
 </g>
 <!-- bit&#45;&gt;R_bot -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>bit:sw&#45;&gt;R_bot</title>
 <path fill="none" stroke="#000000" d="M91.2835,-145C60.6674,-114.384 100.8197,-64.4203 127.6834,-37.1836"/>
 <polygon fill="#000000" stroke="#000000" points="130.168,-39.6491 134.8381,-30.1391 125.2568,-34.6611 130.168,-39.6491"/>
 </g>
 <!-- bit&#45;&gt;halt -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit:se&#45;&gt;halt:n</title>
 <path fill="none" stroke="#000000" d="M113.2835,-145C125.6202,-132.6633 131.8481,-125.943 133.688,-112.1861"/>
 <polygon fill="#000000" stroke="#000000" points="137.1938,-112.1872 134.2835,-102 130.2057,-111.7787 137.1938,-112.1872"/>

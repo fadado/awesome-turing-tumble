@@ -27,3 +27,4 @@ Release one red ball and then all of the blue balls.
 ### Diagram
 
 ![Puzzle #4](../graph/PNG/puzzle04.png)
+

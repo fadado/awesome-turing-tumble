@@ -44,15 +44,19 @@ digraph Challenge21 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_0:n
 
     bit_0:sw -> bit_1:nw
-    bit_1:sw -> bit_2:nw
-    bit_2:sw -> bit_3:nw
-    bit_3:sw -> B_bot:nw
     bit_0:se -> B_bot:ne
+
+    bit_1:sw -> bit_2:nw
     bit_1:se -> B_bot:ne
+
+    bit_2:sw -> bit_3:nw
     bit_2:se -> B_bot:ne
+
+    bit_3:sw -> B_bot:nw
     bit_3:se -> B_bot:ne
 
     GAME_BOARD_EDGES

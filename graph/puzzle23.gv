@@ -42,14 +42,18 @@ digraph Challenge23 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_0:n
 
-    bit_0:se -> bit_1:ne
-    bit_1:se -> bit_2:ne
     bit_0:sw -> B_bot:nw
+    bit_0:se -> bit_1:ne
+
     bit_1:sw -> B_bot:nw
+    bit_1:se -> bit_2:ne
+
     bit_2:sw -> B_bot:nw
     bit_2:se -> halt
+
     halt -> R_bot [ style=invis ]
 
     GAME_BOARD_EDGES

@@ -36,6 +36,7 @@ digraph Challenge06 {
     ** edges
     */
     start -> B_top
+
     B_top -> R_bot
     R_top -> B_bot
 

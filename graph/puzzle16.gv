@@ -36,11 +36,15 @@ digraph Challenge16 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_0:n
-    bit_0:se -> B_bot:ne
+
     bit_0:sw -> bit_1:n
+    bit_0:se -> B_bot:ne
+
     bit_1:sw -> halt
     bit_1:se -> B_bot:nw
+
     halt -> B_bot:w [ style=invis ]
 
     GAME_BOARD_EDGES

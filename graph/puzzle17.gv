@@ -45,16 +45,20 @@ digraph Challenge17 {
     start -> B_top
 
     B_top -> bit_left_0:n
-    bit_left_0:se -> bit_left_1:n
+
     bit_left_0:sw -> B_bot
-    bit_left_1:se -> R_bot:nw
+    bit_left_0:se -> bit_left_1:n
+
     bit_left_1:sw -> B_bot:n
+    bit_left_1:se -> R_bot:nw
 
     R_top -> bit_right_0:n
-    bit_right_0:se -> R_bot
+
     bit_right_0:sw -> bit_right_1:n
-    bit_right_1:se -> R_bot:n
+    bit_right_0:se -> R_bot
+
     bit_right_1:sw -> halt
+    bit_right_1:se -> R_bot:n
 
     halt -> R_bot:w [ style=invis ]
 

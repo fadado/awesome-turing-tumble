@@ -51,6 +51,7 @@ digraph Challenge07 {
     ** edges
     */
     start -> B_top
+
     B_top -> B_bot
 
     GAME_BOARD_EDGES

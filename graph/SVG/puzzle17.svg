@@ -87,7 +87,7 @@
 <text text-anchor="start" x="132.5818" y="-364" font-family="Times" font-size="10.00" fill="#000000">red, red, red.</text>
 </g>
 <!-- bit_left_0&#45;&gt;B_bot -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>bit_left_0:sw&#45;&gt;B_bot</title>
 <path fill="none" stroke="#000000" d="M110.5818,-217C64.7993,-171.2174 92.8422,-86.1309 111.2825,-43.5944"/>
 <polygon fill="#000000" stroke="#000000" points="114.5855,-44.7829 115.4894,-34.2267 108.1998,-41.9152 114.5855,-44.7829"/>
@@ -99,13 +99,13 @@
 <text text-anchor="middle" x="159.5818" y="-151" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- bit_left_0&#45;&gt;bit_left_1 -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit_left_0:se&#45;&gt;bit_left_1:n</title>
 <path fill="none" stroke="#000000" d="M132.5818,-217C145.796,-203.7858 155.6406,-198.4443 158.6343,-184.1827"/>
 <polygon fill="#000000" stroke="#000000" points="162.1401,-184.2813 159.5818,-174 155.1702,-183.6327 162.1401,-184.2813"/>
 </g>
 <!-- bit_right_0&#45;&gt;R_bot -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>bit_right_0:se&#45;&gt;R_bot</title>
 <path fill="none" stroke="#000000" d="M298.5818,-217C346.417,-169.1649 297.8323,-81.9449 270.0701,-40.7294"/>
 <polygon fill="#000000" stroke="#000000" points="272.9038,-38.6736 264.3415,-32.4336 267.1437,-42.6512 272.9038,-38.6736"/>
@@ -117,25 +117,25 @@
 <text text-anchor="middle" x="249.5818" y="-151" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 </g>
 <!-- bit_right_0&#45;&gt;bit_right_1 -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>bit_right_0:sw&#45;&gt;bit_right_1:n</title>
 <path fill="none" stroke="#000000" d="M276.5818,-217C263.3677,-203.7858 253.5231,-198.4443 250.5294,-184.1827"/>
 <polygon fill="#000000" stroke="#000000" points="253.9934,-183.6327 249.5818,-174 247.0235,-184.2813 253.9934,-183.6327"/>
 </g>
 <!-- bit_left_1&#45;&gt;B_bot -->
-<g id="edge6" class="edge">
+<g id="edge5" class="edge">
 <title>bit_left_1:sw&#45;&gt;B_bot:n</title>
 <path fill="none" stroke="#000000" d="M148.5818,-145C115.9081,-112.3263 122.3791,-89.1532 123.4506,-46.1178"/>
 <polygon fill="#000000" stroke="#000000" points="126.9518,-46.0446 123.5818,-36 119.9524,-45.9537 126.9518,-46.0446"/>
 </g>
 <!-- bit_left_1&#45;&gt;R_bot -->
-<g id="edge5" class="edge">
+<g id="edge6" class="edge">
 <title>bit_left_1:se&#45;&gt;R_bot:nw</title>
 <path fill="none" stroke="#000000" d="M170.5818,-145C195.2675,-120.3143 180.3982,-101.1677 199.5818,-72 211.6406,-53.6653 219.6793,-50.0394 233.0526,-38.1144"/>
 <polygon fill="#000000" stroke="#000000" points="235.7171,-40.412 240.5818,-31 230.9095,-35.324 235.7171,-40.412"/>
 </g>
 <!-- bit_right_1&#45;&gt;R_bot -->
-<g id="edge10" class="edge">
+<g id="edge11" class="edge">
 <title>bit_right_1:se&#45;&gt;R_bot:n</title>
 <path fill="none" stroke="#000000" d="M260.5818,-145C292.4272,-113.1546 259.1597,-88.3636 254.1851,-46.1846"/>
 <polygon fill="#000000" stroke="#000000" points="257.6671,-45.7755 253.5818,-36 250.6794,-46.1895 257.6671,-45.7755"/>
@@ -147,7 +147,7 @@
 <ellipse fill="none" stroke="#000000" cx="223.5818" cy="-87" rx="15" ry="15"/>
 </g>
 <!-- bit_right_1&#45;&gt;halt -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>bit_right_1:sw&#45;&gt;halt</title>
 <path fill="none" stroke="#000000" d="M238.5818,-145C230.0547,-136.4729 226.1747,-123.7724 224.4815,-112.4279"/>
 <polygon fill="#000000" stroke="#000000" points="227.9308,-111.747 223.4479,-102.1474 220.9659,-112.4474 227.9308,-111.747"/>

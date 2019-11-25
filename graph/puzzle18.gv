@@ -41,11 +41,15 @@ digraph Challenge18 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_0:n
-    bit_0:se -> halt_right
+
     bit_0:sw -> bit_1:n
+    bit_0:se -> halt_right
+
     bit_1:sw -> halt_left
     bit_1:se -> halt_right
+
     halt_left -> B_bot [ style=invis ]
     halt_right -> R_bot [ style=invis ]
 

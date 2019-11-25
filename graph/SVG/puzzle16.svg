@@ -76,7 +76,7 @@
 <text text-anchor="start" x="123.7915" y="-360.5" font-family="Times" font-size="10.00" fill="#000000">ball in the interceptor.</text>
 </g>
 <!-- bit_0&#45;&gt;B_bot -->
-<g id="edge3" class="edge">
+<g id="edge4" class="edge">
 <title>bit_0:se&#45;&gt;B_bot:ne</title>
 <path fill="none" stroke="#000000" d="M128.7915,-217C168.0688,-177.7226 177.5557,-76.759 157.7906,-39.4017"/>
 <polygon fill="#000000" stroke="#000000" points="160.4509,-37.1045 151.7915,-31 154.7541,-41.1722 160.4509,-37.1045"/>
@@ -88,7 +88,7 @@
 <text text-anchor="middle" x="106.7915" y="-151" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 </g>
 <!-- bit_0&#45;&gt;bit_1 -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>bit_0:sw&#45;&gt;bit_1:n</title>
 <path fill="none" stroke="#000000" d="M106.7915,-217C95.9172,-206.1258 102.5437,-197.2837 105.547,-184.2867"/>
 <polygon fill="#000000" stroke="#000000" points="109.065,-184.348 106.7915,-174 102.1157,-183.5072 109.065,-184.348"/>

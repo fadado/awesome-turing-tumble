@@ -94,7 +94,7 @@
 <text text-anchor="start" x="136.648" y="-375" font-family="Times" font-size="10.00" fill="#000000">Generate the required pattern (3R6B).</text>
 </g>
 <!-- A_bit_0&#45;&gt;B_bot -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>A_bit_0:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M88.648,-90C89.5691,-65.8805 89.8843,-54.0251 102.7867,-38.4665"/>
 <polygon fill="#000000" stroke="#000000" points="105.4588,-40.7314 109.648,-31 100.3045,-35.995 105.4588,-40.7314"/>
@@ -107,13 +107,13 @@
 <text text-anchor="middle" x="143.648" y="-157" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 </g>
 <!-- A_bit_0&#45;&gt;A_bit_1 -->
-<g id="edge4" class="edge">
+<g id="edge5" class="edge">
 <title>A_bit_0:se&#45;&gt;A_bit_1:ne</title>
 <path fill="none" stroke="#000000" d="M154.648,-223C167.7835,-209.8645 169.9386,-194.7308 161.1132,-180.9396"/>
 <polygon fill="#000000" stroke="#000000" points="163.6764,-178.5444 154.648,-173 158.2483,-182.9644 163.6764,-178.5444"/>
 </g>
 <!-- A_bit_1&#45;&gt;B_bot -->
-<g id="edge7" class="edge">
+<g id="edge6" class="edge">
 <title>A_bit_1:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M132.648,-151C109.0109,-127.3628 87.3725,-123.4037 88.648,-90"/>
 </g>
@@ -124,25 +124,25 @@
 <text text-anchor="middle" x="143.648" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- A_bit_1&#45;&gt;A_bit_2 -->
-<g id="edge6" class="edge">
+<g id="edge7" class="edge">
 <title>A_bit_1:se&#45;&gt;A_bit_2:ne</title>
 <path fill="none" stroke="#000000" d="M154.648,-151C167.7835,-137.8645 169.9386,-122.7308 161.1132,-108.9396"/>
 <polygon fill="#000000" stroke="#000000" points="163.6764,-106.5444 154.648,-101 158.2483,-110.9644 163.6764,-106.5444"/>
 </g>
 <!-- A_bit_2&#45;&gt;B_bot -->
-<g id="edge8" class="edge">
+<g id="edge9" class="edge">
 <title>A_bit_2:sw&#45;&gt;B_bot:nw</title>
 <path fill="none" stroke="#000000" d="M132.648,-79C118.9264,-65.2784 100.9838,-53.025 104.2122,-39.831"/>
 <polygon fill="#000000" stroke="#000000" points="107.3867,-41.3507 109.648,-31 101.4255,-37.6813 107.3867,-41.3507"/>
 </g>
 <!-- A_bit_2&#45;&gt;R_bot -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>A_bit_2:se&#45;&gt;R_bot</title>
 <path fill="none" stroke="#000000" d="M154.648,-79C165.6847,-67.9634 176.0075,-53.9343 183.8769,-42.1135"/>
 <polygon fill="#000000" stroke="#000000" points="186.8971,-43.8885 189.3877,-33.5905 181.0188,-40.0877 186.8971,-43.8885"/>
 </g>
 <!-- B_bit_0&#45;&gt;R_bot -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>B_bit_0:sw&#45;&gt;R_bot:n</title>
 <path fill="none" stroke="#000000" d="M198.648,-90C194.9744,-70.086 197.5,-62.4195 198.379,-46.0936"/>
 <polygon fill="#000000" stroke="#000000" points="201.8802,-46.0897 198.648,-36 194.8827,-45.9031 201.8802,-46.0897"/>
@@ -155,13 +155,13 @@
 <text text-anchor="middle" x="253.648" y="-157" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 </g>
 <!-- B_bit_0&#45;&gt;B_bit_1 -->
-<g id="edge10" class="edge">
+<g id="edge11" class="edge">
 <title>B_bit_0:se&#45;&gt;B_bit_1:ne</title>
 <path fill="none" stroke="#000000" d="M264.648,-223C277.7835,-209.8645 279.9386,-194.7308 271.1132,-180.9396"/>
 <polygon fill="#000000" stroke="#000000" points="273.6764,-178.5444 264.648,-173 268.2483,-182.9644 273.6764,-178.5444"/>
 </g>
 <!-- B_bit_1&#45;&gt;R_bot -->
-<g id="edge13" class="edge">
+<g id="edge12" class="edge">
 <title>B_bit_1:sw&#45;&gt;R_bot:n</title>
 <path fill="none" stroke="#000000" d="M242.648,-151C219.0109,-127.3628 204.7123,-122.8733 198.648,-90"/>
 </g>
@@ -172,7 +172,7 @@
 <ellipse fill="none" stroke="#000000" cx="253.648" cy="-90" rx="15" ry="15"/>
 </g>
 <!-- B_bit_1&#45;&gt;halt -->
-<g id="edge12" class="edge">
+<g id="edge13" class="edge">
 <title>B_bit_1:se&#45;&gt;halt</title>
 <path fill="none" stroke="#000000" d="M264.648,-151C274.653,-140.995 271.4789,-125.1758 266.0243,-112.1542"/>
 <polygon fill="#000000" stroke="#000000" points="269.0623,-110.3944 261.5891,-102.8844 262.7479,-113.4156 269.0623,-110.3944"/>

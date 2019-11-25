@@ -51,3 +51,4 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 ### Diagram 2
 
 ![Puzzle #201](../graph/PNG/puzzle201.png)
+

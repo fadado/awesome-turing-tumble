@@ -45,12 +45,15 @@ digraph Challenge11 {
     ** edges
     */
     start -> B_top
+
     B_top -> bit_T:n
+
     bit_T -> bit_1 [style=invis]
     bit_T -> bit_2:n
     bit_T -> bit_3 [style=invis]
     bit_T -> bit_4 [style=invis]
     bit_T -> bit_5:n
+
     bit_2 -> B_bot
     bit_5 -> B_bot
 

@@ -1,11 +1,11 @@
-/*  Challenge #25: Regular Expression
+/*  Challenge #26: Nucleus
  *
- *  Generate the required pattern (3R6B).
+ *  Generate the required pattern (4B1R4B).
  */
 
 #import "board.h"
 
-digraph Challenge25 {
+digraph Challenge26 {
     /*
     ** attributes
     */
@@ -22,21 +22,16 @@ digraph Challenge25 {
     objective [
         OBJECTIVE_STYLE
         label=$text(
-            $line(Generate the required pattern (3R6B).))
+            $line(Generate the required pattern (4B1R4B).))
     ]
 #endif
 
     subgraph cluster_Register_A {
         color=grey
         A_bit_0 [ BIT_STYLE label=BITRIGHT ]
-        A_bit_1 [ BIT_STYLE label=BITLEFT ]
-        A_bit_2 [ BIT_STYLE label=BITRIGHT ]
+        A_bit_1 [ BIT_STYLE label=BITRIGHT ]
     }
-    subgraph cluster_Register_B {
-        color=grey
-        B_bit_0 [ BIT_STYLE label=BITRIGHT ]
-        B_bit_1 [ BIT_STYLE label=BITLEFT ]
-    }
+    B_bit_0 [ BIT_STYLE label=BITRIGHT ]
     halt [ INTERCEPTOR_STYLE ]
 
     /*
@@ -45,22 +40,17 @@ digraph Challenge25 {
     start -> B_top
 
     B_top:s -> A_bit_0:n
-    R_top:s -> B_bit_0:n
 
     A_bit_0:sw -> B_bot:nw
     A_bit_0:se -> A_bit_1:ne
 
     A_bit_1:sw -> B_bot:nw
-    A_bit_1:se -> A_bit_2:ne
+    A_bit_1:se -> R_bot
 
-    A_bit_2:se -> R_bot
-    A_bit_2:sw -> B_bot:nw
+    R_top:s -> B_bit_0:n
 
-    B_bit_0:sw -> R_bot:n
-    B_bit_0:se -> B_bit_1:ne
-
-    B_bit_1:sw -> R_bot:n
-    B_bit_1:se -> halt
+    B_bit_0:sw -> B_bot
+    B_bit_0:se -> halt
 
     halt -> R_bot [style=invis ]
 
@@ -71,7 +61,7 @@ digraph Challenge25 {
     */
 #if ShowGraphLabel
     graph [
-        label="Challenge #25: Regular Expression"
+        label="Challenge #26: Nucleus"
     ]
 #endif
 }

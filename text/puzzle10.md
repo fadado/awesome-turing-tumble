@@ -27,3 +27,4 @@ Make the pattern blue, blue, red, red, blue, blue, red, red…
 ### Diagram
 
 ![Puzzle #10](../graph/PNG/puzzle10.png)
+
