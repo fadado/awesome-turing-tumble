@@ -1,0 +1,66 @@
+/*  Challenge #20: Symbiosis
+ *
+ *  If the top bit OR the bottom bit start pointed to the right, intercept a blue ball. Otherwise, intercept a red ball.
+ */
+
+#import "board.h"
+
+digraph Challenge20 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(If the top bit OR the bottom bit start),
+            $line(pointed to the right, intercept a blue),
+            $line(ball. Otherwise, intercept a red ball.))
+    ]
+#endif
+
+    bit_0 [ BIT_STYLE label=BITUNDEF ]
+    bit_1 [ BIT_STYLE label=BITUNDEF ]
+    halt  [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+#if Puzzle == 200
+    B_top -> bit_0:n
+    R_top -> halt:ne
+#elif Puzzle == 201
+    B_top -> bit_0:nw
+    R_top -> bit_0:ne
+#else
+#   error Unexpected puzzle ID
+#endif
+    bit_0:sw -> halt
+    bit_0:se -> bit_1:n
+    bit_1:sw -> halt
+    bit_1:se -> R_bot:n
+    halt -> B_bot:w [ style=invis ]
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #20: Symbiosis"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

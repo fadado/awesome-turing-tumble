@@ -44,12 +44,12 @@ SHELL := /bin/bash
 
 # Dot files to process
 DotFiles := $(wildcard puzzle??*.gv)
-Duplicated := puzzle02.gv puzzle06.gv puzzle07.gv puzzle192.gv
+Derived := puzzle02.gv puzzle06.gv puzzle07.gv puzzle192.gv  puzzle201.gv
 
 # Targets to create
-SvgTargets := $(DotFiles:.gv=.svg) $(Duplicated:.gv=.svg)
-PngTargets := $(DotFiles:.gv=.png) $(Duplicated:.gv=.png)
-PdfTargets := $(DotFiles:.gv=.pdf) $(Duplicated:.gv=.pdf)
+SvgTargets := $(DotFiles:.gv=.svg) $(Derived:.gv=.svg)
+PngTargets := $(DotFiles:.gv=.png) $(Derived:.gv=.png)
+PdfTargets := $(DotFiles:.gv=.pdf) $(Derived:.gv=.pdf)
 DotTargets := $(DotFiles:.gv=.dot)
 CppTargets := $(DotFiles:.gv=.cpp)
 
@@ -90,7 +90,7 @@ define renderI =
   | dot -T$(1) -o $(2)/$@
 endef
 
-# Only Pre-processed (for debugging)
+# Only pre-processed (for debugging)
 define renderP =
   $(CPP) $(WithText) $(call puzzle,$@,$(1)) $< >$(2)/$@
 endef
@@ -98,25 +98,26 @@ endef
 # Implicit rules
 
 %.svg: %.gv; $(call renderT,svg,.)
-%.png: %.gv; $(call renderI,png,PNG)
 %.pdf: %.gv; $(call renderT,pdf,PDF)
+%.png: %.gv; $(call renderI,png,PNG)
 
 # Debug only formats
 DOT CPP: ; mkdir $@
 %.dot: %.gv | DOT; $(call renderT,dot,DOT)
 %.cpp: %.gv | CPP; $(call renderP,cpp,CPP)
 
-# Duplicated graphs
-define duplicated
+# Derived graphs
+define derived
 puzzle$(1).svg: puzzle$(2).gv; $$(call renderT,svg,.)
 puzzle$(1).png: puzzle$(2).gv; $$(call renderI,png,PNG)
 puzzle$(1).pdf: puzzle$(2).gv; $$(call renderT,pdf,PDF)
 endef
 
-$(eval $(call duplicated,02,01))
-$(eval $(call duplicated,07,01))
-$(eval $(call duplicated,06,05))
-$(eval $(call duplicated,192,190))
+$(eval $(call derived,02,01))
+$(eval $(call derived,07,01))
+$(eval $(call derived,06,05))
+$(eval $(call derived,192,190))
+$(eval $(call derived,201,200))
 
 # Targets
 

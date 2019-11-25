@@ -24,3 +24,6 @@ Register A starts at 15. Subtract the number of blue balls from the register. (U
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #22](../graph/PNG/puzzle22.png)

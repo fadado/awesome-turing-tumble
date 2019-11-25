@@ -24,6 +24,10 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 	|     U     |
 	|____% %____|
 
+### Diagram 1
+
+![Puzzle #200](../graph/PNG/puzzle200.png)
+
 ### Setup 2
 
 `balls:8B-8R; start:B; trace:b|rB`
@@ -44,3 +48,6 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 	|     U     |
 	|____% %____|
 
+### Diagram 2
+
+![Puzzle #201](../graph/PNG/puzzle201.png)

@@ -570,6 +570,8 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ![Puzzle #190](../graph/PNG/puzzle190.png)
 
+------------------------------------------------------------------------
+
 ### Setup 2
 
 `balls:8B-8R; start:B; trace:b|rB|rRB|rRRB`
@@ -620,6 +622,12 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 	|     U     |
 	|____% %____|
 
+### Diagram 1
+
+![Puzzle #200](../graph/PNG/puzzle200.png)
+
+------------------------------------------------------------------------
+
 ### Setup 2
 
 `balls:8B-8R; start:B; trace:b|rB`
@@ -639,6 +647,10 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 	|-.-.\.\.-.-|
 	|     U     |
 	|____% %____|
+
+### Diagram 2
+
+![Puzzle #201](../graph/PNG/puzzle201.png)
 
 ## Challenge #21: Quantum Number
 
@@ -693,6 +705,10 @@ Register A starts at 15. Subtract the number of blue balls from the register. (U
 	|-./.-.-.-.-|
 	|     -     |
 	|____% %____|
+
+### Diagram
+
+![Puzzle #22](../graph/PNG/puzzle22.png)
 
 ## Challenge #23: Tetrad
 
