@@ -16,7 +16,6 @@ digraph Challenge25 {
     /*
     ** nodes
     */
-
     GAME_BOARD_NODES
 
 #if ShowObjective
@@ -28,32 +27,29 @@ digraph Challenge25 {
 #endif
 
     subgraph cluster_Register_A {
-        fontname=FONTNAME
-        fontsize=10
         color=grey
         A_bit_0 [ BIT_STYLE label=BITRIGHT ]
         A_bit_1 [ BIT_STYLE label=BITLEFT ]
         A_bit_2 [ BIT_STYLE label=BITRIGHT ]
     }
     subgraph cluster_Register_B {
-        fontname=FONTNAME
-        fontsize=10
         color=grey
         B_bit_0 [ BIT_STYLE label=BITRIGHT ]
         B_bit_1 [ BIT_STYLE label=BITLEFT ]
     }
-    halt  [ INTERCEPTOR_STYLE ]
+    halt [ INTERCEPTOR_STYLE ]
 
     /*
     ** edges
     */
     start -> B_top
-    B_top -> A_bit_0:n
-    R_top:se -> B_bit_0:n
+
+    B_top:s -> A_bit_0:n
+    R_top:s -> B_bit_0:n
 
     A_bit_0:se -> A_bit_1:ne
-    A_bit_1:se -> A_bit_2:ne
     A_bit_0:sw -> B_bot:nw
+    A_bit_1:se -> A_bit_2:ne
     A_bit_1:sw -> B_bot:nw
     A_bit_2:sw -> B_bot:nw
     A_bit_2:se -> R_bot

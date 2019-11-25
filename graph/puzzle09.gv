@@ -33,7 +33,7 @@ digraph Challenge09 {
     ** edges
     */
     start -> B_top
-    B_top -> bit:nw
+    B_top -> bit:n
     R_top -> B_bot:ne
     bit:sw -> B_bot
     bit:se -> R_bot

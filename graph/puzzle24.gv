@@ -48,11 +48,13 @@ digraph Challenge24 {
     bit_0:se -> bit_1:ne
     bit_1:se -> bit_2:ne
     bit_2:se -> bit_3:ne
-    bit_3:sw -> B_bot:ne
+    bit_3:se -> halt
+
     bit_0:sw -> B_bot:nw
     bit_1:sw -> B_bot:nw
     bit_2:sw -> B_bot:nw
-    bit_3:se -> halt
+    bit_3:sw -> B_bot:nw
+
     halt -> R_bot [ style=invis ]
 
     GAME_BOARD_EDGES
