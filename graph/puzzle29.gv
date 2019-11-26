@@ -1,0 +1,60 @@
+/*  Challenge #29: One-Shot Switch
+ *
+ * Release a blue ball, a red ball, and then the rest of the blue balls.
+ */
+
+#import "board.h"
+
+digraph Challenge29 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(Release a blue ball, a red ball,),
+            $line(and then the rest of the blue balls.))
+    ]
+#endif
+
+    gbit_U [ GEAR_BIT_STYLE label=GBITLEFT ]
+    gbit_D [ GEAR_BIT_STYLE label=GBITLEFT ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+
+    B_top -> gbit_U:n
+
+    gbit_U:w -> gbit_D:nw
+    gbit_U:e -> R_bot
+    gbit_U:sw -> gbit_D:ne [ GEAR_LINE_STYLE ]
+
+    gbit_D:se -> B_bot:n
+
+    R_top -> B_bot:ne
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #29: One-Shot Switch"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

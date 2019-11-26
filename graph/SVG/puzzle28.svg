@@ -88,7 +88,7 @@
 <!-- gbit_U&#45;&gt;gbit_D -->
 <g id="edge5" class="edge">
 <title>gbit_U:sw&#45;&gt;gbit_D:ne</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M101.152,-151C85.3883,-135.2363 120.9157,-116.7637 105.152,-101"/>
+<path fill="none" stroke="#dc143c" stroke-width="2" d="M101.152,-151C85.3883,-135.2363 120.9157,-116.7637 105.152,-101"/>
 </g>
 <!-- p -->
 <!-- gbit_U&#45;&gt;p -->

@@ -951,6 +951,10 @@ Release a blue ball, a red ball, and then the rest of the blue balls.
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #29](../graph/PNG/puzzle29.png)
+
 ## Challenge #30: Overflow
 
 ### Objective
