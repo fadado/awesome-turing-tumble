@@ -49,7 +49,7 @@ digraph Challenge27 {
     */
     start -> B_top
 
-    B_top -> bit_T:n
+    B_top:s -> bit_T:n
 
     bit_T:sw -> bit_A0:n
     bit_T:se -> bit_B0:n
@@ -72,19 +72,10 @@ digraph Challenge27 {
     bit_B3:sw -> R_bot
     bit_B3:se -> R_bot
 
-    R_top -> bit_R:n
+    R_top:s -> bit_R:n
 
     bit_R:sw -> halt
     bit_R:se -> halt
-
-    bit_A0:e -> bit_B0:w [style=invis]
-    {rank=same bit_A0 bit_B0}
-    bit_A1:e -> bit_B1:w [style=invis]
-    {rank=same bit_A1 bit_B1}
-    bit_A2:e -> bit_B2:w [style=invis]
-    {rank=same bit_A2 bit_B2}
-    bit_A3:e -> bit_B3:w [style=invis]
-    {rank=same bit_A3 bit_B3}
 
     GAME_BOARD_EDGES
 

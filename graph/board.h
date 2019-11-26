@@ -38,6 +38,13 @@
 #define BITLEFT         "<"
 #define BITUNDEF        "^"
 
+#define GBITCOLOR       dodgerblue3
+#define GLINECOLOR      crimson
+
+#define GBITRIGHT       "}"
+#define GBITLEFT        "{"
+#define GBITUNDEF       "^"
+
 /*
  * Styles
  */
@@ -78,6 +85,17 @@
     shape=doublecircle      \
     width=0.3               \
     label=""                \
+
+#define GEAR_BIT_STYLE      \
+    shape=diamond           \
+    fontcolor=GBITCOLOR     \
+    fontsize=BITSIZE        \
+    style=bold              \
+
+#define GEAR_LINE_STYLE     \
+    dir=none                \
+    style="bold,solid"      \
+    color=GLINECOLOR        \
 
 /*
  * Game Board

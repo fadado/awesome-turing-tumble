@@ -921,6 +921,10 @@ Release only the blue balls.
 	|     -     |
 	|____% %____|
 
+### Diagram
+
+![Puzzle #28](../graph/PNG/puzzle28.png)
+
 ## Challenge #29: One-Shot Switch
 
 ### Objective
