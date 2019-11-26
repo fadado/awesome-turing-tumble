@@ -1,0 +1,80 @@
+/*  Challenge #30: Overflow
+ *
+ *  Count the blue balls in register A. If there are more than 7, gear bit OV must flip right (and stay right) to indicate the overflow.
+ */
+
+#import "board.h"
+
+digraph Challenge30 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE newrank=true concentrate=true ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+
+        label=$text(
+            $line(Count the blue balls in register A. If there),
+            $line(are more than 7, gear bit OV must flip right),
+            $line((and stay right) to indicate the overflow.))
+    ]
+#endif
+
+    subgraph cluster_Register_A {
+        fontname=FONTNAME
+        fontsize=10
+        color=grey
+
+        bit_A0 [ BIT_STYLE label=BITLEFT ]
+        bit_A1 [ BIT_STYLE label=BITLEFT ]
+        bit_A2 [ BIT_STYLE label=BITLEFT ]
+    }
+
+    gbit_U [ GEAR_BIT_STYLE label=GBITLEFT ]
+    gbit_D [ GEAR_BIT_STYLE label=GBITLEFT ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+
+    B_top -> bit_A0:n
+
+    bit_A0:sw -> bit_A1:nw
+    bit_A0:se -> B_bot:ne
+
+    bit_A1:sw -> bit_A2:nw
+    bit_A1:se -> B_bot:ne
+
+    bit_A2:sw -> gbit_U
+    bit_A2:se -> B_bot:ne
+
+    gbit_U:w -> gbit_D:nw
+    gbit_U:e -> B_bot
+    gbit_U:sw -> gbit_D:ne [ GEAR_LINE_STYLE $xlabel(OV) ]
+    //gbit_D:sw -> B_bot
+    gbit_D:se -> B_bot
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #30: Overflow"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot
