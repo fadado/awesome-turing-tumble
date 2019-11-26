@@ -27,6 +27,7 @@ digraph Challenge13 {
 #endif
 
     bit  [ BIT_STYLE label=BITRIGHT ]
+
     halt [ INTERCEPTOR_STYLE ]
 
     /*

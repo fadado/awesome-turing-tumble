@@ -1,0 +1,101 @@
+/*  Challenge #27: Reflection
+ *
+ *  Reverse the direction of each of the 9 starting bits, regardless of the direction they point to start
+ */
+
+#import "board.h"
+
+digraph Challenge27 {
+    /*
+    ** attributes
+    */
+    graph [ GRAPH_STYLE newrank=true ]
+    node  [ NODE_STYLE  ]
+    edge  [ EDGE_STYLE  ]
+
+    /*
+    ** nodes
+    */
+    GAME_BOARD_NODES
+
+#if ShowObjective
+    objective [
+        OBJECTIVE_STYLE
+        label=$text(
+            $line(Reverse the direction of each of),
+            $line(the 9 starting bits, regardless of),
+            $line(of the direction they point to start))
+    ]
+#endif
+
+    bit_T [ BIT_STYLE label=BITRIGHT ]
+
+    bit_A0 [ BIT_STYLE label=BITUNDEF ]
+    bit_A1 [ BIT_STYLE label=BITUNDEF ]
+    bit_A2 [ BIT_STYLE label=BITUNDEF ]
+    bit_A3 [ BIT_STYLE label=BITUNDEF ]
+
+    bit_B0 [ BIT_STYLE label=BITUNDEF ]
+    bit_B1 [ BIT_STYLE label=BITUNDEF ]
+    bit_B2 [ BIT_STYLE label=BITUNDEF ]
+    bit_B3 [ BIT_STYLE label=BITUNDEF ]
+
+    bit_R [ BIT_STYLE label=BITUNDEF ]
+
+    halt [ INTERCEPTOR_STYLE ]
+
+    /*
+    ** edges
+    */
+    start -> B_top
+
+    B_top -> bit_T:n
+
+    bit_T:sw -> bit_A0:n
+    bit_T:se -> bit_B0:n
+
+    bit_A0:sw -> bit_A1:nw
+    bit_A0:se -> bit_A1:ne
+    bit_A1:sw -> bit_A2:nw
+    bit_A1:se -> bit_A2:ne
+    bit_A2:sw -> bit_A3:nw
+    bit_A2:se -> bit_A3:ne
+    bit_A3:sw -> B_bot
+    bit_A3:se -> B_bot
+
+    bit_B0:sw -> bit_B1:nw
+    bit_B0:se -> bit_B1:ne
+    bit_B1:sw -> bit_B2:nw
+    bit_B1:se -> bit_B2:ne
+    bit_B2:sw -> bit_B3:nw
+    bit_B2:se -> bit_B3:ne
+    bit_B3:sw -> R_bot
+    bit_B3:se -> R_bot
+
+    R_top -> bit_R:n
+
+    bit_R:sw -> halt
+    bit_R:se -> halt
+
+    bit_A0:e -> bit_B0:w [style=invis]
+    {rank=same bit_A0 bit_B0}
+    bit_A1:e -> bit_B1:w [style=invis]
+    {rank=same bit_A1 bit_B1}
+    bit_A2:e -> bit_B2:w [style=invis]
+    {rank=same bit_A2 bit_B2}
+    bit_A3:e -> bit_B3:w [style=invis]
+    {rank=same bit_A3 bit_B3}
+
+    GAME_BOARD_EDGES
+
+    /*
+    ** graph attributes
+    */
+#if ShowGraphLabel
+    graph [
+        label="Challenge #27: Reflection"
+    ]
+#endif
+}
+
+// vim:ai:ts=4:sw=4:et:fileencoding=utf-8:syntax=dot

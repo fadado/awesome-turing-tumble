@@ -37,6 +37,7 @@ digraph Challenge17 {
         bit_left_1  [ BIT_STYLE label=BITRIGHT ]
         bit_right_1 [ BIT_STYLE label=BITLEFT ]
     }
+
     halt [ INTERCEPTOR_STYLE ]
 
     /*

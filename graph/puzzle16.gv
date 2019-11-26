@@ -30,6 +30,7 @@ digraph Challenge16 {
 
     bit_0 [ BIT_STYLE label=BITLEFT ]
     bit_1 [ BIT_STYLE label=BITLEFT ]
+
     halt  [ INTERCEPTOR_STYLE ]
 
     /*

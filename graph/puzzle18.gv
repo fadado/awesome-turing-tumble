@@ -31,6 +31,7 @@ digraph Challenge18 {
 
     bit_0 [ BIT_STYLE label=BITUNDEF ]
     bit_1 [ BIT_STYLE label=BITUNDEF ]
+
     subgraph {
         rank=same
         halt_left [ INTERCEPTOR_STYLE ]

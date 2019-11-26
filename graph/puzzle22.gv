@@ -36,6 +36,7 @@ digraph Challenge22 {
         labeljust=r
         label="A"
         color=grey
+
         bit_0 [ BIT_STYLE label=BITRIGHT ]
         bit_1 [ BIT_STYLE label=BITRIGHT ]
         bit_2 [ BIT_STYLE label=BITRIGHT ]

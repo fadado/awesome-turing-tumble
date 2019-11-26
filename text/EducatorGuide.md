@@ -890,6 +890,11 @@ Reverse the direction of each of the 9 starting bits, regardless of the directio
 	|     \     |
 	|____% %____|
 
+
+### Diagram
+
+![Puzzle #27](../graph/PNG/puzzle27.png)
+
 ## Challenge #28: Latch
 
 ### Objective

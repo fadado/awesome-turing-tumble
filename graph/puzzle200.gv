@@ -30,6 +30,7 @@ digraph Challenge20 {
 
     bit_0 [ BIT_STYLE label=BITUNDEF ]
     bit_1 [ BIT_STYLE label=BITUNDEF ]
+
     halt  [ INTERCEPTOR_STYLE ]
 
     /*

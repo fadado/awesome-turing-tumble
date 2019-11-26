@@ -28,15 +28,16 @@ digraph Challenge25 {
 
     subgraph cluster_Register_A {
         color=grey
-        A_bit_0 [ BIT_STYLE label=BITRIGHT ]
-        A_bit_1 [ BIT_STYLE label=BITLEFT ]
-        A_bit_2 [ BIT_STYLE label=BITRIGHT ]
+        bit_A0 [ BIT_STYLE label=BITRIGHT ]
+        bit_A1 [ BIT_STYLE label=BITLEFT ]
+        bit_A2 [ BIT_STYLE label=BITRIGHT ]
     }
     subgraph cluster_Register_B {
         color=grey
-        B_bit_0 [ BIT_STYLE label=BITRIGHT ]
-        B_bit_1 [ BIT_STYLE label=BITLEFT ]
+        bit_B0 [ BIT_STYLE label=BITRIGHT ]
+        bit_B1 [ BIT_STYLE label=BITLEFT ]
     }
+
     halt [ INTERCEPTOR_STYLE ]
 
     /*
@@ -44,23 +45,23 @@ digraph Challenge25 {
     */
     start -> B_top
 
-    B_top:s -> A_bit_0:n
-    R_top:s -> B_bit_0:n
+    B_top:s -> bit_A0:n
+    R_top:s -> bit_B0:n
 
-    A_bit_0:sw -> B_bot:nw
-    A_bit_0:se -> A_bit_1:ne
+    bit_A0:sw -> B_bot:nw
+    bit_A0:se -> bit_A1:ne
 
-    A_bit_1:sw -> B_bot:nw
-    A_bit_1:se -> A_bit_2:ne
+    bit_A1:sw -> B_bot:nw
+    bit_A1:se -> bit_A2:ne
 
-    A_bit_2:se -> R_bot
-    A_bit_2:sw -> B_bot:nw
+    bit_A2:se -> R_bot
+    bit_A2:sw -> B_bot:nw
 
-    B_bit_0:sw -> R_bot:n
-    B_bit_0:se -> B_bit_1:ne
+    bit_B0:sw -> R_bot:n
+    bit_B0:se -> bit_B1:ne
 
-    B_bit_1:sw -> R_bot:n
-    B_bit_1:se -> halt
+    bit_B1:sw -> R_bot:n
+    bit_B1:se -> halt
 
     halt -> R_bot [style=invis ]
 

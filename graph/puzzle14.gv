@@ -29,6 +29,7 @@ digraph Challenge14 {
 #endif
 
     bit_A [ BIT_STYLE label=BITUNDEF $xlabel(A) ]
+
     halt  [ INTERCEPTOR_STYLE ]
 
     /*
