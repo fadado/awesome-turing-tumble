@@ -20,7 +20,7 @@
 + Crossover: `X`
 + Bit: `<` (0) `>` (1) `^` (0 or 1)
 + Interceptor: `U`
-+ Gearbit: `{` (0) `}` (1)
++ Gearbit: `{` (0) `}` (1) `^` (0 or 1)
 + Gear: `*`
 
 ### Setup syntax

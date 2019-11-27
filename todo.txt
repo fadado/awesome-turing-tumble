@@ -1,0 +1,4 @@
+(A) 2019-11-27 Buscar colors EXACTES per les parts (bit i gbit)
+(A) 2019-11-27 Generar PNG amb text en directori separat.
+(A) 2019-11-27 Posar links estructurals per navegar entre solucions.
+(D) 2019-11-18 Publicar format PDF. Fer al final.
