@@ -77,6 +77,9 @@ CPPFLAGS :=			\
 WithText    := -DShowGraphLabel=1 -DShowObjective=1
 WithoutText := -DShowGraphLabel=0 -DShowObjective=0
 
+# By default show text
+ShowText := $(WithText)
+
 # Extracts puzzle ID
 puzzle = -DPuzzle=$(patsubst 0%,%,$(patsubst $(3)puzzle%.$(2),%,$(1)))
 
@@ -86,28 +89,23 @@ define render =
   | dot -T$(1) -o $@
 endef
 
+# Build images without text
+all: $(Images)
+
 # Implicit rules
 img/%.png: ShowText := $(WithoutText)
 img/%.png: %.gv; $(call render,png,img/)
 
-SVG/%.svg: ShowText := $(WithText)
 SVG/%.svg: %.gv; $(call render,svg,SVG/)
-
-PDF/%.pdf: ShowText := $(WithText)
 PDF/%.pdf: %.gv; $(call render,pdf,PDF/)
-
-PNG/%.png: ShowText := $(WithText)
 PNG/%.png: %.gv; $(call render,png,PNG/)
 
 # Derived graphs
 define derived
-img/puzzle$(1).png: ShowText := $(WithText)
+img/puzzle$(1).png: ShowText := $(WithoutText)
 img/puzzle$(1).png: puzzle$(2).gv; $$(call render,png,img/)
-SVG/puzzle$(1).svg: ShowText := $(WithText)
 SVG/puzzle$(1).svg: puzzle$(2).gv; $$(call render,svg,SVG/)
-PNG/puzzle$(1).png: ShowText := $(WithText)
 PNG/puzzle$(1).png: puzzle$(2).gv; $$(call render,png,PNG/)
-PDF/puzzle$(1).pdf: ShowText := $(WithText)
 PDF/puzzle$(1).pdf: puzzle$(2).gv; $$(call render,pdf,PDF/)
 endef
 
@@ -117,18 +115,13 @@ $(eval $(call derived,06,05))
 $(eval $(call derived,192,190))
 $(eval $(call derived,201,200))
 
-all: $(Images)
-	@echo 'Done!'
-
 # Debug only formats
 define renderP =
-  cpp $(CPPFLAGS) $(WithText) $(call puzzle,$@,$(1),$(2)) $< >$@
+  cpp $(CPPFLAGS) $(WithText) $(call puzzle,$@,$(1),$(2)) < $< > $@
 endef
 
 define debugged
-DOT/puzzle$(1).dot: ShowText := $(WithText)
 DOT/puzzle$(1).dot: puzzle$(2).gv; $$(call renderP,dot,DOT/)
-CPP/puzzle$(1).cpp: ShowText := $(WithText)
 CPP/puzzle$(1).cpp: puzzle$(2).gv; $$(call renderP,cpp,CPP/)
 endef
 
