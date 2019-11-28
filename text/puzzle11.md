@@ -28,3 +28,10 @@ Flip bits 2 and 5 to the right.
 
 ![Puzzle #11](../graph/img/puzzle11.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle11.svg),
+[PNG](../graph/PNG/puzzle11.png),
+[PDF](../graph/PDF/puzzle11.pdf).
+

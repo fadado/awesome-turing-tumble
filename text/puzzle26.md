@@ -28,3 +28,10 @@ Generate the pattern 4B1R4B.
 
 ![Puzzle #26](../graph/img/puzzle26.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle26.svg),
+[PNG](../graph/PNG/puzzle26.png),
+[PDF](../graph/PDF/puzzle26.pdf).
+

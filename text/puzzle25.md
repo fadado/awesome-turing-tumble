@@ -28,3 +28,10 @@ Generate the pattern 3R6B.
 
 ![Puzzle #25](../graph/img/puzzle25.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle25.svg),
+[PNG](../graph/PNG/puzzle25.png),
+[PDF](../graph/PDF/puzzle25.pdf).
+

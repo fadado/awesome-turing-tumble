@@ -28,3 +28,10 @@ Release only the blue balls.
 
 ![Puzzle #28](../graph/img/puzzle28.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle28.svg),
+[PNG](../graph/PNG/puzzle28.png),
+[PDF](../graph/PDF/puzzle28.pdf).
+

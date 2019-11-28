@@ -28,3 +28,10 @@ If the machine starts with bit A pointing to the left, intercept a blue ball. Ot
 
 ![Puzzle #14](../graph/img/puzzle14.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle14.svg),
+[PNG](../graph/PNG/puzzle14.png),
+[PDF](../graph/PDF/puzzle14.pdf).
+

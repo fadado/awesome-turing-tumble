@@ -143,7 +143,7 @@ svg: $(SvgTargets)
 png: $(PngTargets)
 pdf: $(PdfTargets)
 
-publish: all svg png pdf
+publish: all svg png # ??? pdf
 
 dot: $(DotTargets)
 cpp: $(CppTargets)

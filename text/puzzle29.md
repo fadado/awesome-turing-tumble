@@ -28,3 +28,10 @@ Release a blue ball, a red ball, and then the rest of the blue balls.
 
 ![Puzzle #29](../graph/img/puzzle29.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle29.svg),
+[PNG](../graph/PNG/puzzle29.png),
+[PDF](../graph/PDF/puzzle29.pdf).
+

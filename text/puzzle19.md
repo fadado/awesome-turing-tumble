@@ -28,6 +28,13 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ![Puzzle #190](../graph/img/puzzle190.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle190.svg),
+[PNG](../graph/PNG/puzzle190.png),
+[PDF](../graph/PDF/puzzle190.pdf).
+
 ### Setup 2
 
 `balls:8B-8R; start:B; trace:b|rB|rRB|rRRB`
@@ -51,4 +58,11 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 ### Diagram 2
 
 ![Puzzle #192](../graph/img/puzzle192.png)
+
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle192.svg),
+[PNG](../graph/PNG/puzzle192.png),
+[PDF](../graph/PDF/puzzle192.pdf).
 

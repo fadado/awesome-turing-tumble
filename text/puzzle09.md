@@ -28,3 +28,10 @@ Make the pattern blue, blue, red, blue, blue, red…
 
 ![Puzzle #9](../graph/img/puzzle09.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle09.svg),
+[PNG](../graph/PNG/puzzle09.png),
+[PDF](../graph/PDF/puzzle09.pdf).
+

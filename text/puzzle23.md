@@ -28,3 +28,10 @@ Let exactly 4 blue balls reach the end. (Intercept the 5th.)
 
 ![Puzzle #23](../graph/img/puzzle23.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle23.svg),
+[PNG](../graph/PNG/puzzle23.png),
+[PDF](../graph/PDF/puzzle23.pdf).
+

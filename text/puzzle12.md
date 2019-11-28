@@ -28,3 +28,10 @@ Intercept a blue ball.
 
 ![Puzzle #12](../graph/img/puzzle12.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle12.svg),
+[PNG](../graph/PNG/puzzle12.png),
+[PDF](../graph/PDF/puzzle12.pdf).
+

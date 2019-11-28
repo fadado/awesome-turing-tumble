@@ -28,3 +28,10 @@ If the top bit AND the bottom bit start pointed to the right, put a ball in inte
 
 ![Puzzle #18](../graph/img/puzzle18.png)
 
+#### Standalone images
+
+Images with title text and objective description:
+[SVG](../graph/SVG/puzzle18.svg),
+[PNG](../graph/PNG/puzzle18.png),
+[PDF](../graph/PDF/puzzle18.pdf).
+
