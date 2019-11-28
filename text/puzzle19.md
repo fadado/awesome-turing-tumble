@@ -26,7 +26,7 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Diagram 1
 
-![Puzzle #190](../graph/PNG/puzzle190.png)
+![Puzzle #190](../graph/img/puzzle190.png)
 
 ### Setup 2
 
@@ -50,5 +50,5 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Diagram 2
 
-![Puzzle #192](../graph/PNG/puzzle192.png)
+![Puzzle #192](../graph/img/puzzle192.png)
 

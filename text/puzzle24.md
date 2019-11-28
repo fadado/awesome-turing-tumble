@@ -26,5 +26,5 @@ Let exactly 9 blue balls reach the end. (Intercept the 10th.)
 
 ### Diagram
 
-![Puzzle #24](../graph/PNG/puzzle24.png)
+![Puzzle #24](../graph/img/puzzle24.png)
 

@@ -26,5 +26,5 @@ If the machine starts with bit A pointing to the left, intercept a blue ball. Ot
 
 ### Diagram
 
-![Puzzle #14](../graph/PNG/puzzle14.png)
+![Puzzle #14](../graph/img/puzzle14.png)
 

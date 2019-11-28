@@ -24,5 +24,5 @@ Use register A to count the number of blue balls. Use 15 or fewer balls.
 
 ### Diagram
 
-![Puzzle #21](../graph/PNG/puzzle21.png)
+![Puzzle #21](../graph/img/puzzle21.png)
 

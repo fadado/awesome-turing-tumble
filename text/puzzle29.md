@@ -26,5 +26,5 @@ Release a blue ball, a red ball, and then the rest of the blue balls.
 
 ### Diagram
 
-![Puzzle #29](../graph/PNG/puzzle29.png)
+![Puzzle #29](../graph/img/puzzle29.png)
 

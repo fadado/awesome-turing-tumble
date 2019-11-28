@@ -26,5 +26,5 @@ Generate the pattern 3R6B.
 
 ### Diagram
 
-![Puzzle #25](../graph/PNG/puzzle25.png)
+![Puzzle #25](../graph/img/puzzle25.png)
 

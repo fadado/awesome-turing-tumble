@@ -43,18 +43,22 @@ SHELL := /bin/bash
 ########################################################################
 
 # Dot files to process
-DotFiles := $(wildcard puzzle??*.gv)
-Derived := puzzle02.gv puzzle06.gv puzzle07.gv puzzle192.gv  puzzle201.gv
+DotFiles := $(wildcard puzzle??*.gv)	\
+	    puzzle02.gv puzzle07.gv	\
+	    puzzle06.gv			\
+	    puzzle192.gv		\
+	    puzzle201.gv		\
 
 # Targets to create
-SvgTargets := $(DotFiles:.gv=.svg) $(Derived:.gv=.svg)
-PngTargets := $(DotFiles:.gv=.png) $(Derived:.gv=.png)
-PdfTargets := $(DotFiles:.gv=.pdf) $(Derived:.gv=.pdf)
-DotTargets := $(DotFiles:.gv=.dot)
-CppTargets := $(DotFiles:.gv=.cpp)
+Images	   := $(addprefix img/,$(DotFiles:.gv=.png))
+SvgTargets := $(addprefix SVG/,$(DotFiles:.gv=.svg))
+PngTargets := $(addprefix PNG/,$(DotFiles:.gv=.png))
+PdfTargets := $(addprefix PDF/,$(DotFiles:.gv=.pdf))
+DotTargets := $(addprefix DOT/,$(DotFiles:.gv=.dot))
+CppTargets := $(addprefix CPP/,$(DotFiles:.gv=.cpp))
 
 # All depends on board.h
-$(SvgTargets): board.h
+$(Images): board.h
 
 ########################################################################
 # Rules
@@ -70,47 +74,41 @@ CPPFLAGS :=			\
 	-Wundef			\
 	-Wunused-macros		\
 
-WithText := -DShowGraphLabel=1 -DShowObjective=1
+WithText    := -DShowGraphLabel=1 -DShowObjective=1
 WithoutText := -DShowGraphLabel=0 -DShowObjective=0
 
-CPP = cpp $(CPPFLAGS)
-
 # Extracts puzzle ID
-puzzle = -DPuzzle=$(patsubst 0%,%,$(patsubst puzzle%.$(2),%,$(1)))
+puzzle = -DPuzzle=$(patsubst 0%,%,$(patsubst $(3)puzzle%.$(2),%,$(1)))
 
-# Render with text into a directory
-define renderT =
-  $(CPP) $(WithText) $(call puzzle,$@,$(1)) $< \
-  | dot -T$(1) -o $(2)/$@
-endef
-
-# Render without text, only image, into a directory
-define renderI =
-  $(CPP) $(WithoutText) $(call puzzle,$@,$(1)) $< \
-  | dot -T$(1) -o $(2)/$@
-endef
-
-# Only pre-processed (for debugging)
-define renderP =
-  $(CPP) $(WithText) $(call puzzle,$@,$(1)) $< >$(2)/$@
+# Render images
+define render =
+  cpp $(CPPFLAGS) $(ShowText) $(call puzzle,$@,$(1),$(2)) $< \
+  | dot -T$(1) -o $@
 endef
 
 # Implicit rules
+img/%.png: ShowText := $(WithoutText)
+img/%.png: %.gv; $(call render,png,img/)
 
-%.svg: %.gv; $(call renderT,svg,.)
-%.pdf: %.gv; $(call renderT,pdf,PDF)
-%.png: %.gv; $(call renderI,png,PNG)
+SVG/%.svg: ShowText := $(WithText)
+SVG/%.svg: %.gv; $(call render,svg,SVG/)
 
-# Debug only formats
-DOT CPP: ; mkdir $@
-%.dot: %.gv | DOT; $(call renderT,dot,DOT)
-%.cpp: %.gv | CPP; $(call renderP,cpp,CPP)
+PDF/%.pdf: ShowText := $(WithText)
+PDF/%.pdf: %.gv; $(call render,pdf,PDF/)
+
+PNG/%.png: ShowText := $(WithText)
+PNG/%.png: %.gv; $(call render,png,PNG/)
 
 # Derived graphs
 define derived
-puzzle$(1).svg: puzzle$(2).gv; $$(call renderT,svg,.)
-puzzle$(1).png: puzzle$(2).gv; $$(call renderI,png,PNG)
-puzzle$(1).pdf: puzzle$(2).gv; $$(call renderT,pdf,PDF)
+img/puzzle$(1).png: ShowText := $(WithText)
+img/puzzle$(1).png: puzzle$(2).gv; $$(call render,png,img/)
+SVG/puzzle$(1).svg: ShowText := $(WithText)
+SVG/puzzle$(1).svg: puzzle$(2).gv; $$(call render,svg,SVG/)
+PNG/puzzle$(1).png: ShowText := $(WithText)
+PNG/puzzle$(1).png: puzzle$(2).gv; $$(call render,png,PNG/)
+PDF/puzzle$(1).pdf: ShowText := $(WithText)
+PDF/puzzle$(1).pdf: puzzle$(2).gv; $$(call render,pdf,PDF/)
 endef
 
 $(eval $(call derived,02,01))
@@ -119,19 +117,45 @@ $(eval $(call derived,06,05))
 $(eval $(call derived,192,190))
 $(eval $(call derived,201,200))
 
-# Targets
+all: $(Images)
+	@echo 'Done!'
 
-.PHONY: svg png pdf dot cpp publish
+# Debug only formats
+define renderP =
+  cpp $(CPPFLAGS) $(WithText) $(call puzzle,$@,$(1),$(2)) $< >$@
+endef
 
-svg: $(SvgTargets); @cp --update *.svg SVG
+define debugged
+DOT/puzzle$(1).dot: ShowText := $(WithText)
+DOT/puzzle$(1).dot: puzzle$(2).gv; $$(call renderP,dot,DOT/)
+CPP/puzzle$(1).cpp: ShowText := $(WithText)
+CPP/puzzle$(1).cpp: puzzle$(2).gv; $$(call renderP,cpp,CPP/)
+endef
+
+DOT CPP: ; mkdir $@
+
+DOT/%.dot: %.gv | DOT; $(call renderP,dot,DOT/)
+CPP/%.cpp: %.gv | CPP; $(call renderP,cpp,CPP/)
+
+$(eval $(call debugged,02,01))
+$(eval $(call debugged,07,01))
+$(eval $(call debugged,06,05))
+$(eval $(call debugged,192,190))
+$(eval $(call debugged,201,200))
+
+# Other formats
+.PHONY: svg png pdf dot cpp publish debug
+
+svg: $(SvgTargets)
 png: $(PngTargets)
 pdf: $(PdfTargets)
+
+publish: all svg png pdf
+
 dot: $(DotTargets)
 cpp: $(CppTargets)
-publish: svg png pdf
 
-all: $(SvgTargets)
-	@echo 'Done!'
+debug: dot cpp
 
 ########################################################################
 # Tools
@@ -140,10 +164,10 @@ all: $(SvgTargets)
 .PHONY: clean clobber help
 
 clean:
-	@rm -f *.svg
+	@rm -f SVG/*.svg img/*.png
 
 clobber: clean
-	@rm -f SVG/*.svg PNG/*.png PDF/*.pdf 
+	@rm -f PNG/*.png PDF/*.pdf 
 	@rm -rf DOT CPP
 
 # Show targets

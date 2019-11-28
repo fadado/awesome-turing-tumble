@@ -26,5 +26,5 @@ Count the blue balls in register A. If there are more than 7, gear bit OV must f
 
 ### Diagram
 
-![Puzzle #30](../graph/PNG/puzzle30.png)
+![Puzzle #30](../graph/img/puzzle30.png)
 

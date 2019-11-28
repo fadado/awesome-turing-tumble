@@ -26,5 +26,5 @@ Reverse the direction of each of the 9 starting bits, regardless of the directio
 
 ### Diagram
 
-![Puzzle #27](../graph/PNG/puzzle27.png)
+![Puzzle #27](../graph/img/puzzle27.png)
 

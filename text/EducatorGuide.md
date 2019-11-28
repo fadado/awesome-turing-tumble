@@ -62,7 +62,7 @@ Make all of the blue balls (and only the blue balls) reach the end.
 
 ### Diagram
 
-![Puzzle #1](../graph/PNG/puzzle01.png)
+![Puzzle #1](../graph/img/puzzle01.png)
 
 ## Challenge #2: Re-entry
 
@@ -92,7 +92,7 @@ Make all of the blue balls (and only the blue balls) reach the end.
 
 ### Diagram
 
-![Puzzle #2](../graph/PNG/puzzle02.png)
+![Puzzle #2](../graph/img/puzzle02.png)
 
 ## Challenge #3: Ignition
 
@@ -122,7 +122,7 @@ Release one blue ball and then all of the red balls.
 
 ### Diagram
 
-![Puzzle #3](../graph/PNG/puzzle03.png)
+![Puzzle #3](../graph/img/puzzle03.png)
 
 ## Challenge #4: Fusion
 
@@ -152,7 +152,7 @@ Release one red ball and then all of the blue balls.
 
 ### Diagram
 
-![Puzzle #4](../graph/PNG/puzzle04.png)
+![Puzzle #4](../graph/img/puzzle04.png)
 
 ## Challenge #5: Entropy
 
@@ -182,7 +182,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Diagram
 
-![Puzzle #5](../graph/PNG/puzzle05.png)
+![Puzzle #5](../graph/img/puzzle05.png)
 
 ## Challenge #6: Total Internal Reflection
 
@@ -212,7 +212,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Diagram
 
-![Puzzle #6](../graph/PNG/puzzle06.png)
+![Puzzle #6](../graph/img/puzzle06.png)
 
 ## Challenge #7: Path of Least Resistance
 
@@ -242,7 +242,7 @@ Create a path for the blue balls to reach the output with only 6 ramps.
 
 ### Diagram
 
-![Puzzle #7](../graph/PNG/puzzle07.png)
+![Puzzle #7](../graph/img/puzzle07.png)
 
 ## Challenge #8: Depolarization
 
@@ -272,7 +272,7 @@ Make the pattern blue, red, blue, red, blue, red…
 
 ### Diagram
 
-![Puzzle #8](../graph/PNG/puzzle08.png)
+![Puzzle #8](../graph/img/puzzle08.png)
 
 ## Challenge #9: Dimers
 
@@ -302,7 +302,7 @@ Make the pattern blue, blue, red, blue, blue, red…
 
 ### Diagram
 
-![Puzzle #9](../graph/PNG/puzzle09.png)
+![Puzzle #9](../graph/img/puzzle09.png)
 
 ## Challenge #10: Double Bond
 
@@ -332,7 +332,7 @@ Make the pattern blue, blue, red, red, blue, blue, red, red…
 
 ### Diagram
 
-![Puzzle #10](../graph/PNG/puzzle10.png)
+![Puzzle #10](../graph/img/puzzle10.png)
 
 ## Challenge #11: Selectivity
 
@@ -362,7 +362,7 @@ Flip bits 2 and 5 to the right.
 
 ### Diagram
 
-![Puzzle #11](../graph/PNG/puzzle11.png)
+![Puzzle #11](../graph/img/puzzle11.png)
 
 ## Challenge #12: Duality - Part 1
 
@@ -392,7 +392,7 @@ Intercept a blue ball.
 
 ### Diagram
 
-![Puzzle #12](../graph/PNG/puzzle12.png)
+![Puzzle #12](../graph/img/puzzle12.png)
 
 ## Challenge #13: Duality - Part 2
 
@@ -422,7 +422,7 @@ Intercept a red ball.
 
 ### Diagram
 
-![Puzzle #13](../graph/PNG/puzzle13.png)
+![Puzzle #13](../graph/img/puzzle13.png)
 
 ## Challenge #14: Duality - Part 3
 
@@ -452,7 +452,7 @@ If the machine starts with bit A pointing to the left, intercept a blue ball. Ot
 
 ### Diagram
 
-![Puzzle #14](../graph/PNG/puzzle14.png)
+![Puzzle #14](../graph/img/puzzle14.png)
 
 ## Challenge #15: Inversion
 
@@ -482,7 +482,7 @@ If bit A starts to the left, intercept a blue ball. If bit A starts to the right
 
 ### Diagram
 
-![Puzzle #15](../graph/PNG/puzzle15.png)
+![Puzzle #15](../graph/img/puzzle15.png)
 
 ## Challenge #16: Termination
 
@@ -512,7 +512,7 @@ Let only 3 blue balls reach the bottom and catch the 4th ball in the interceptor
 
 ### Diagram
 
-![Puzzle #16](../graph/PNG/puzzle16.png)
+![Puzzle #16](../graph/img/puzzle16.png)
 
 ## Challenge #17: Fixed Ratio
 
@@ -542,7 +542,7 @@ Make the pattern blue, blue, blue, red, red, red.
 
 ### Diagram
 
-![Puzzle #17](../graph/PNG/puzzle17.png)
+![Puzzle #17](../graph/img/puzzle17.png)
 
 ## Challenge #18: Entanglement
 
@@ -572,7 +572,7 @@ If the top bit AND the bottom bit start pointed to the right, put a ball in inte
 
 ### Diagram
 
-![Puzzle #18](../graph/PNG/puzzle18.png)
+![Puzzle #18](../graph/img/puzzle18.png)
 
 ## Challenge #19: Entanglement
 
@@ -602,7 +602,7 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Diagram 1
 
-![Puzzle #190](../graph/PNG/puzzle190.png)
+![Puzzle #190](../graph/img/puzzle190.png)
 
 ------------------------------------------------------------------------
 
@@ -628,7 +628,7 @@ If the top bit AND the bottom bit start pointed to the right, intercept a blue b
 
 ### Diagram 2
 
-![Puzzle #192](../graph/PNG/puzzle192.png)
+![Puzzle #192](../graph/img/puzzle192.png)
 
 ## Challenge #20: Symbiosis
 
@@ -658,7 +658,7 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 
 ### Diagram 1
 
-![Puzzle #200](../graph/PNG/puzzle200.png)
+![Puzzle #200](../graph/img/puzzle200.png)
 
 ------------------------------------------------------------------------
 
@@ -684,7 +684,7 @@ If the top bit OR the bottom bit start pointed to the right, intercept a blue ba
 
 ### Diagram 2
 
-![Puzzle #201](../graph/PNG/puzzle201.png)
+![Puzzle #201](../graph/img/puzzle201.png)
 
 ## Challenge #21: Quantum Number
 
@@ -712,7 +712,7 @@ Use register A to count the number of blue balls. Use 15 or fewer balls.
 
 ### Diagram
 
-![Puzzle #21](../graph/PNG/puzzle21.png)
+![Puzzle #21](../graph/img/puzzle21.png)
 
 ## Challenge #22: Depletion
 
@@ -742,7 +742,7 @@ Register A starts at 15. Subtract the number of blue balls from the register. (U
 
 ### Diagram
 
-![Puzzle #22](../graph/PNG/puzzle22.png)
+![Puzzle #22](../graph/img/puzzle22.png)
 
 ## Challenge #23: Tetrad
 
@@ -772,7 +772,7 @@ Let exactly 4 blue balls reach the end. (Intercept the 5th.)
 
 ### Diagram
 
-![Puzzle #23](../graph/PNG/puzzle23.png)
+![Puzzle #23](../graph/img/puzzle23.png)
 
 ## Challenge #24: Ennead
 
@@ -802,7 +802,7 @@ Let exactly 9 blue balls reach the end. (Intercept the 10th.)
 
 ### Diagram
 
-![Puzzle #24](../graph/PNG/puzzle24.png)
+![Puzzle #24](../graph/img/puzzle24.png)
 
 ## Challenge #25: Regular Expression
 
@@ -832,7 +832,7 @@ Generate the pattern 3R6B.
 
 ### Diagram
 
-![Puzzle #25](../graph/PNG/puzzle25.png)
+![Puzzle #25](../graph/img/puzzle25.png)
 
 ## Challenge #26: Nucleus
 
@@ -862,7 +862,7 @@ Generate the pattern 4B1R4B.
 
 ### Diagram
 
-![Puzzle #26](../graph/PNG/puzzle26.png)
+![Puzzle #26](../graph/img/puzzle26.png)
 
 ## Challenge #27: Reflection
 
@@ -893,7 +893,7 @@ Reverse the direction of each of the 9 starting bits, regardless of the directio
 
 ### Diagram
 
-![Puzzle #27](../graph/PNG/puzzle27.png)
+![Puzzle #27](../graph/img/puzzle27.png)
 
 ## Challenge #28: Latch
 
@@ -923,7 +923,7 @@ Release only the blue balls.
 
 ### Diagram
 
-![Puzzle #28](../graph/PNG/puzzle28.png)
+![Puzzle #28](../graph/img/puzzle28.png)
 
 ## Challenge #29: One-Shot Switch
 
@@ -953,7 +953,7 @@ Release a blue ball, a red ball, and then the rest of the blue balls.
 
 ### Diagram
 
-![Puzzle #29](../graph/PNG/puzzle29.png)
+![Puzzle #29](../graph/img/puzzle29.png)
 
 ## Challenge #30: Overflow
 
@@ -983,5 +983,5 @@ Count the blue balls in register A. If there are more than 7, gear bit OV must f
 
 ### Diagram
 
-![Puzzle #30](../graph/PNG/puzzle30.png)
+![Puzzle #30](../graph/img/puzzle30.png)
 

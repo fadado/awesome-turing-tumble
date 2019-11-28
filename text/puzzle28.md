@@ -26,5 +26,5 @@ Release only the blue balls.
 
 ### Diagram
 
-![Puzzle #28](../graph/PNG/puzzle28.png)
+![Puzzle #28](../graph/img/puzzle28.png)
 
