@@ -79,6 +79,7 @@ Published papers on _Turing Tumble_.
 * [Constructing reversible logic elements on Turing Tumble model](http://www.automata2018.ugent.be/files/proceedings_main.pdf)
 * [Resource review: Turing Tumble a programmable logic building kit](https://search.informit.com.au/documentSummary;dn=524095287395978;res=IELHSS)
 * [Turing Tumble Is P(SPACE)-Complete](https://link.springer.com/chapter/10.1007/978-3-030-17402-6_23)
+* [Turing Tumble is P-Complete (Draft Proof Sketch)](https://sites.ualberta.ca/~jhoover/TuringTumble/TuringTumbleIsPComplete.htm)
 * [Universal logic elements constructed on the Turing Tumble](https://link.springer.com/article/10.1007/s11047-019-09760-8)
 
 ## Contribute
