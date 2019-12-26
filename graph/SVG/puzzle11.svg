@@ -77,7 +77,7 @@
 <g id="node8" class="node">
 <title>bit_1</title>
 <polygon fill="none" stroke="#c0c0c0" points="55.3827,-108 28.3827,-90 55.3827,-72 82.3827,-90 55.3827,-108"/>
-<text text-anchor="middle" x="55.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">^</text>
+<text text-anchor="middle" x="55.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 <text text-anchor="start" x="8.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
 <text text-anchor="start" x="15.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#00bfff">1</text>
 <text text-anchor="start" x="21.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
@@ -87,7 +87,7 @@
 <g id="node9" class="node">
 <title>bit_2</title>
 <polygon fill="none" stroke="#000000" points="127.3827,-108 100.3827,-90 127.3827,-72 154.3827,-90 127.3827,-108"/>
-<text text-anchor="middle" x="127.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">^</text>
+<text text-anchor="middle" x="127.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 <text text-anchor="start" x="80.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
 <text text-anchor="start" x="87.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#00bfff">2</text>
 <text text-anchor="start" x="93.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
@@ -102,7 +102,7 @@
 <g id="node10" class="node">
 <title>bit_3</title>
 <polygon fill="none" stroke="#c0c0c0" points="199.3827,-108 172.3827,-90 199.3827,-72 226.3827,-90 199.3827,-108"/>
-<text text-anchor="middle" x="199.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">^</text>
+<text text-anchor="middle" x="199.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 <text text-anchor="start" x="152.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
 <text text-anchor="start" x="159.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#00bfff">3</text>
 <text text-anchor="start" x="165.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
@@ -112,7 +112,7 @@
 <g id="node11" class="node">
 <title>bit_4</title>
 <polygon fill="none" stroke="#c0c0c0" points="271.3827,-108 244.3827,-90 271.3827,-72 298.3827,-90 271.3827,-108"/>
-<text text-anchor="middle" x="271.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">^</text>
+<text text-anchor="middle" x="271.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 <text text-anchor="start" x="224.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
 <text text-anchor="start" x="231.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#00bfff">4</text>
 <text text-anchor="start" x="237.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
@@ -122,7 +122,7 @@
 <g id="node12" class="node">
 <title>bit_5</title>
 <polygon fill="none" stroke="#000000" points="343.3827,-108 316.3827,-90 343.3827,-72 370.3827,-90 343.3827,-108"/>
-<text text-anchor="middle" x="343.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">^</text>
+<text text-anchor="middle" x="343.3827" y="-85" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
 <text text-anchor="start" x="296.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>
 <text text-anchor="start" x="303.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#00bfff">5</text>
 <text text-anchor="start" x="309.3827" y="-115" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff"> </text>

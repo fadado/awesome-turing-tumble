@@ -30,11 +30,11 @@ digraph Challenge11 {
     subgraph five_bits {
         rank=same
         rankdir=LR
-        bit_1 [ BIT_STYLE label=BITUNDEF $xlabel(1) color=grey ]
-        bit_2 [ BIT_STYLE label=BITUNDEF $xlabel(2) ]
-        bit_3 [ BIT_STYLE label=BITUNDEF $xlabel(3) color=grey ]
-        bit_4 [ BIT_STYLE label=BITUNDEF $xlabel(4) color=grey ]
-        bit_5 [ BIT_STYLE label=BITUNDEF $xlabel(5) ]
+        bit_1 [ BIT_STYLE label=BITLEFT $xlabel(1) color=grey ]
+        bit_2 [ BIT_STYLE label=BITLEFT $xlabel(2) ]
+        bit_3 [ BIT_STYLE label=BITLEFT $xlabel(3) color=grey ]
+        bit_4 [ BIT_STYLE label=BITLEFT $xlabel(4) color=grey ]
+        bit_5 [ BIT_STYLE label=BITLEFT $xlabel(5) ]
         bit_1 -> bit_2 [style=invis]
         bit_2 -> bit_3 [style=invis]
         bit_3 -> bit_4 [style=invis]
