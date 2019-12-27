@@ -8,6 +8,7 @@ turing-complete language _Turing Tumble_.
 * [Software](#software)
 * [Articles](#articles)
 * [Papers](#papers)
+* [Other marble computers](#other-marble-computers)
 * [Contribute](#contribute)
 * [License](#license)
 
@@ -81,6 +82,14 @@ Published papers on _Turing Tumble_.
 * [Turing Tumble Is P(SPACE)-Complete](https://link.springer.com/chapter/10.1007/978-3-030-17402-6_23)
 * [Turing Tumble is P-Complete (Draft Proof Sketch)](https://sites.ualberta.ca/~jhoover/TuringTumble/TuringTumbleIsPComplete.htm)
 * [Universal logic elements constructed on the Turing Tumble](https://link.springer.com/article/10.1007/s11047-019-09760-8)
+
+## Other marble computers
+
+Documents on other marble computers can help the study of _Turing Tumble_.
+
+* [The Power of the Digi-Comp II: My First Conscious Paperlet](https://www.scottaaronson.com/blog/?p=1902)
+* [Digi-Comp II Instruction Manual](https://cdn.evilmadscientist.com/KitInstrux/DCII-manual.pdf)
+* [Images from “Marble Runs and Turing Machines”](https://nbickford.wordpress.com/2014/03/25/images-from-marble-runs-and-turing-machines/)
 
 ## Contribute
 
