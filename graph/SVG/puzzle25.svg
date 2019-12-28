@@ -152,7 +152,7 @@
 <g id="node11" class="node">
 <title>bit_B1</title>
 <polygon fill="none" stroke="#000000" points="253.648,-180 226.648,-162 253.648,-144 280.648,-162 253.648,-180"/>
-<text text-anchor="middle" x="253.648" y="-157" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&lt;</text>
+<text text-anchor="middle" x="253.648" y="-157" font-family="Helvetica,sans-Serif" font-size="20.00" fill="#00bfff">&gt;</text>
 </g>
 <!-- bit_B0&#45;&gt;bit_B1 -->
 <g id="edge11" class="edge">

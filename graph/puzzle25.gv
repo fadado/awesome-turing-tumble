@@ -35,7 +35,7 @@ digraph Challenge25 {
     subgraph cluster_Register_B {
         color=grey
         bit_B0 [ BIT_STYLE label=BITRIGHT ]
-        bit_B1 [ BIT_STYLE label=BITLEFT ]
+        bit_B1 [ BIT_STYLE label=BITRIGHT ]
     }
 
     halt [ INTERCEPTOR_STYLE ]
