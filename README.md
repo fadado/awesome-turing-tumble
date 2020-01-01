@@ -62,15 +62,19 @@ GitHub repositories:
 
 Selected articles on _Turing Tumble_.
 
+* [Cool marble-powered mechanical computer to solve logic problems](https://boingboing.net/2017/05/30/cool-marble-powered-mechanical.html)
 * [Kickstarter Alert: Program a Mechanical Computer With ‘Turing Tumble’](https://geekdad.com/2017/05/kickstarter-alert-turing-tumble/)
+* [Review: Turing Tumble](http://www.geeksundergrace.com/tabletop/review-turing-tumble/)
 * [The Turing Tumble lets you and your kids build real mechanical computers](https://techcrunch.com/2017/05/30/the-turing-tumble-lets-you-and-your-kids-build-real-mechanical-computers/)
 * [Turing Tumble Game Teaches Computational Thinking](https://www.bethel.edu/news/articles/2017/june/turing-tumble)
 * [Turing Tumble Review](https://tbgd.blog/2019/01/13/turing-tumble/)
 * [Turing Tumble is a mechanical computer built for gaming](https://www.popularmechanics.co.za/stuff/turing-tumble-mechanical-computer/)
 * [Turing Tumble on Kickstarter Has Kids Building Mechanical Computers](https://www.macobserver.com/news/product-news/turing-tumble-kickstarter-kids-building-mechanical-computers/)
+* [Turing Tumble: A Timberdoodle Review](https://mamabeanaz.com/2019/09/15/turing-tumble-a-timberdoodle-review/)
 * [Turing Tumble: Gaming on a Mechanical Computer](https://www.kickstarter.com/projects/871405126/turing-tumble-gaming-on-a-mechanical-computer)
 * [Turing Tumble’s Incredible Kickstarter Journey](https://theworks.org/turing-tumbles-incredible-kickstarter-journey/)
 * [Understand Computer Logic With Turing Tumble](https://www.i-programmer.info/news/150-training-a-education/10830-learn-computer-logic-with-turing-tumble-.html)
+* [Wikipedia: Turing Tumble](https://en.wikipedia.org/wiki/Turing_Tumble)
 
 ## Papers
 
